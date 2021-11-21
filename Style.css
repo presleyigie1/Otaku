@@ -20,7 +20,7 @@ body{
 }
 
 #h_bar li a{
-
+  /*presley- fixed the nav bar*/
     display:inline-block;
     color:white;
     text-align: center;
@@ -173,12 +173,21 @@ a{
 .kirito_and_co{
   width:240px;
   height:380px;
-  border-radius: 10px;
+  padding: 5px;
+  border-radius: 15px;
   float:right;
 }
-
+/*presley*/
+.saopara{
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
 }
 
+  /*sean*/
 .container p{
     margin-bottom: 15px;
 }
