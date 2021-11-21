@@ -19,8 +19,9 @@ body{
 }
 
 #h_bar li a{
-
+    /*presley*/
     display:inline-block;
+    /*sean*/
     color:blue;
     text-align: center;
     padding: 14px 15px;
@@ -30,7 +31,7 @@ body{
 }
 
 #h1_bar li a:hover{
-  /*presley*/
+
   color:green;
 }
 
