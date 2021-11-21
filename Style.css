@@ -1,6 +1,7 @@
-body{
+.MHA{
     background-color:gold;
     font-size: 13pt;
+     
 }
 
 #h_bar{
@@ -19,9 +20,8 @@ body{
 }
 
 #h_bar li a{
-    /*presley*/
-    display:inline-block;
-    /*sean*/
+
+    display: block;
     color:blue;
     text-align: center;
     padding: 14px 15px;
@@ -32,7 +32,7 @@ body{
 
 #h1_bar li a:hover{
 
-  color:green;
+    color:green;
 }
 
 .para1{
@@ -141,49 +141,73 @@ h1{
 
     font-family: 'Noto Sans JP',
     sans-serif;
+    
+}
+
+a{
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    .MHA{
+
+        height: 600px;
+        width:  600px;
+    }
+
+
+    
+}
+
+@media screen and(max-width:800px){
+
 
 }
 
-/*presley*/
-.saopara{
-  font-family: 'Oswald',
-  sans-serif;
-  font-family: 'Shippori Antique',
-  sans-serif;
-
-
-
-
-}
-/*presley*/
-.kirito_and_co{
-  width:294px;
-  height:411px;
-  margin:40px;
-  float:right;
-  position:relative;
-  top:-300px;
-
-}
-.saopara{
-  float:left;
+.para1{
+    float:right;
+    padding-left: 5%;
 }
 
-/*Solomon*/
-.characters{
-  width: 50%;
-  height: 30%;
-  position:relative;
-  top:-300px;
-  float:Center;
-  margin:0 0 0 15px;
+/*Sean*/
+.MHA{
+    padding:0;
+    margin:0;
 }
 
-.kage{
-  width:50%;
-  height:25%;
-  position:relative;
-  top:-300px;
-  float:center;
-  margin:0 0 0 15px;
+
+.container{
+    padding:30px;
+    font-size:15px;
+    font-weight: 300;
+    line-height: 24px;;
 }
+
+.container p{
+    margin-bottom: 15px;
+}
+
+.picture{
+    width:450px;
+    position:relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    background-color: antiquewhite;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+/*Sean*/
+.picture:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border: 8px solid #fff;
+    z-index: 2;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
