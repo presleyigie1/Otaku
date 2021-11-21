@@ -20,18 +20,24 @@ body{
 }
 
 #h_bar li a{
-  /*presley- fixed the nav bar*/
+
+
     display:inline-block;
     color:white;
     text-align: center;
     padding: 14px 15px;
     text-decoration: none;
 
+
 }
+
 
 /*presley- adds a hover on nav bar that changes color*/
 #h_bar li a:hover{
   color:black;
+
+
+
 }
 /*sean*/
 .para1{
@@ -147,6 +153,13 @@ a{
 
 }
 
+
+a{
+
+}
+
+
+
 @media screen and (max-width: 800px) {
 
     .MHA{
@@ -157,35 +170,52 @@ a{
 
 
 
+
+
 }
+
+
+@media screen and(max-width:800px){
+
+
+}
+<
 
 @media screen and(max-width:800px){
 
 
 }
 
+
 .para1{
     float:right;
     padding-left: 5%;
 }
+
 /*presley*/
 .kirito_and_co{
   width:240px;
   height:380px;
-  padding: 5px;
-  border-radius: 15px;
+  border-radius: 10px;
   float:right;
 }
-/*presley*/
-.saopara{
-  font-family: 'Noto Sans JP',
-  sans-serif;
-  font-family: 'Oswald',
-  sans-serif;
-  font-family: 'Shippori Antique',
-  sans-serif;
+
+
+/*Sean*/
+.MHA{
+    padding:0;
+    margin:0;
 }
-  /*sean*/
+
+
+.container{
+    padding:30px;
+    font-size:15px;
+    font-weight: 300;
+    line-height: 24px;;
+
+}
+
 .container p{
     margin-bottom: 15px;
 }
@@ -199,6 +229,7 @@ a{
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
 /*Sean*/
 .picture:before{
     content:'';
