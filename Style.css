@@ -1,6 +1,7 @@
 body{
     background-color:gold;
     font-size: 13pt;
+
 }
 
 #h_bar{
@@ -30,11 +31,11 @@ body{
 
 }
 
-#h1_bar li a:hover{
-
-  color:green;
+/*presley- adds a hover on nav bar that changes color*/
+#h_bar li a:hover{
+  color:black;
 }
-
+/*sean*/
 .para1{
     font-family: 'Oswald',
     sans-serif;
@@ -157,16 +158,12 @@ h1{
 }
 /*presley*/
 .kirito_and_co{
-  width:294px;
-  height:411px;
-  margin:40px;
+  width:240px;
+  height:380px;
+  border-radius: 10px;
   float:right;
-  position:relative;
-  top:-300px;
-
 }
-.saopara{
-  float:left;
+
 }
 
 /*Solomon*/
