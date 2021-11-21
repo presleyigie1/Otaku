@@ -152,3 +152,22 @@ h1{
   sans-serif;
   float:left;
 }
+
+/*Solomon*/
+.characters{
+  width: 50%;
+  height: 30%;
+  position:realative;
+  top:-300px;
+  float:Center;
+  margin:0 0 0 15px;
+}
+
+.kage{ 
+  width:50%;
+  height:25%;
+  position:realative;
+  top:-300px;
+  float:center;
+  margin:0 0 0 15px;
+}
