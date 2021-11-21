@@ -20,7 +20,7 @@ body{
 
 #h_bar li a{
 
-    display: block;
+    display:inline-block;
     color:blue;
     text-align: center;
     padding: 14px 15px;
@@ -30,8 +30,8 @@ body{
 }
 
 #h1_bar li a:hover{
-
-    color:green;
+  /*presley*/
+  color:green;
 }
 
 .para1{
