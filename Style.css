@@ -145,10 +145,26 @@ h1{
 }
 
 /*presley*/
-.saopara1{
+.saopara{
   font-family: 'Oswald',
   sans-serif;
   font-family: 'Shippori Antique',
   sans-serif;
+
+
+
+
+}
+/*presley*/
+.kirito_and_co{
+  width:294px;
+  height:411px;
+  margin:40px;
+  float:right;
+  position:relative;
+  top:-300px;
+
+}
+.saopara{
   float:left;
 }
