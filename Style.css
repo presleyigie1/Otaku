@@ -1,7 +1,7 @@
 .MHA{
     background-color:gold;
     font-size: 13pt;
-     
+
 }
 
 #h_bar{
@@ -21,8 +21,9 @@
 
 #h_bar li a{
 
-    display: block;
-    color:blue;
+
+    display:inline-block;
+    color:white;
     text-align: center;
     padding: 14px 15px;
     text-decoration: none;
@@ -30,11 +31,15 @@
 
 }
 
-#h1_bar li a:hover{
 
-    color:green;
+/*presley- adds a hover on nav bar that changes color*/
+#h_bar li a:hover{
+  color:black;
+
+
+
 }
-
+/*sean*/
 .para1{
     font-family: 'Oswald',
     sans-serif;
@@ -148,6 +153,13 @@ a{
     
 }
 
+
+a{
+
+}
+
+
+
 @media screen and (max-width: 800px) {
 
     .MHA{
@@ -157,18 +169,37 @@ a{
     }
 
 
+
+
     
 }
+
+
+@media screen and(max-width:800px){
+
+
+}
+<
 
 @media screen and(max-width:800px){
 
 
 }
 
+
 .para1{
     float:right;
     padding-left: 5%;
 }
+
+/*presley*/
+.kirito_and_co{
+  width:240px;
+  height:380px;
+  border-radius: 10px;
+  float:right;
+}
+
 
 /*Sean*/
 .MHA{
@@ -182,6 +213,7 @@ a{
     font-size:15px;
     font-weight: 300;
     line-height: 24px;;
+
 }
 
 .container p{
@@ -197,6 +229,7 @@ a{
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
 /*Sean*/
 .picture:before{
     content:'';
