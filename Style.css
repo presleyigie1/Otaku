@@ -1,4 +1,4 @@
-body{
+.MHA{
     background-color:gold;
     font-size: 13pt;
 
@@ -21,6 +21,7 @@ body{
 
 #h_bar li a{
 
+
     display:inline-block;
     color:white;
     text-align: center;
@@ -30,9 +31,13 @@ body{
 
 }
 
+
 /*presley- adds a hover on nav bar that changes color*/
 #h_bar li a:hover{
   color:black;
+
+
+
 }
 /*sean*/
 .para1{
@@ -141,12 +146,19 @@ h1{
 
     font-family: 'Noto Sans JP',
     sans-serif;
-
+    
 }
+
+a{
+    
+}
+
 
 a{
 
 }
+
+
 
 @media screen and (max-width: 800px) {
 
@@ -158,17 +170,28 @@ a{
 
 
 
+
+    
 }
+
+
+@media screen and(max-width:800px){
+
+
+}
+<
 
 @media screen and(max-width:800px){
 
 
 }
 
+
 .para1{
     float:right;
     padding-left: 5%;
 }
+
 /*presley*/
 .kirito_and_co{
   width:240px;
@@ -176,6 +199,20 @@ a{
   border-radius: 10px;
   float:right;
 }
+
+
+/*Sean*/
+.MHA{
+    padding:0;
+    margin:0;
+}
+
+
+.container{
+    padding:30px;
+    font-size:15px;
+    font-weight: 300;
+    line-height: 24px;;
 
 }
 
@@ -192,6 +229,7 @@ a{
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
 /*Sean*/
 .picture:before{
     content:'';
@@ -205,3 +243,4 @@ a{
     overflow:hidden;
     box-sizing: border-box;
 }
+
