@@ -1,5 +1,5 @@
 body{
-    background-color:gold;
+    background-color:yellow;
     font-size: 13pt;
 
 }
@@ -39,7 +39,7 @@ body{
 
 
 }
-/*sean*/
+/*Sean*/
 .para1{
     font-family: 'Oswald',
     sans-serif;
@@ -61,31 +61,31 @@ body{
     overflow:hidden;
 
 }
-
+/*Sean*/
 .slides{
     width: 500%;
     height:500px;
     display: flex;
 }
-
+/*Sean*/
 .slides input{
     display: none;
 
 }
-
+/*Sean*/
 .slide{
     width: 20%;
     transition: 4s;
 
 }
-
+/*Sean*/
 .slide img{
     width:800px;
     height:500px;
 }
 
 /*css for manual navigation*/
-
+/*Sean*/
 .navigation-manual{
     position: absolute;
     width: 800px;
@@ -94,7 +94,7 @@ body{
     justify-content: center;
 
 }
-
+/*Sean*/
 .manual-btn{
     border: 2px solid black;
     padding: 5px;
@@ -102,13 +102,13 @@ body{
     cursor: pointer;
     transition: 2s;
 }
-
+/*Sean*/
 .manual-btn:not(:last-child){
 
     margin-right: 40px;
 
 }
-
+/*Sean*/
 .manual-btn:hover{
     background:black;
 
