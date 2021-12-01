@@ -1,7 +1,8 @@
-.MHA{
+body{
     background-color:gold;
     font-size: 13pt;
-     
+    /*presley-under*/
+    overflow-x:hidden;
 }
 
 #h_bar{
@@ -10,7 +11,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden; /*This is the navagtion bar styling*/
-    background-color:green;
+    background-color:black;
 
 }
 
@@ -18,23 +19,37 @@
 
     float:left;
 }
-
+/*Sean*/
+.Otaku{
+    font-family: ;
+}
 #h_bar li a{
-
-    display: block;
+    /*presley*/
+    display:inline-block;
+    /*sean*/
     color:blue;
     text-align: center;
     padding: 14px 15px;
     text-decoration: none;
+    /*preseley*/
+    box-shadow: inset 0 0 0 0 yellow;
+    transition: ease-out 1s;
+    position: relative;
+    outline:none;
+    cursor:pointer
+
 
 
 }
 
+/*preseley- add a hover on nav bar that changes color,an also gives an animation whe cursor is pointed at it*/
 #h1_bar li a:hover{
 
-    color:green;
+  box-shadow: inset 0 0 0 2px yellow;
+  color:gray;
+  cursor:pointer;
 }
-
+/*Sean*/
 .para1{
     font-family: 'Oswald',
     sans-serif;
@@ -47,6 +62,7 @@
 .para2{
 
 }
+/*Sean*/
 .slider{
 
     width:800px;
@@ -55,31 +71,31 @@
     overflow:hidden;
 
 }
-
+/*Sean*/
 .slides{
     width: 500%;
     height:500px;
     display: flex;
 }
-
+/*Sean*/
 .slides input{
     display: none;
 
 }
-
+/*Seam*/
 .slide{
     width: 20%;
     transition: 4s;
 
 }
-
+/*Sean*/
 .slide img{
     width:800px;
     height:500px;
 }
 
 /*css for manual navigation*/
-
+/*Sean*/
 .navigation-manual{
     position: absolute;
     width: 800px;
@@ -88,7 +104,7 @@
     justify-content: center;
 
 }
-
+/*Sean*/
 .manual-btn{
     border: 2px solid black;
     padding: 5px;
@@ -96,7 +112,7 @@
     cursor: pointer;
     transition: 2s;
 }
-
+/*Sean*/
 .manual-btn:not(:last-child){
 
     margin-right: 40px;
@@ -141,73 +157,107 @@ h1{
 
     font-family: 'Noto Sans JP',
     sans-serif;
-    
-}
-
-a{
-    
-}
-
-@media screen and (max-width: 800px) {
-
-    .MHA{
-
-        height: 600px;
-        width:  600px;
-    }
-
-
-    
-}
-
-@media screen and(max-width:800px){
-
 
 }
 
-.para1{
-    float:right;
-    padding-left: 5%;
+/*presley*/
+.saopara{
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+
+
+
+
+}
+/*presley*/
+.kirito_and_co{
+  width:294px;
+  height:411px;
+  margin:40px;
+  float:right;
+  position:relative;
+  top:-300px;
+
+}
+.saopara{
+  float:left;
+}
+
+/*Solomon*/
+.characters{
+  width: 50%;
+  height: 30%;
+  position:relative;
+  top:-300px;
+  float:Center;
+  margin:0 0 0 15px;
+}
+
+.kage{
+  width:50%;
+  height:25%;
+  position:relative;
+  top:-300px;
+  float:center;
+  margin:0 0 0 15px;
 }
 
 /*Sean*/
-.MHA{
-    padding:0;
-    margin:0;
+.anime{
+    border:10 px solid 2px black;
+    padding: 10 px;   /*This styling is for the table*/
+    border-spacing: 0;
+
+
 }
 
+/*Sean*/
+.age{
 
-.container{
-    padding:30px;
-    font-size:15px;
-    font-weight: 300;
-    line-height: 24px;;
+    width: 40%;
+    padding: 20px; /*This is for the age input*/
+    margin: auto;
+    
+
+}
+.email{
+
+    width: 40%;
+    padding: 20px;
+    margin:auto; /*Email input*/
 }
 
-.container p{
-    margin-bottom: 15px;
-}
+/*Sean*/
 
-.picture{
-    width:450px;
-    position:relative;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
-    background-color: antiquewhite;
-    overflow: hidden;
-    border-radius: 8px;
-    margin-bottom: 10px;
+.gender{
+    width: 40%;
+    padding: 20 px;
+    margin: auto;
 }
 /*Sean*/
-.picture:before{
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    border: 8px solid #fff;
-    z-index: 2;
-    overflow:hidden;
-    box-sizing: border-box;
+.phone{
+
+    width: 40%;
+    padding: 20 px;
+    margin:auto;
+}
+
+/*Sean*/
+.surname{
+
+    width: 40%;
+    padding: 20 px;
+    margin: auto;
+}
+
+/*Sean*/
+
+.firstname{
+
+    width: 40%;
+    padding: 20px;
+    margin: auto;
 }
 
