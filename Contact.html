@@ -15,10 +15,10 @@
     <link rel = "stylesheet" href="Style.css">
     <!-- media queries -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otaku - Contact Us</title>
+    <title>Otaku | Contact Us</title>
 
 </head>
-<body>
+<body class ="contact-page">
 
   <div class="sidebar">
       <header>Contact Us</header>
@@ -32,6 +32,20 @@
           <li><a href="Contact.html">Contact Us</a></li>
       </ul>
   </div>
+  <h2 class="contact-h2">CONTACT US HERE</h2>
+
+  <div class="contact">
+      <form class="contact-form">
+        <input type="text" class="input" id="nameData" placeholder="Name">
+        <p id="error"></p>
+
+        <input type="text" class="input" id="emailData" placeholder="Email">
+        <p id="emailError"> </p>
+
+        <input type="text" class="input" placeholder="Subject">
+        <textarea type="text" class="input textarea-field" placeholder="Your message"></textarea>
+        <input type="button" value="submit" onclick="validate()" class="button">
+      </form>
 
 </body>
 </html>
