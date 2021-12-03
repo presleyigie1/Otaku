@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+      <!-- media queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to my stylesheet -->
+    <link rel = "stylesheet" href="Style.css">
+    <link rel = "text/javascript" href="Script.js">
     <!-- google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Oswald:wght@200&family=Shippori+Antique&display=swap" rel="stylesheet">
-    <!-- link to my stylesheet -->
-    <link rel = "stylesheet" href="Style.css">
-    <!-- media queries -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Otaku | Contact Us</title>
 
 </head>
@@ -35,17 +38,23 @@
   <h2 class="contact-h2">CONTACT US HERE</h2>
 
   <div class="contact">
-      <form class="contact-form">
+    <form class="contact-form">
         <input type="text" class="input" id="nameData" placeholder="Name">
-        <p id="error"></p>
+        <p id="errorText"></p>
+
 
         <input type="text" class="input" id="emailData" placeholder="Email">
-        <p id="emailError"> </p>
+        <label id=errorText style="color: red; visibility: hidden">Invalid</label>
+        <!--<p id="emailError"> </p> -->
+
 
         <input type="text" class="input" placeholder="Subject">
+
         <textarea type="text" class="input textarea-field" placeholder="Your message"></textarea>
-        <input type="button" value="submit" onclick="validate()" class="button">
-      </form>
+        <br>
+        <input type="button" class="button" value="submit" onclick="validate()">
+        <!--<input type="button" value="submit" onclick="validate()" class="button">-->
+    </form>
 
 </body>
 </html>
