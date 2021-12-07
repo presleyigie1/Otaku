@@ -327,7 +327,9 @@ table, th, td {
 /*presley*/
 .contact{
   width: 500px;
+  /*sets a box shadow on the right on 40px with grey */
   box-shadow: 0 0 40px 0 grey;
+  /* moving th eposttion of th econtact box from the top and left */
   position: absolute;
   top: 30%;
   left: 31%;
@@ -365,6 +367,7 @@ table, th, td {
     color:black;
     font-size:15px;
     border: none;
+    /* sets a a box shadow inset, takes 3s to go back to normal */
     box-shadow: inset 0 0 0 0 #000080;
     transition: ease-out 0.3s;
     cursor: pointer;
@@ -374,7 +377,7 @@ table, th, td {
     right: -40%;
   }
 
-/*prsley - the transition of button wehn hovering*/
+/*presley - the transition of button wehn hovering*/
 .button:hover{
   box-shadow: inset 100px 0 0 0 #000080;
   cursor: pointer;
