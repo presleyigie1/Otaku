@@ -1,3 +1,4 @@
+
 function validate(){
   //get input from user save ot var
   var inputForEmail = document.getElementById("emailData").value;
@@ -18,5 +19,6 @@ function validate(){
         document.getElementById("errorText").style.visibility = "visible";
         document.getElementById("errorText").style.color="green";
   }
+
 
 }

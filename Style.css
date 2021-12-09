@@ -362,14 +362,16 @@ table, th, td {
     /* sets a a box shadow inset, takes 3s to go back to normal */
     box-shadow: inset 0 0 0 0 #000080;
     transition: ease-out 0.3s;
+    /*mkakes the button able to b clicked on*/
     cursor: pointer;
+    /*hides scrollbars*/
     overflow: hidden;
     outline:none;
     position: relative;
     right: -40%;
   }
 
-/*presley - the transition of button wehn hovering*/
+/*presley - the transition of button when hovering*/
 .button:hover{
   box-shadow: inset 100px 0 0 0 #000080;
   cursor: pointer;
@@ -386,4 +388,8 @@ table, th, td {
 .SAO{
   margin: 0;
   padding: 0;
+}
+/*presley*/
+.sao_main{
+  margin: 10px;
 }
