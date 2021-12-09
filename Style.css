@@ -224,37 +224,17 @@ a{
   height:360px;
 }
 /*presley*/
-.sao_para{
-  font-family: 'Noto Sans JP',
-  sans-serif;
-  font-family: 'Oswald',
-  sans-serif;
+.sao_para,.contact-h2{
   font-family: 'Shippori Antique',
   sans-serif;
 }
 /*presley*/
-.sao_list{
+.sao_list,.sao_list2{
   position:relative;
   right: -20px;
-  font-family: 'Noto Sans JP',
-  sans-serif;
-  font-family: 'Oswald',
-  sans-serif;
   font-family: 'Shippori Antique',
   sans-serif;
 }
-
-.sao_list2{
-  position:relative;
-  right: -20px;
-  font-family: 'Noto Sans JP',
-  sans-serif;
-  font-family: 'Oswald',
-  sans-serif;
-  font-family: 'Shippori Antique',
-  sans-serif;
-}
-
 
 /*Sean*/
 .MHA{
@@ -297,4 +277,113 @@ a{
     z-index: 2;
     overflow:hidden;
     box-sizing: border-box;
+}
+
+/*solomon*/
+.kage{
+    width: 55%;
+    height: 15%;
+    position: relative;
+    right: -250px;
+}
+/*solomon*/
+.characters{
+          position: relative;
+          right:-600px;
+}
+/*solomon*/
+table{
+    position: relative;
+    top:-225px;
+  }
+  /*solomon*/
+  .narutopara1{
+    font-family: 'Noto Sans JP',
+    sans-serif;
+    font-family: 'Oswald',
+    sans-serif;
+    font-family: 'Shippori Antique',
+    sans-serif;
+  }
+
+  /*solomon*/
+table, th, td {
+  border: 1px solid black;
+}
+
+/*prsley*/
+.contact-page{
+  margin: 0;
+  padding: 0;
+}
+/*presley*/
+.contact{
+  width: 500px;
+  /*sets a box shadow on the right on 40px with grey */
+  box-shadow: 0 0 40px 0 grey;
+  /* moving th eposttion of th econtact box from the top and left */
+  position: absolute;
+  top: 30%;
+  left: 31%;
+  transform: translate( -30%. -50%);
+}
+/*presley*/
+.input{
+  width: 400px;
+  height: 50px;
+  padding-right:10px;
+  padding-left: 10px;
+  margin-top: 20px;
+  border: 1px  grey;
+  border-radius:14px;
+  outline: none;
+}
+/*presley*/
+.contact-form{
+  margin: 25px;
+}
+/*presley*/
+.textarea-field{
+  height: 150px;
+  padding-top: 10px;
+}
+
+/*presley*/
+.button{
+  margin-top:14px;
+  padding: 5px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  background-color:white;
+    border-radius: 10%;
+    color:black;
+    font-size:15px;
+    border: none;
+    /* sets a a box shadow inset, takes 3s to go back to normal */
+    box-shadow: inset 0 0 0 0 #000080;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    outline:none;
+    position: relative;
+    right: -40%;
+  }
+
+/*presley - the transition of button wehn hovering*/
+.button:hover{
+  box-shadow: inset 100px 0 0 0 #000080;
+  cursor: pointer;
+  color: white;
+
+}
+
+/*presley*/
+  .contact-h2{
+    text-align: center;
+  }
+
+  /*presley*/
+.SAO{
+  margin: 0;
+  padding: 0;
 }
