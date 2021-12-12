@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <link rel = "text/javascript" href="Script.js">
+    <script src="Script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&family=Oswald:wght@200&family=Ruda:wght@400;500&family=Shippori+Antique&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    
     <title>Otaku</title>
 </head>
 <body class="Home">
@@ -27,6 +28,7 @@
         <li><a href="Naruto.html">Naruto</a></li>
         <li><a href="7DS.html">Seven Deadly Sins</a></li>
         <li><a href="TopPicks.html">Our Top Picks</a></li>
+        <li><a href="Game.html">Mini-Game</a></li>
     </ul>
     <br>
     
@@ -54,7 +56,7 @@
         <h3 class="intro">A Brief History of Anime!</h3>
             <p class="para1">Anime had made a start up within 1917 at its earliest in Japan,but mainly took a proper turn in the 1960's through the works of artists such Osamu Tezuka.Who was a pioneer of modern anime who was responsible for creating household names such as "Astro Boy","Black Jack" and "Princess Knight".The word "Anime" is a Japanese abbreviation of animation,where most anime series are adapted from Japanese styled comic books called "Manga". </p>
         <!--This is the HTML for the gallery of 6 images-->
-        <h3 class="intro">A slideshow of 20th Century Anime</h3>
+        <h3 class="intro">A image gallery of 20th Century Anime Series</h3>
         <div class="main"></div>
             <img class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
             <img class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
@@ -78,66 +80,76 @@
         
     </table>
     </div>
+
     <h3 class="intro">Sign Up!</h3>
     <!--Input forms for new members to sign up-->
-    <form class="intro">
-        <div class="firstname">
-            <label>Your First Name</label>
-            <input type="text" id="fname" name="First name">
-            <br/>
-        </div>
-        <div class="surname">
-            <label>Your Surname</label>
-            <input type="text" id="sname" name="Surname">
-        <br/>
-        </div>
-        <div class="age">
+    <div class="container">
+        <form class="form" id="form">
+            <div class="firstname">
+                <label>First Name</label>
+                <input type="text" name="firstname" id="fname">
+                <br>
+            </div>
+            <div class="surname">
+                <label>Surname</label>
+                <input type="text" name="surname" id="sname">
+                <br>
+            </div>
+            <div class="age">
             <label>Age</label>
-            <input id="age" name="age"><br>
-            <button onclick="confirm()">Confirm</button>
+                <input id="age" name="age"><br>
+                <button onclick="confirm()">Confirm</button>
+            <div class="username">
+                <label>Username</label>
+                <input type="text" name="username" id="uname">
+                <br>
+            </div>
+            <div class="password">
+                <label>Password</label>
+                <input id="psword" type="text" name="password">
+                <br>
+            </div>
             
-        <br/>
-        </div>
-        <div class="email">
-            <label>Your Email Address</label>
-            <input type="text" id="email" name="Email">
-            <br/>
-        </div>
-        <div class="phone">
-            <label>Your Phone number</label>
-            <input type="text" id="number" name="Phone">
-            <br/>
-        </div>
-        <div class="gender">
-            <label for="male">Male</label>
-            <input type ="radio" name="sex" id="male">
-        </div>
-        <div class="gender">
-            <label for="female">Female</label>
-            <input type ="radio" name="sex" id="female">
-        </div>
-        <div class="gender">
-            <label for="non-binary">Non-Binary</label>
-            <input type="radio" name="sex" id="non-binary">
-        </div>
-        <div class="gender">
-            <label for="none">Prefer not say</label>
-            <input type="radio" name="sex" id="none"><!--This is an option for those not comformatable about confirming their gender-->
-        </div>
-        <label>Terms and Agreement</label>
-        <h6>All information has been consented</h6>
-        <input type="checkbox" id="term" name="Terms"> <!--This is check if the user agree with all terms and agreements with signing upt to the community-->
-        
+        </form>
+    </div>
         <button onclick="submit()">Submit</button><!---This is the submit button-->
         
 
     </form>
   
 
-        
 
 <script>
+    var name = document.getElementById("uname");
+    var password = document.getElementById("psword");
+    var form = document.getElementById("form");
+    //Web develop simplified https://www.youtube.com/watch?v=In0nB0ABaUk
+    form.addEventListener( 'submit', (e) => {
+        e.preventDefault() //This allows nothing to be submitted is nothing is entered
+        let messages= []
+        if(name.value === '' || name.value == null){
+            document.write("Your username needs to be entered");
+        }
 
+        if(messages.length > 0){
+            e.preventDefault();
+            errorElement.innerText = messages.join(',');//prevents user from moving on if nothhas been submmitted in the forms
+
+        }
+        
+        if(password.value.length >=10){
+            document.write("This password is too long"); //If user enters more than 10 characters this message will pop up on a new page;
+        }
+
+        if(password.value.length <= 5){
+            documennt.write("You should have 5 or more characters entered");//If user enters less then 5 characters this message will pop up;
+
+        }
+        if(messages.length >0){
+            e.preventDefault()
+            errorElement.innerText = messages.join(', ');
+        }
+    })
     function confirm(){
 
         var num1= Number(document.getElementById("age").value)//This is used to refer by back to id 
@@ -151,10 +163,15 @@
 
     }
 
-    //
+    //reference to Florin Pop
+    var password= document.getElementById("pass");
     function validation(){
 
-        var 
+        
+    }
+
+    function checkInput(){
+
     }
 
     
