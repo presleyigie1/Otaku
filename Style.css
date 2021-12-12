@@ -338,7 +338,7 @@ table, th, td {
   box-shadow: 0 0 40px 0 grey;
   border-radius: 10px;
   /* moving th eposttion of th econtact box from the top and left */
-  position: relative;
+  position: absolute;
   top: 30%;
   left: 31%;
   transform: translate( -30%. -50%);
