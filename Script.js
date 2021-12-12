@@ -1,24 +1,48 @@
-
+//presley-JavaScript fr contact page
 function validate(){
-  //get input from user save ot var
-  var inputForEmail = document.getElementById("emailData").value;
-  //check for @symbol
-  // using indexof() - this will return a number of where the @ symbol is on the string
-  var symbol = inputForEmail.indexOf('@');
-  //get the index of the . and if >0 that means its present
-  //if not there gve feedback
-  // presley Youtube: Telesko email validation #31 tutorial for style and visibility
-  if(symbol < 1){
+  var formData = []; // array that holds data from the form fields
+  // arrays count from 0 up
+  formData[0] = document.getElementById("nameData").value;
+  formData[1] = document.getElementById("emailData").value;
+  formData[2] = document.getElementById("msgData").value;
+
+  if(formData[0] .length == ""){
+    document.getElementById("nameFeedback").innerHTML = "This field is required"
+    document.getElementById("nameFeedback").style.visibility = "visible";
+    document.getElementById("nameFeedback").style.color="red";
+  }
+    else if(formData[0] .length < 2){
+      document.getElementById("nameFeedback").innerHTML = "Name Is Not Valid"
+      document.getElementById("nameFeedback").style.visibility = "visible";
+  }
+
+  var symbol = formData[1].indexOf("@");
+
+  if(symbol = 0){
     document.getElementById("errorText").innerHTML = "Please enter a valid email address";
     document.getElementById("errorText").style.visibility = "visible";
     document.getElementById("errorText").style.color="red";
-  }else{
-        //if it is there then capitalise the email & show user
-
-        document.getElementById("errorText").innerHTML = "Valid";
-        document.getElementById("errorText").style.visibility = "visible";
-        document.getElementById("errorText").style.color="green";
   }
+    else if(formData[1] .length == 2 || formData[1] .length == 1){
+      document.getElementById("errorText").innerHTML = "Please enter a valid email address";
+      document.getElementById("errorText").style.visibility = "visible";
+      document.getElementById("errorText").style.color="red";
+    }
+      else if(formData[1] .length == "" ){
+        document.getElementById("errorText").innerHTML = "This field is required";
+        document.getElementById("errorText").style.visibility = "visible";
+        document.getElementById("errorText").style.color="red";
+      }
 
+    else{
+        //if it is there then capitalise the email & show user
+          document.getElementById("emailFeedback").innerHTML = input.toUpperCase();
+  }
+    if(formData[2] .length == "" ){
+      document.getElementById("msgFeedback").innerHTML = "This field is required"
+      document.getElementById("msgFeedback").style.visibility = "visible";
+      document.getElementById("msgFeedback").style.color="red";
+
+  }
 
 }

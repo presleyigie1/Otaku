@@ -29,28 +29,34 @@
           <li><a href="TopPicks.html">Recommendations</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="Game.html">Mini-Game</a></li>
       </ul>
   </div>
   <h2 class="contact-h2">CONTACT US HERE</h2>
 
   <div class="contact">
-    <form class="contact-form">
+    <!-- submits form and sends to otaku email address upon submissioní -->
+    <form class="contact-form" action="https://formspree.io/f/xgedeyrk" method="post">
       <!-- input section for name -->
-        <input type="text" class="input" id="nameData" placeholder="Name">
+        <input type="name" class="input" id="nameData" placeholder="Name" required>
+        <label id="nameFeedback" style="color: red; visibility: hidden"></label>
+
+
         <!-- input section for emial -->
-        <input type="text" class="input" id="emailData" placeholder="Email">
+        <input type="email" name="_replyto" class="input" id="emailData" placeholder="Email" required>
         <label id="errorText" style="color: red; visibility: hidden">Invalid</label>
-        <p id="errorText"></p>
+
         <!--<p id="emailError"> </p> -->
 
         <!-- input section for subject -->
-        <input type="text" class="input" placeholder="Subject">
+        <input type="text" name="subject" class="input" placeholder="Subject">
 
         <!-- input section for "your message" -->
-        <textarea class="input textarea-field" placeholder="Your message"></textarea>
+        <textarea name="message"class="input textarea-field" id="msgData" placeholder="Your message" required></textarea>
+        <label id="msgFeedback" style="color: red; visibility: hidden"></label>
         <br>
         <!-- submit button for form -->
-        <input type="button" class="button" value="submit" onclick="validate()">
+        <input type="submit" class="button" value="submit" onclick="validate()">
         <!--<input type="button" value="submit" onclick="validate()" class="button">-->
     </form>
   </div>

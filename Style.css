@@ -167,11 +167,17 @@ a{
 
 
 @media screen and (max-width: 800px) {
-
+    /*sean*/
     .MHA{
-
         height: 600px;
         width:  600px;
+    }
+
+    .SAO,.contact-page,.sao_main{
+      width: 95%;
+    }
+    #h_bar{
+      width:106%
     }
 
 
@@ -180,14 +186,23 @@ a{
 
 }
 
-/*Sean*/
-@media screen and(max-width:800px){
+
+@media screen and(max-width:500px){
+    .SAO,.contact-page,.sao_main{
+      width: 65%;
+    }
+
 
 
 }
-<
-/*Sean*/
-@media screen and(max-width:800px){
+
+
+@media screen and(max-width:200px){
+    .SAO,.contact-page,.sao_main{
+      width: 45%;
+    }
+
+
 
 
 }
@@ -321,8 +336,9 @@ table, th, td {
   width: 500px;
   /*sets a box shadow on the right on 40px with grey */
   box-shadow: 0 0 40px 0 grey;
+  border-radius: 10px;
   /* moving th eposttion of th econtact box from the top and left */
-  position: absolute;
+  position: relative;
   top: 30%;
   left: 31%;
   transform: translate( -30%. -50%);
