@@ -166,52 +166,115 @@ a{
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     /*sean*/
     .MHA{
         height: 600px;
         width:  600px;
     }
-
-    .SAO,.contact-page,.sao_main{
-      width: 95%;
+    /*presley*/
+    .contact{
+      max-width:80%;
     }
-    #h_bar{
-      width:106%
+    .input{
+      max-width:90%;
+    }
+    .kirito_and_co{
+      width:85%;
+      height:85%;
+    }
+    .sao_cover{
+      width:65%;
+      height:65%;
     }
 
 
+}
 
+@media screen and (max-width: 500px) {
+  /*presley*/
+  .contact{
+    max-width:75%;
+  }
+  .input{
+    max-width:90%;
+  }
+  .kirito_and_co{
+    max-width:40%;
+    max-height:50%;
+  }
+  .sao_cover{
+    max-width:35%;
+  }
+  .kirito_alfheim{
+    max-width:316px;
+    max-height:220px;
+  }
+  #h_bar {
+    display: block;
+  }
+  #h_bar a{
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+    border-top: 2px solid gray ;
+    text-align: center;
+  }
+
+
+  .sidebar label{
+    display:inline-block;
+    color:white;
+    background-color: black;
+    font-size: 1.2em;
+    font-style: normal;
+    padding: 10px;
+    float: right;
+  }
+
+  #h_bar li{
+    display:none;
+  }
+
+  .sidebar label input:checked ~ #h_bar li{
+    display:inline-block;
+  }
+
+}
+
+
+
+@media screen and(max-width:320px){
+  /*presley*/
+  .contact{
+    max-width:45%;
+  }
+  .input{
+    max-width:45%;
+  }
+  .kirito_and_co{
+    max-width:25%;
+    max-height:25%;
+  }
+  .sao_cover{
+    max-width:35%;
+  }
+  .krito_alfheim{
+    max-width:20%;
+  }
 
 
 }
 
 
-@media screen and(max-width:500px){
-    .SAO,.contact-page,.sao_main{
-      width: 65%;
-    }
-
-
-
-}
-
-
-@media screen and(max-width:200px){
-    .SAO,.contact-page,.sao_main{
-      width: 45%;
-    }
-
-
-
-
-}
 
 
 .para1{
     float:right;
     padding-left: 5%;
 }
+
+
 
 /*presley*/
 .kirito_and_co{
@@ -239,7 +302,7 @@ a{
   height:360px;
 }
 /*presley*/
-.sao_para,.contact-h2{
+.sao_para,.contact-h2,.button{
   font-family: 'Shippori Antique',
   sans-serif;
 }
@@ -326,29 +389,27 @@ table, th, td {
   border: 1px solid black;
 }
 
-/*prsley*/
+/*preley*/
 .contact-page{
   margin: 0;
   padding: 0;
 }
 /*presley*/
 .contact{
+  margin: auto;
   width: 500px;
   /*sets a box shadow on the right on 40px with grey */
   box-shadow: 0 0 40px 0 grey;
   border-radius: 10px;
   /* moving th eposttion of th econtact box from the top and left */
-  position: absolute;
-  top: 30%;
-  left: 31%;
   transform: translate( -30%. -50%);
 }
 /*presley*/
 .input{
   width: 400px;
   height: 50px;
-  padding-right:10px;
-  padding-left: 10px;
+  padding-right:15px;
+  padding-left: 15px;
   margin-top: 20px;
   border: 1px  grey;
   border-radius:14px;
@@ -370,13 +431,13 @@ table, th, td {
   padding: 5px;
   background-color: Transparent;
   background-repeat: no-repeat;
-  background-color:white;
+  background-color:black;
     border-radius: 10%;
-    color:black;
-    font-size:15px;
+    color:white;
+    font-size:20px;
     border: none;
     /* sets a a box shadow inset, takes 3s to go back to normal */
-    box-shadow: inset 0 0 0 0 #000080;
+    box-shadow: inset 0 0 0 0 #618a3d;
     transition: ease-out 0.3s;
     /*mkakes the button able to b clicked on*/
     cursor: pointer;
@@ -384,12 +445,12 @@ table, th, td {
     overflow: hidden;
     outline:none;
     position: relative;
-    right: -40%;
+    right: -38.5%;
   }
 
 /*presley - the transition of button when hovering*/
 .button:hover{
-  box-shadow: inset 100px 0 0 0 #000080;
+  box-shadow: inset 100px 0 0 0 #618a3d;
   cursor: pointer;
   color: white;
 
@@ -408,4 +469,10 @@ table, th, td {
 /*presley*/
 .sao_main{
   margin: 10px;
+}
+
+/*presley : source - code boxx- https://www.youtube.com/watch?v=4996fn82c4c*/
+
+#hamburger{
+  display:none;
 }
