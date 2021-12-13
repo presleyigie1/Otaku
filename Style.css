@@ -210,35 +210,12 @@ a{
     max-width:316px;
     max-height:220px;
   }
-  #h_bar {
-    display: block;
-  }
-  #h_bar a{
+  .hamburger{
+    float:right;
     display:block;
-    width:100%;
-    box-sizing: border-box;
-    border-top: 2px solid gray ;
-    text-align: center;
   }
 
 
-  .sidebar label{
-    display:inline-block;
-    color:white;
-    background-color: black;
-    font-size: 1.2em;
-    font-style: normal;
-    padding: 10px;
-    float: right;
-  }
-
-  #h_bar li{
-    display:none;
-  }
-
-  .sidebar label input:checked ~ #h_bar li{
-    display:inline-block;
-  }
 
 }
 
@@ -471,8 +448,16 @@ table, th, td {
   margin: 10px;
 }
 
-/*presley : source - code boxx- https://www.youtube.com/watch?v=4996fn82c4c*/
+.hamburger{
+  background-color: transparent;
+  border:0;
+  color: white;
+  font-size: 30px;
+  cursor:pointer;
+  display: none;
+}
 
-#hamburger{
-  display:none;
+.hamburger:focus{
+  /*removes outline on button */
+  outline:none;
 }
