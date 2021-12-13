@@ -16,9 +16,12 @@
     <title>Otaku</title>
 </head>
 <body class="Home">
-
+    <div class="container1">
     <img class="logo" src="Images/otaku-logo-resize.png" alt="image of site logo">
+    <div class="color-overlay"></div>
+    </div>
     <h1 class="otaku">Otaku</h1>
+    
 
     <ul id="h_bar"><!--This is the horizonal navigation bar-->
         <li><a href="Index.html">Home</a></li><!--This leads to this webpage-->
@@ -58,12 +61,16 @@
         <!--This is the HTML for the gallery of 6 images-->
         <h3 class="intro">A image gallery of 20th Century Anime Series</h3>
         <div class="main"></div>
-            <img class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
-            <img class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
-            <img class="gallery" src="Images/Hakusho.jpg" alt="Image of Hakusho">  <!--Each image of the gallery was given a class used to target the size since since all images where different sizes-->
-            <img class="gallery" src="Images/speedracer.jpg" alt="Image of the Speedracer">
-            <img class="gallery" src="Images/Gundam.jpg" alt="Image of a Gundam">
-            <img class="gallery" src="Images/Neon_Evangelion.jpg" alt="Image of Evangelion">
+            <img onclick="showTextImage()" class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
+            <a href="javascript: changeText(2);">
+            <img id="image" class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
+            </a>
+            <a href="javascript: changeText(3);">
+            <img id="image" class="gallery" src="Images/Hakusho.jpg" alt="Image of Hakusho">
+            </a>                                                                                            <!--Each image of the gallery was given a class used to target the size since since all images where different sizes-->
+            <img id="image" class="gallery" src="Images/speedracer.jpg" alt="Image of the Speedracer">
+            <img id ="image" class="gallery" src="Images/Gundam.jpg" alt="Image of a Gundam">
+            <img id="image" class="gallery" src="Images/Neon_Evangelion.jpg" alt="Image of Evangelion">
             </div>       
         </div>
 
@@ -163,17 +170,11 @@
 
     }
 
-    //reference to Florin Pop
-    var password= document.getElementById("pass");
-    function validation(){
-
-        
-    }
-
-    function checkInput(){
+    
+    function showText(value){
+        var div = document.getElementById("")
 
     }
-
     
 
 
