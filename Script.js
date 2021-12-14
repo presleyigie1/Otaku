@@ -46,10 +46,3 @@ function validate(){
   }
 
 }
-//presley: source - https://www.youtube.com/watch?v=ydZc17rlR5E&t=20s -Florin pop
-  const hamburger = document.getElementById('hamburger');
-  const nav = document.getElementById('nav-ul');
-
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('show');
-  });

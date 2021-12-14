@@ -16,16 +16,18 @@ body{
     padding: 0;
     overflow: hidden; /*This is the navagtion bar styling*/
     background-color:black;
+<<<<<<< HEAD
 
     flex-wrap:wrap;
+=======
+>>>>>>> parent of 1d9509d (made media queries changes, encountered nav bar problem so I had to change id's, classes and move script js tag to body to be compatible with hamburger.Also added font awesomescript tag fro hamburger)
 }
 /*Sean*/
-.nav-ul li {
+nav li {
 
     float:left;
+
 }
-
-
 /*Sean*/
 .nav-ul li a{
 
@@ -223,6 +225,7 @@ a{
       height:65%;
     }
 
+
 }
 
 @media screen and (max-width: 500px) {
@@ -245,18 +248,8 @@ a{
     max-height:220px;
   }
   .hamburger{
+    float:right;
     display:block;
-  }
-  .nav-ul{
-    display:none;
-    width:100%;
-  }
-  .nav-ul.show{
-    display: inline-block;
-  }
-  .contact-h2{
-    position:relative;
-    right: -20px;
   }
 
 
@@ -642,4 +635,3 @@ table, th, td {
 .sao_main{
   margin: 10px;
 }
-
