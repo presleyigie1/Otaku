@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <script src="Script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&family=Oswald:wght@200&family=Ruda:wght@400;500&family=Shippori+Antique&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-    
+        <script src="https://kit.fontawesome.com/ad4791524b.js" crossorigin="anonymous"></script>
+
     <title>Otaku</title>
 </head>
 <body class="Home">
@@ -21,20 +22,25 @@
     <div class="color-overlay"></div>
     </div>
     <h1 class="otaku">Otaku</h1>
-    
 
-    <ul id="h_bar"><!--This is the horizonal navigation bar-->
-        <li><a href="Index.html">Home</a></li><!--This leads to this webpage-->
-        <li><a href="Contact.html">Contacts</a></li><!--This leads to the contact page-->
-        <li><a href="About.html">About Us</a></li>
-        <li><a href="MHA.html">My Hero Academia</a></li>
-        <li><a href="Naruto.html">Naruto</a></li>
-        <li><a href="7DS.html">Seven Deadly Sins</a></li>
-        <li><a href="TopPicks.html">Our Top Picks</a></li>
-        <li><a href="Game.html">Mini-Game</a></li>
-    </ul>
+    <nav>
+      <button class="hamburger" id="hamburger">
+        <i class= "fas fa-bars"></i>
+      </button>
+        <ul class="nav-ul" id="nav-ul">
+            <li><a href ="Index.html">Home</a></li>
+            <li><a href="MHA.html">My Hero Academia</a></li>
+            <li><a href="Naruto.html">Naruto</a></li>
+            <li><a href="SAO.html">Sword Art Online</a></li>
+            <li><a href="TopPicks.html">Recommendations</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="Game.html">Mini-Game</a></li>
+        </ul>
+        <script src="Script.js"></script>
+    </nav>
     <br>
-    
+
 </div>
 
     <!--Section of information about the site-->
@@ -62,7 +68,7 @@
         <h3 class="intro">A image gallery of 20th Century Anime Series</h3>
         <div class="main"></div>
             <img id="galtext" onclick="showText()" class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
-            
+
             <img onclick= "this.InnerHTML='Inuyasha (2000)'" id="image" class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
             </a>
             <a href="javascript: changeText(3);">
@@ -71,7 +77,7 @@
             <img id="image" class="gallery" src="Images/speedracer.jpg" alt="Image of the Speedracer">
             <img id ="image" class="gallery" src="Images/Gundam.jpg" alt="Image of a Gundam">
             <img id="image" class="gallery" src="Images/Neon_Evangelion.jpg" alt="Image of Evangelion">
-            </div>       
+            </div>
         </div>
 
          <h3 class="intro">Click the buttons to show the Anime's name!</h3>
@@ -84,7 +90,7 @@
             <td></td>
         </tr>
 
-        
+
     </table>
     </div>
 
@@ -116,14 +122,14 @@
                 <input id="psword" type="text" name="password">
                 <br>
             </div>
-            
+
         </form>
     </div>
         <button onclick="submit()">Submit</button><!---This is the submit button-->
-        
+
 
     </form>
-  
+
 
 
 <script>
@@ -143,7 +149,7 @@
             errorElement.innerText = messages.join(',');//prevents user from moving on if nothhas been submmitted in the forms
 
         }
-        
+
         if(password.value.length >=10){
             window.alert("This password is too long"); //If user enters more than 10 characters this message will pop up on a new page;
         }
@@ -159,7 +165,7 @@
     })
     function confirm(){
 
-        var num1= Number(document.getElementById("age").value)//This is used to refer by back to id 
+        var num1= Number(document.getElementById("age").value)//This is used to refer by back to id
         if(num1<13){
             window.alert("Your not at the correct age,sincere apologies");//This window will pop up if the user is not the correct age
 
@@ -170,23 +176,24 @@
 
     }
 
-    
+
     function showText(){
-       
+
 
         document.print("Astroboy") ;
-        
 
-        
+
+
 
     }
-    
+
 
 
 </script>
 
-    
+
 </div>
-</div>   
+</div>
 </body>
 </html>
+

@@ -1,40 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"> 
+    <meta name="description">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&family=Oswald:wght@200&family=Shippori+Antique&display=swap" rel="stylesheet">
-    
+        <script src="https://kit.fontawesome.com/ad4791524b.js" crossorigin="anonymous"></script>
+
     <!--Link to google fonts-->
     <link rel="stylesheet" href="Style.css">
     <!--Link to css-->
-    <title>Otaku</title>
+    <title>Otaku | My Hero Academia</title>
 </head>
 <body class="MHA">
     <img src="Images/otaku-logo-resize.png" alt="picture of logo for the site">
     <h1 class="intro">My Hero Academia</h1>
-    
-    <ul id="h_bar"><!--This is the horizonal navigation bar-->
-        <li><a href="Index.html">Home</a></li><!--This leads to this webpage-->
-        <li><a href="MHA.html">My Hero Academia</a></li><!--This leads to the contact page-->
-        <li><a href="Naruto.html">Naruto</a></li>
-        <li><a href="TopPicks.html">Recommendations</a></li>
-        <li><a href="About.html">About Us</a></li>
-        <li><a href="Contact.html">Contact Us</a></li>
-    </ul>
+
+    <nav>
+      <button class="hamburger" id="hamburger">
+        <i class= "fas fa-bars"></i>
+      </button>
+        <ul class="nav-ul" id="nav-ul">
+            <li><a href ="Index.html">Home</a></li>
+            <li><a href="MHA.html">My Hero Academia</a></li>
+            <li><a href="Naruto.html">Naruto</a></li>
+            <li><a href="SAO.html">Sword Art Online</a></li>
+            <li><a href="TopPicks.html">Recommendations</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="Game.html">Mini-Game</a></li>
+        </ul>
+        <script src="Script.js"></script>
+    </nav>
 
     <h3 id="title" onclick="this.innerHTML='Get to know it!'"class="intro">Lore/Story</h3>
-    <p>Try to Click this header!</p>
+    <button id="btn1">Click Me I will change!</button>
         <h4>Try click the text below!</h4>
-        <p onclick="clickToChange()"id= "para2"class="para3">My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".Those who dont possese quirks are known as "quirkless" indviduals are discriminated against and looked down upon in society.Children are born with quirks and can choose to become pro heroes.My Hero Academia also known as "MHA" provides an exciting turn to supehero series by providing a more relatable exprience to how a world would be like with super powered humans.Allowing us to relate with characters within the show. </p>
-        
-    
-        <p class="para3">A manga/anime series created by Japanese manga artist Kohei Horokoshi. My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".Children born with Quirks have the ability to train as hero through academic tutoring the most prestigious hero academy called "U.A Academy".</p>   
-   
+        <p  onclick="clickToChange()"id= "para2"class="para3">My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".Those who dont possese quirks are known as "quirkless" indviduals are discriminated against and looked down upon in society.Children are born with quirks and can choose to become pro heroes.My Hero Academia also known as "MHA" provides an exciting turn to supehero series by providing a more relatable exprience to how a world would be like with super powered humans.Allowing us to relate with characters within the show. </p>
+
+
     <h3 class="head2">Characters</h3>
 
     <h4 class="intro">Izuku Midoriya AKA Deku</h6>
@@ -44,10 +52,10 @@
             </div>
 
                 <p class="para1">Is a student that did not possess the ability to use quirk in the beginning of the story,but after running into the number 1 pro hero All Might who see a huge amount of potential in him to become a hero,All Might has a quirk that is tranferable,which allows him to pass on his quirk to Izuku.We follow the series from his point of view by aiming to be the best hero in the world.</p>
-        
+
 
         </div>
-       
+
     <h4 class="intro">Toshinori Yagi AKA All Might</h3>
         <div class="container">
             <div class="picture">
@@ -94,19 +102,20 @@
     </div>
 
 
-    
-    
-    <script> 
+
+
+    <script>
 
     function clickToChange(){
         document.getElementById("para2").style.color="Purple";
     }
 
-    
-        
-    
+
+
+
     </script>
 
     <footer></footer>
 </body>
 </html>
+
