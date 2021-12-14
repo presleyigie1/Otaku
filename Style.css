@@ -8,12 +8,15 @@ body{
 
 }
 /*Sean*/
+
 .nav-ul{
+
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden; /*This is the navagtion bar styling*/
     background-color:black;
+
     flex-wrap:wrap;
 }
 /*Sean*/
@@ -25,6 +28,7 @@ body{
 
 /*Sean*/
 .nav-ul li a{
+
     display:inline-block;
     color:white;
     text-align: center;
@@ -41,11 +45,14 @@ body{
 
 
 /*presley- adds a hover on nav bar that changes color, and also gives an animation when cursor is pointed in it*/
+
 .nav-ul li a:hover{
+
   box-shadow: inset 0 0 0 2px yellow;
   color:gray;
   cursor:pointer;
 }
+
 /*presley*/
 .hamburger{
   background-color: transparent;
@@ -180,7 +187,17 @@ a{
 
 a{
 
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+  color: yellow;
+
+
 }
+
 
 
 
@@ -244,7 +261,18 @@ a{
 
 
 
+
 }
+
+
+/*Sean*/
+@media screen and(max-width:800px){
+
+
+}
+<
+/*Sean*/
+@media screen and(max-width:800px){
 
 
 
@@ -268,8 +296,8 @@ a{
   }
 
 
-}
 
+}
 
 
 
@@ -277,7 +305,6 @@ a{
     float:right;
     padding-left: 5%;
 }
-
 
 
 /*presley*/
@@ -306,7 +333,9 @@ a{
   height:360px;
 }
 /*presley*/
+
 .sao_para,.contact-h2,.button{
+
   font-family: 'Shippori Antique',
   sans-serif;
 }
@@ -314,6 +343,7 @@ a{
 .sao_list,.sao_list2{
   position:relative;
   right: -20px;
+
   font-family: 'Shippori Antique',
   sans-serif;
 }
@@ -393,7 +423,7 @@ table, th, td {
   border: 1px solid black;
 }
 
-/*preley*/
+
 .contact-page{
   margin: 0;
   padding: 0;
@@ -406,14 +436,17 @@ table, th, td {
   box-shadow: 0 0 40px 0 grey;
   border-radius: 10px;
   /* moving th eposttion of th econtact box from the top and left */
+
   transform: translate( -30%. -50%);
 }
 /*presley*/
 .input{
   width: 400px;
   height: 50px;
+
   padding-right:15px;
   padding-left: 15px;
+
   margin-top: 20px;
   border: 1px  grey;
   border-radius:14px;
@@ -435,6 +468,7 @@ table, th, td {
   padding: 5px;
   background-color: Transparent;
   background-repeat: no-repeat;
+
   background-color:black;
     border-radius: 10%;
     color:white;
@@ -455,6 +489,7 @@ table, th, td {
 /*presley - the transition of button when hovering*/
 .button:hover{
   box-shadow: inset 100px 0 0 0 #618a3d;
+
   cursor: pointer;
   color: white;
 
@@ -470,7 +505,141 @@ table, th, td {
   margin: 0;
   padding: 0;
 }
+
+
+/*Sean*/
+
+.intro{
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+}
+
+/*Sean*/
+.otaku{
+
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+}
+.logo{
+
+  align-items: center;
+  padding-top: 1%;
+}
+
+/*Sean*/
+.anime {
+  border: 10 px solid 2px black;
+  padding: 10 px;
+  /*This styling is for the table*/
+  border-spacing: 0;
+
+
+}
+
+/*Sean*/
+.age {
+
+  width: 40%;
+  padding: 20px;
+  /*This is for the age input*/
+  margin: auto;
+
+
+}
+
+.email {
+
+  width: 40%;
+  padding: 20px;
+  margin: auto;
+  /*Email input*/
+}
+
+/*Sean*/
+
+.gender {
+  width: 40%;
+  padding: 20 px;
+  margin: auto;
+}
+
+/*Sean*/
+.phone {
+
+  width: 40%;
+  padding: 20 px;
+  margin: auto;
+}
+
+/*Sean*/
+.surname {
+
+  width: 40%;
+  padding: 20 px;
+  margin: auto;
+}
+
+/*Sean*/
+
+.firstname {
+
+  width: 40%;
+  padding: 20px;
+  margin: auto;
+}
+
+/*Sean*/
+.shonen {
+
+  width: 100%;
+  height: 500px;
+  align-items: center;
+}
+/*Sean*/
+#div1{
+
+  float:left;
+  width:33%;
+  height: 500px; /*This is a div for the paragraghs*/
+}
+/*Sean*/
+#div2{
+
+  width: 33%;
+  float: right;
+  height:500px;
+}
+/*Sean*/
+#div3{
+
+  width: 33%;
+  margin: 0 auto;
+  height:500px;
+}
+/*Sean*/
+.stats{
+
+  border: 1px solid black;
+
+
+}
+/*Sean*/
+.MHApic{
+
+  height:235 px;
+  width:590 px;
+}
+
 /*presley*/
 .sao_main{
   margin: 10px;
 }
+

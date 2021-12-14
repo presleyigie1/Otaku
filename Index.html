@@ -15,12 +15,14 @@
 
     <title>Otaku</title>
 </head>
+
 <body class="Home">
     <div class="container1">
     <img class="logo" src="Images/otaku-logo-resize.png" alt="image of site logo">
     <div class="color-overlay"></div>
     </div>
     <h1 class="otaku">Otaku</h1>
+
 
   <nav>
       <button class="hamburger" id="hamburger">
@@ -36,8 +38,7 @@
         <li><a href="Contact.html">Contact Us</a></li>
         <li><a href="Game.html">Mini-Game</a></li>
     </ul>
-  </nav>
-    <br>
+
 
 </div>
 
@@ -142,11 +143,16 @@
             document.write("Your username needs to be entered");
         }
 
+
         if(messages.length > 0){
             e.preventDefault();
             errorElement.innerText = messages.join(',');//prevents user from moving on if nothhas been submmitted in the forms
 
+
+</script>
+
         }
+
 
         if(password.value.length >=10){
             document.write("This password is too long"); //If user enters more than 10 characters this message will pop up on a new page;
