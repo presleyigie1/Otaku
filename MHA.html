@@ -4,125 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Oswald:wght@200&family=Shippori+Antique&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Oswald:wght@200&family=Shippori+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&family=Oswald:wght@200&family=Shippori+Antique&display=swap" rel="stylesheet">
+    <!-- font awesome script tag -->
+
     <!--Link to google fonts-->
     <link rel="stylesheet" href="Style.css">
+      <script src="https://kit.fontawesome.com/ad4791524b.js" crossorigin="anonymous"></script>
+
     <!--Link to css-->
     <title>Otaku</title>
 </head>
 <body class="MHA">
-    <img src="" alt="A picture of sites logo">
-    <h1 class="MHAtitle">My Hero Academia</h1>
-    
-    <ul id="h_bar"><!--This is the horizonal navigation bar-->
-        <li><a href="Index.html">Home</a></li><!--This leads to this webpage-->
-        <li><a href="MHA.html">My Hero Academia</a></li><!--This leads to the contact page-->
-        <li><a href="Naruto.html">Naruto</a></li>
-        <li><a href="TopPicks.html">Recommendations</a></li>
-        <li><a href="About.html">About Us</a></li>
-        <li><a href="Contact.html">Contact Us</a></li>
-    </ul>
 
-    <h3>Lore/Story</h3>
+    <img src="Images/otaku-logo-resize.png" alt="picture of logo for the site">
+    <h1 class="intro">My Hero Academia</h1>
 
-    
-        <p class="para3">A manga/anime series created by Japanese manga artist Kohei Horokoshi. My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".Children born with Quirks have the ability to train as hero through academic tutoring the most prestigious hero academy called "U.A Academy".</p>   
-   
+    <nav>
+      <button class="hamburger" id="hamburger">
+        <i class= "fas fa-bars"></i>
+      </button>
+        <ul class="nav-ul" id="nav-ul">
+            <li><a href ="Index.html">Home</a></li>
+            <li><a href="MHA.html">My Hero Academia</a></li>
+            <li><a href="Naruto.html">Naruto</a></li>
+            <li><a href="SAO.html">Sword Art Online</a></li>
+            <li><a href="TopPicks.html">Recommendations</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="Game.html">Mini-Game</a></li>
+        </ul>
+        <script src="Script.js"></script>
+    </nav>
+
+    <h3 id="title" onclick="this.innerHTML='Get to know it!'"class="intro">Lore/Story</h3>
+    <button id="btn1">Click Me I will change!</button>
+        <h4>Try click the text below!</h4>
+        <p  onclick="clickToChange()"id= "para2"class="para3">My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".Those who dont possese quirks are known as "quirkless" indviduals are discriminated against and looked down upon in society.Children are born with quirks and can choose to become pro heroes.My Hero Academia also known as "MHA" provides an exciting turn to supehero series by providing a more relatable exprience to how a world would be like with super powered humans.Allowing us to relate with characters within the show. </p>
+
+
     <h3 class="head2">Characters</h3>
 
-    <h4>Izuku Midoriya AKA Deku</h6>
-        <div class="container">
+    <h4 class="intro">Izuku Midoriya AKA Deku</h6>
+        <div class="container"> <!--Div container reference-->
             <div class="picture">
-                <img src="Images/Deku4.jpg" alt="Picture of Deku">
-             <p class="para1">Is a student that did not possess the ability to use quirk in the beggining of the story,but after running into the number 1 pro hero All Might who see a huge amount of potential in him to become a hero.Midoriya inherits this power rom All Might,even though Izuku stuggles to use this quirk he makes up for through his hard work and determination</p>
 
+                <img class="MHApic" src="Images/Deku4.jpg" alt="Picture of Deku">
             </div>
 
-    <h4 class="head3">Toshinori Yagi AKA All Might</h3>
-        <div>
-        <img src="Images/AllMight3.png" alt="">
-        <p class="para5">Toshi also known as All Might is known as the number one pro hero in the world.He is one othe reasons why Isuku aspires to be a hero,he posseses the quirk One For All which is a quirk that can be passed on willingly to its next user.Toshi acts as menotr towards Midoriya</p>
-        </div>
+                <p class="para1">Is a student that did not possess the ability to use quirk in the beginning of the story,but after running into the number 1 pro hero All Might who see a huge amount of potential in him to become a hero,All Might has a quirk that is tranferable,which allows him to pass on his quirk to Izuku.We follow the series from his point of view by aiming to be the best hero in the world.</p>
 
-    <h4 class="head4">Katsuki Bakugo AKA Kachan</h3>
-        <div>
-        <img src="Images/Katsuki2.png" alt="A picture of Katsuki Bakugo">
-        <p>Is a rival of Midoriya and is his childhood bully.Bakugo posseses the quirk called "Explosion" which allows its user to destroy objects with an explosive blast.Bakugo is arrogant and shown to have a despicable personality.But other than this he is a training to be a hero showing he not all bad.</p>
-        </div>
-
-    <h4 class="head5">Shoto Todoroki</h4>
-    <!--This is a slideshow of images from the anime-->
-        <div>
-            <img src="Images/Shoto.png" alt="A picture of Shoto Todoroki">
-            <p class="para6">Todoroki is somewhat a secondary rival towards Midoriya,as Todorokiha a quirk called "Half-cold Half-hot".Which is is an ability that allows him to channel the use of frost and fire powers that he inhertied from his parents</p>
 
         </div>
 
-    <h4 class="head6">League Of Villians</h4>
-    <div>
-        <img src="Images/LeagueVillains.png" alt="a picture of the villians">
-        <p class="para7">Are the main anatgonists of the series who are serious threat that pose to U.A Academy and the rest of the world.The main leader of this organisation is a villian called All For One,who is a person who posesses the quirk that is able to steal other quirks without hesitation </p>
+    <h4 class="intro">Toshinori Yagi AKA All Might</h3>
+        <div class="container">
+            <div class="picture">
+                <img class="MHApic" src="Images/All_Might.png" alt="Picture of All Might">
+        </div>
+            <p class="para1">Toshi also known as All Might is known as the number one pro hero in the world,he posseses the quirk One For All which is the the only transimasble quirk within the MHA universe.It allows its user to willingly pass on the quirk to a successor and has been passed down for generations.All Might is a noble hero who sees potential in Midoriya and sees him as a worthy siccessor to inherit One For All,as he acts as a mentor towards him within the series.</p>
     </div>
 
-    <div class="slider">
-        <div class="slides"></div>
-        <!--radio buttons-->
-        <input type="radio" name="radio-btn" id="radio1"><!--radio buttons for slide show-->
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
+    <h4 class="intro">Katsuki Bakugo AKA Kachan</h3>
+        <div class="container">
+            <div class="picture">
+                <img class="MHApic" src="Images/katsuki_s4.png" alt="picture of Katsuki">
+        </div>
+            <p class="para1">Is a rival of Midoriya and is his childhood bully.Bakugo possesses the quirk called "Explosion" allow him to emit a burst of explosive energy,Bakugo acts acts as a driving force for Deku to work harder.Despite being an arrogant and brash character Bakugo does have a sense of good within him,as he is also training to be a professional hero at U.A High school.</p>
+        </div>
 
-        <!--Images start here-->
+    <h4 class="intro">Shoto Todoroki</h4>
+        <div class="container">
+            <div class="picture">
+                <img class="MHApic" src="Images/Shoto.png" alt="picture of Shoto Todoroki">
+        </div>
+            <p class="para1">Shoto acts as a secondary rival to Izuku,he possesses the quirk called "Half-hot Half-cold" which allows him to use ice and fire powers which he inherited from his parents.He is a talented individual who is quite stoic in nature due to the abuse he endured as a child.He is the son of the 2nd pro hero in the world "Endeavor" who raised him to be a strong hero in order to surpass All Might one day.</p>
+    </div><div class="container">
 
-        <div class="slide first">
-            <img src="Images/Class_A.jpg" alt="A picture of Class A">
+    <h4 class="intro">The League Of Villains</h4>
+        <div class="container">
+            <div class="picture">
+                <img class="villians" src="Images/LeagueVillains.png" alt="Picture of the villians">
+            </div>
+            <p class="para1">Are the main antagonists of the series,and are lead by the villian All For One.Who has the ability to take and give other people quirks.He uses this as an advantage to set up The League of Villains,who threaten to destroy the hero society.The organisation is currently lead by All for One adopted son Tomura Shigaraki,who has the dangerous ability to decay anything he touches by will.With multiple members who pose a danger to the world. </p>
         </div>
-        <div class="slide">
-            <img src="Images/All_Might.png" alt="A picture of Class A">
-        </div>
-        <div class="slide">
-            <img src="Images/Bakugo.jpg" alt="A picture of Class A">
-        </div>
-        <div class="slide">
-            <img src="Images/Deku.3.png" alt="A picture of Class A">
-        </div>
-        <!--Images end here-->
-        <!--Automatic navigation starts here-->
 
 
-        <!--Automatic navigation ends here-->
-        <div class= "navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>    
-        </div>
-        <!--automatic navigation ends here-->
+        <br>
+        <!--An  image gallery of the anime itself-->
+    <div class="main">
 
-        </div>
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-        </div>
-        
-
+        <img class="gallery" src="Images/Deku.3.png" alt="Image of Astroboy">
+        <img class="gallery" src="Images/Class_A.jpg" alt="Image of Astroboy">
+        <img class="gallery" src="Images/AllMight3.png" alt="Image of Astroboy">
+        <img class="gallery" src="Images/Bakugo.jpg" alt="Image of Astroboy">
+        <img class="gallery" src="Images/" alt="Image of Astroboy">
+        <img class="gallery" src="Images" alt="Image of Astroboy">
     </div>
-    
-    <h2>Voting poll for favourite characters</h2>
+
+
+
+
     <script>
-        //function for voting poll
-        
+
+    function clickToChange(){
+        document.getElementById("para2").style.color="Purple";
+    }
+
+
+
 
 
     </script>
 
-
+    <footer></footer>
 </body>
 </html>
