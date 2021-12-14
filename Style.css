@@ -8,27 +8,23 @@ body{
 
 }
 /*Sean*/
-
 .nav-ul{
-
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden; /*This is the navagtion bar styling*/
     background-color:black;
-<<<<<<< HEAD
-
     flex-wrap:wrap;
 }
 /*Sean*/
-nav li {
+.nav-ul li {
 
     float:left;
-
 }
+
+
 /*Sean*/
 .nav-ul li a{
-
     display:inline-block;
     color:white;
     text-align: center;
@@ -45,14 +41,11 @@ nav li {
 
 
 /*presley- adds a hover on nav bar that changes color, and also gives an animation when cursor is pointed in it*/
-
 .nav-ul li a:hover{
-
   box-shadow: inset 0 0 0 2px yellow;
   color:gray;
   cursor:pointer;
 }
-
 /*presley*/
 .hamburger{
   background-color: transparent;
@@ -187,17 +180,7 @@ a{
 
 a{
 
-  font-family: 'Noto Sans JP',
-  sans-serif;
-  font-family: 'Oswald',
-  sans-serif;
-  font-family: 'Shippori Antique',
-  sans-serif;
-  color: yellow;
-
-
 }
-
 
 
 
@@ -223,7 +206,6 @@ a{
       height:65%;
     }
 
-
 }
 
 @media screen and (max-width: 500px) {
@@ -246,24 +228,23 @@ a{
     max-height:220px;
   }
   .hamburger{
-    float:right;
     display:block;
+  }
+  .nav-ul{
+    display:none;
+    width:100%;
+  }
+  .nav-ul.show{
+    display: inline-block;
+  }
+  .contact-h2{
+    position:relative;
+    right: -20px;
   }
 
 
 
-
 }
-
-
-/*Sean*/
-@media screen and(max-width:800px){
-
-
-}
-<
-/*Sean*/
-@media screen and(max-width:800px){
 
 
 
@@ -287,8 +268,8 @@ a{
   }
 
 
-
 }
+
 
 
 
@@ -296,6 +277,7 @@ a{
     float:right;
     padding-left: 5%;
 }
+
 
 
 /*presley*/
@@ -324,9 +306,7 @@ a{
   height:360px;
 }
 /*presley*/
-
 .sao_para,.contact-h2,.button{
-
   font-family: 'Shippori Antique',
   sans-serif;
 }
@@ -334,7 +314,6 @@ a{
 .sao_list,.sao_list2{
   position:relative;
   right: -20px;
-
   font-family: 'Shippori Antique',
   sans-serif;
 }
@@ -414,7 +393,7 @@ table, th, td {
   border: 1px solid black;
 }
 
-
+/*preley*/
 .contact-page{
   margin: 0;
   padding: 0;
@@ -427,17 +406,14 @@ table, th, td {
   box-shadow: 0 0 40px 0 grey;
   border-radius: 10px;
   /* moving th eposttion of th econtact box from the top and left */
-
   transform: translate( -30%. -50%);
 }
 /*presley*/
 .input{
   width: 400px;
   height: 50px;
-
   padding-right:15px;
   padding-left: 15px;
-
   margin-top: 20px;
   border: 1px  grey;
   border-radius:14px;
@@ -459,7 +435,6 @@ table, th, td {
   padding: 5px;
   background-color: Transparent;
   background-repeat: no-repeat;
-
   background-color:black;
     border-radius: 10%;
     color:white;
@@ -480,7 +455,6 @@ table, th, td {
 /*presley - the transition of button when hovering*/
 .button:hover{
   box-shadow: inset 100px 0 0 0 #618a3d;
-
   cursor: pointer;
   color: white;
 
@@ -496,717 +470,7 @@ table, th, td {
   margin: 0;
   padding: 0;
 }
-
-
-/*Sean*/
-
-.intro{
-  font-family: 'Noto Sans JP',
-  sans-serif;
-  font-family: 'Oswald',
-  sans-serif;
-  font-family: 'Shippori Antique',
-  sans-serif;
-}
-
-/*Sean*/
-.otaku{
-
-  font-family: 'Noto Sans JP',
-  sans-serif;
-  font-family: 'Oswald',
-  sans-serif;
-  font-family: 'Shippori Antique',
-  sans-serif;
-}
-.logo{
-
-  align-items: center;
-  padding-top: 1%;
-}
-
-/*Sean*/
-.anime {
-  border: 10 px solid 2px black;
-  padding: 10 px;
-  /*This styling is for the table*/
-  border-spacing: 0;
-
-
-}
-
-/*Sean*/
-.age {
-
-  width: 40%;
-  padding: 20px;
-  /*This is for the age input*/
-  margin: auto;
-
-
-}
-
-.email {
-
-  width: 40%;
-  padding: 20px;
-  margin: auto;
-  /*Email input*/
-}
-
-/*Sean*/
-
-.gender {
-  width: 40%;
-  padding: 20 px;
-  margin: auto;
-}
-
-/*Sean*/
-.phone {
-
-  width: 40%;
-  padding: 20 px;
-  margin: auto;
-}
-
-/*Sean*/
-.surname {
-
-  width: 40%;
-  padding: 20 px;
-  margin: auto;
-}
-
-/*Sean*/
-
-.firstname {
-
-  width: 40%;
-  padding: 20px;
-  margin: auto;
-}
-
-/*Sean*/
-.shonen {
-
-  width: 100%;
-  height: 500px;
-  align-items: center;
-}
-/*Sean*/
-#div1{
-
-  float:left;
-  width:33%;
-  height: 500px; /*This is a div for the paragraghs*/
-}
-/*Sean*/
-#div2{
-
-  width: 33%;
-  float: right;
-  height:500px;
-}
-/*Sean*/
-#div3{
-
-  width: 33%;
-  margin: 0 auto;
-  height:500px;
-}
-/*Sean*/
-.stats{
-
-  border: 1px solid black;
-
-
-}
-/*Sean*/
-.MHApic{
-
-  height:235 px;
-  width:590 px;
-}
-
 /*presley*/
 .sao_main{
   margin: 10px;
 }
-=======
-/*Sean edited background color*/
-body{
-    background-color:yellow;
-    font-size: 13pt;
-    /*presley-under*/
-    overflow-x:hidden
-
-}
-/*Sean*/
-#h_bar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /*This is the navagtion bar styling*/
-    background-color:black;
-}
-/*Sean*/
-#h_bar li {
-
-    float:left;
-
-}
-/*Sean*/
-#h_bar li a{
-    display:inline-block;
-    color:white;
-    text-align: center;
-    padding: 14px 15px;
-    text-decoration: none;
-    /*pres;ey*/
-    box-shadow:inset 0 0 0 0 yellow;
-    transition: ease-out 1s;
-    position: relative;
-    outline:none;
-    cursor:pointer;
-}
-
-
-
-/*presley- adds a hover on nav bar that changes color, and also gives an animation when cursor is pointed in it*/
-#h_bar li a:hover{
-  box-shadow: inset 0 0 0 2px yellow;
-  color:gray;
-  cursor:pointer;
-}
-/*Sean*/
-.para1{
-    font-family: 'Oswald',
-    sans-serif;
-    font-family: 'Shippori Antique',
-    sans-serif;
-    float:left;
-
-}
-
-.para2{
-
-}
-/*Sean*/
-.
-
-/*css for manual navigation*/
-/*Sean*/
-.navigation-manual{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-
-}
-/*Sean*/
-.manual-btn{
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 2s;
-}
-/*Sean*/
-
-
-
-/*Sean*/
-
-/*This is used for radio buttons*/
-.slideshow{
-  width:700px;
-  height:500px;
-  overflow: hidden;
-
-}
-/*Sean*/
-.para2,.para4{
-    font-family: 'Noto Sans JP',
-    sans-serif;
-    font-family: 'Oswald',
-    sans-serif;
-    font-family: 'Shippori Antique',
-    sans-serif;
-}
-/*Sean*/
-.para3{
-
-    font-family: 'Noto Sans JP',
-    sans-serif;
-
-}
-
-/*Sean*/
-a{
-  font-family: 'Noto Sans JP',
-  sans-serif;
-  font-family: 'Oswald',
-  sans-serif;
-  font-family: 'Shippori Antique',
-  sans-serif;
-  color: yellow;
-
-}
-
-
-
-@media screen and (max-width: 800px) {
-
-    .MHA{
-
-        height: 600px;
-        width:  600px;
-    }
-
-
-
-
-
-}
-
-/*Sean*/
-@media screen and(max-width:800px){
-
-
-}
-/*Added media queries for RWD*/
-/*Sean*/
-@media screen and(max-width:800px){
-
-
-}
-
-
-.para1{
-    float:right;
-    padding-left: 5%;
-    font-size: medium;
-
-}
-
-/*presley*/
-.kirito_and_co{
-  width:240px;
-  height:380px;
-  border-radius:15px;
-  float:right;
-  margin: 5px;
-
-}
-/*presley*/
-.sao_cover{
-  width:240px;
-  height:380px;
-  border-radius:15px;
-  float:left;
-  margin: 5px;
-}
-/*presley*/
-.kirito_alfheim{
-  position:relative;
-  float: right;
-  border-radius:15px;
-  width:640px;
-  height:360px;
-}
-/*presley*/
-.sao_para,.contact-h2{
-  font-family: 'Noto Sans JP',
-  sans-serif;
-  font-family: 'Oswald',
-  sans-serif;
-  font-family: 'Shippori Antique',
-  sans-serif;
-}
-/*presley*/
-.sao_list,.sao_list2{
-  position:relative;
-  right: -20px;
-  font-family: 'Noto Sans JP',
-  sans-serif;
-  font-family: 'Oswald',
-  sans-serif;
-  font-family: 'Shippori Antique',
-  sans-serif;
-}
-
-/*Sean*/
-.MHA{
-    padding:0;
-    margin:0;
-}
-
-/*Sean*/
-.container{
-    padding:30px;
-    font-size:15px;
-    font-weight: 300;
-    line-height: 24px;;
-
-}
-
-.container p{
-    margin-bottom: 15px;
-}
-/*Sean*/
-.picture{
-    width:450px;
-    position:relative;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
-    background-color: antiquewhite;
-    overflow: hidden;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-/*Sean*/
-.picture:before{
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    border: 8px solid #fff;
-    z-index: 2;
-    overflow:hidden;
-    box-sizing: border-box;
-}
-
-/*solomon*/
-.kage{
-    width: 55%;
-    height: 15%;
-    position: relative;
-    right: -250px;
-}
-/*solomon*/
-.characters{
-          position: relative;
-          right:-600px;
-}
-/*solomon*/
-table{
-    position: relative;
-    top:-225px;
-  }
-  /*solomon*/
-  .narutopara1{
-    font-family: 'Noto Sans JP',
-    sans-serif;
-    font-family: 'Oswald',
-    sans-serif;
-    font-family: 'Shippori Antique',
-    sans-serif;
-  }
-
-  /*solomon*/
-table, th, td {
-  border: 1px solid black;
-}
-
-/*prsley*/
-.contact-page{
-  margin: 0;
-  padding: 0;
-}
-/*presley*/
-.contact{
-  width: 500px;
-  box-shadow: 0 0 40px 0 grey;
-  position: absolute;
-  top: 30%;
-  left: 31%;
-  transform: translate( -30%. -50%);
-}
-/*presley*/
-.input{
-  width: 400px;
-  height: 50px;
-  padding-right:10px;
-  padding-left: 10px;
-  margin-top: 20px;
-  border: 1px  grey;
-  border-radius:14px;
-  outline: none;
-}
-/*presley*/
-.contact-form{
-  margin: 25px;
-}
-/*presley*/
-.textarea-field{
-  height: 150px;
-  padding-top: 10px;
-}
-
-/*presley*/
-.button{
-  margin-top:14px;
-  padding: 5px;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  background-color:white;
-    border-radius: 10%;
-    color:black;
-    font-size:15px;
-    border: none;
-    box-shadow: inset 0 0 0 0 #000080;
-    transition: ease-out 0.3s;
-    cursor: pointer;
-    overflow: hidden;
-    outline:none;
-    position: relative;
-    right: -40%;
-  }
-
-/*prsley - the transition of button wehn hovering*/
-.button:hover{
-  box-shadow: inset 100px 0 0 0 #000080;
-  cursor: pointer;
-  color: white;
-
-}
-
-/*presley*/
-  .contact-h2{
-    text-align: center;
-  }
-
-  /*presley*/
-.SAO{
-  margin: 0;
-  padding: 0;
-}
-
-/*Sean*/
-
-.intro{
-
-  font-family: 'Titillium Web',
-  sans-serif;
-
-}
-
-/*Sean*/
-.otaku{
-
-  font-family: 'Titillium Web',
-  sans-serif;
-
-}
-
-/*Sean*/
-.anime {
-  border: 10 px solid 2px black;
-  padding: 10 px;
-  /*This styling is for the table*/
-  border-spacing: 0;
-
-
-}
-
-/*Sean*/
-.age {
-
-  width: 40%;
-  padding: 20px;
-  /*This is for the age input*/
-  margin: auto;
-
-
-}
-
-.email {
-
-  width: 40%;
-  padding: 20px;
-  margin: auto;
-  /*Email input*/
-}
-
-/*Sean*/
-
-.gender {
-  width: 40%;
-  padding: 20 px;
-  margin: auto;
-}
-
-/*Sean*/
-.phone {
-
-  width: 40%;
-  padding: 20 px;
-  margin: auto;
-}
-
-/*Sean*/
-.surname {
-
-  width: 40%;
-  padding: 20 px; /*surname field for user input*/
-  margin: auto;
-}
-
-/*Sean*/
-
-.firstname {
-
-  width: 40%;
-  padding: 20px;
-  margin: auto; /*firstname field*/
-}
-
-/*Sean*/
-.shonen {
-
-  width: 100%;
-  height: 500px;
-  align-items: center;
-}
-/*Sean*/
-#div1{
-
-  float:left;
-  width:33%;
-  height: 500px; /*This is a div for the paragraghs*/
-}
-/*Sean*/
-#div2{
-
-  width: 33%;
-  float: right;
-  height:500px;
-}
-/*Sean*/
-#div3{
-
-  width: 33%;
-  margin: 0 auto;
-  height:500px;
-}
-/*Sean*/
-.stats{
-
-  border: 1px solid black;
-
-
-}
-/*Sean*/
-.MHApic{
-
-  height:235 px;
-  width:590 px;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-}
-
-/*Image gallery*/
-/*Sean*/
-.image-container{
-  width:2400px;
-  height: 600px;
-  position:relative;   /*Clever Techie*/
-  transition: left 2s;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s; /*transition in all relative browsers*/
-  -o-transition: left 2s;
-}
-/*Sean*/
-
-/*Sean*/
-.button-container{
-
-  top: -20px;
-  position:relative;
-}
-/*Sean*/
-
-
-/*Sean*/
-.imgS{
-
-  height:400px;
-  width: 600px;
-}
-
-/*Sean*/
-.Home{
-
-  margin:0;
-  padding:0;
-  background-image: bac
-}
-
-.container1{
-
-  color:black;
-  height:100%;
-  width:1000px;
-  background-image: url("Images/Graphic_Background.jpg");
-  background-repeat:no-repeat;
-  background-position: 50 px;
-  position:relative;
-
-}
-
-.color-overlay{
-  width:100%;
-  height:100%;
-  opacity: .5;
-  position:absolute;
-
-}
-/*Sean*/
-.villians{
-
-  height:auto;
-  width:auto;
-}
-/*Styling for the images*/
-/*Sean*/
-.main{
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  display:grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,300px));
-  column-gap: 40px;
-  row-gap: 40px;
-}
-/*Sean*/
-.gallery{
-  width:300px;
-  height:300px;
-  object-fit: cover;
-  object-position: center; /*CSS for the image gallery to be formated in the center with having equal size*/
-
-}
-.text1{
-
-  display:none;
-}
-
-
-
-.para5{
-
-  color: black;
-  font-family: 'Oswald',
-  sans-serif;
-  font-family: 'Shippori Antique',
-  sans-serif;
-  float:left;
-  justify-content: center;
-}
->>>>>>> dea658f7d0161344f5e5d44652a6156eaa75f247
