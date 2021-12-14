@@ -5,9 +5,7 @@
         <!--link to stylesheet -->
     <link rel="stylesheet" href="Style.css">
     <!-- my js script tag -->
-
-    <!-- font awesome script link-->
-    <script src="https://kit.fontawesome.com/ad4791524b.js" crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
     <!-- google fonts-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +16,10 @@
   </head>
   <body class="SAO">
     <img class="logo" src="Images/otaku-logo-resize.png" alt="image of site logo">
-
+    
       <div class="sidebar">
         <header>Otaku</header>
-      <nav>
-        <button class="hamburger" id="hamburger">
-          <i class= "fas fa-bars"></i>
-        </button>
-          <ul class="nav-ul" id="nav-ul"> <!-- horizontal nav bar-->
+          <ul id="h_bar"> <!-- horizontal nav bar-->
             <li><a href ="Index.html">Home</a></li> <!-- this page leads to the home page -->
             <li><a href="MHA.html">My Hero Academia</a></li>
             <li><a href="Naruto.html">Naruto</a></li>
@@ -35,8 +29,6 @@
             <li><a href="Contact.html">Contact Us</a></li>
             <li><a href="Game.html">Mini-Game</a></li>
           </ul>
-          <script src="Script.js"></script> <!-- had to place this script tag under the nav-bar for JS so it would work, if i had it in head tag it would give me an Uncaught TypeError -->
-      </nav>
       </div>
 
     <div class="sao_main"> <!--div class for the main body of page incl. images -->

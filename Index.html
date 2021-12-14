@@ -61,9 +61,9 @@
         <!--This is the HTML for the gallery of 6 images-->
         <h3 class="intro">A image gallery of 20th Century Anime Series</h3>
         <div class="main"></div>
-            <img onclick="showTextImage()" class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
-            <a href="javascript: changeText(2);">
-            <img id="image" class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
+            <img id="galtext" onclick="showText()" class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
+
+            <img onclick= "this.InnerHTML='Inuyasha (2000)'" id="image" class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
             </a>
             <a href="javascript: changeText(3);">
             <img id="image" class="gallery" src="Images/Hakusho.jpg" alt="Image of Hakusho">
@@ -135,7 +135,7 @@
         e.preventDefault() //This allows nothing to be submitted is nothing is entered
         let messages= []
         if(name.value === '' || name.value == null){
-            document.write("Your username needs to be entered");
+            window.alert("Your username needs to be entered");
         }
 
         if(messages.length > 0){
@@ -145,11 +145,11 @@
         }
 
         if(password.value.length >=10){
-            document.write("This password is too long"); //If user enters more than 10 characters this message will pop up on a new page;
+            window.alert("This password is too long"); //If user enters more than 10 characters this message will pop up on a new page;
         }
 
         if(password.value.length <= 5){
-            documennt.write("You should have 5 or more characters entered");//If user enters less then 5 characters this message will pop up;
+            window.alert("You should have 5 or more characters entered");//If user enters less then 5 characters this message will pop up;
 
         }
         if(messages.length >0){
@@ -171,8 +171,13 @@
     }
 
 
-    function showText(value){
-        var div = document.getElementById("")
+    function showText(){
+
+
+        document.print("Astroboy") ;
+
+
+
 
     }
 
