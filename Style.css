@@ -8,21 +8,23 @@ body{
 
 }
 /*Sean*/
-#h_bar{
+.nav-ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden; /*This is the navagtion bar styling*/
     background-color:black;
+    flex-wrap:wrap;
 }
 /*Sean*/
-#h_bar li {
+.nav-ul li {
 
     float:left;
-
 }
+
+
 /*Sean*/
-#h_bar li a{
+.nav-ul li a{
     display:inline-block;
     color:white;
     text-align: center;
@@ -39,11 +41,27 @@ body{
 
 
 /*presley- adds a hover on nav bar that changes color, and also gives an animation when cursor is pointed in it*/
-#h_bar li a:hover{
+.nav-ul li a:hover{
   box-shadow: inset 0 0 0 2px yellow;
   color:gray;
   cursor:pointer;
 }
+/*presley*/
+.hamburger{
+  background-color: transparent;
+  border:0;
+  color: black;
+  font-size: 30px;
+  cursor:pointer;
+  display: none;
+  float:right;
+}
+
+.hamburger:focus{
+  /*removes outline on button */
+  outline:none;
+}
+
 /*Sean*/
 .para1{
     font-family: 'Oswald',
@@ -188,7 +206,6 @@ a{
       height:65%;
     }
 
-
 }
 
 @media screen and (max-width: 500px) {
@@ -211,8 +228,18 @@ a{
     max-height:220px;
   }
   .hamburger{
-    float:right;
     display:block;
+  }
+  .nav-ul{
+    display:none;
+    width:100%;
+  }
+  .nav-ul.show{
+    display: inline-block;
+  }
+  .contact-h2{
+    position:relative;
+    right: -20px;
   }
 
 
@@ -446,18 +473,4 @@ table, th, td {
 /*presley*/
 .sao_main{
   margin: 10px;
-}
-
-.hamburger{
-  background-color: transparent;
-  border:0;
-  color: white;
-  font-size: 30px;
-  cursor:pointer;
-  display: none;
-}
-
-.hamburger:focus{
-  /*removes outline on button */
-  outline:none;
 }
