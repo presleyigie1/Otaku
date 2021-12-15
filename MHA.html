@@ -30,7 +30,7 @@
     <h3 id="title" onclick="this.innerHTML='Get to know it!'"class="intro">Lore/Story</h3>
     <p>Try to Click this header!</p>
         <h4>Try click the text below!</h4>
-        <p onclick="clickToChange()"id= "para2"class="para3">My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".Those who dont possese quirks are known as "quirkless" indviduals are discriminated against and looked down upon in society.Children are born with quirks and can choose to become pro heroes.My Hero Academia also known as "MHA" provides an exciting turn to supehero series by providing a more relatable exprience to how a world would be like with super powered humans.Allowing us to relate with characters within the show. </p>
+        <p onclick="clickToChange()" id="para2" class="para3">My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".Those who dont possese quirks are known as "quirkless" indviduals are discriminated against and looked down upon in society.Children are born with quirks and can choose to become pro heroes.My Hero Academia also known as "MHA" provides an exciting turn to supehero series by providing a more relatable exprience to how a world would be like with super powered humans.Allowing us to relate with characters within the show. </p>
         
     
         <p class="para3">A manga/anime series created by Japanese manga artist Kohei Horokoshi. My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".Children born with Quirks have the ability to train as hero through academic tutoring the most prestigious hero academy called "U.A Academy".</p>   
@@ -44,9 +44,8 @@
             </div>
 
                 <p class="para1">Is a student that did not possess the ability to use quirk in the beginning of the story,but after running into the number 1 pro hero All Might who see a huge amount of potential in him to become a hero,All Might has a quirk that is tranferable,which allows him to pass on his quirk to Izuku.We follow the series from his point of view by aiming to be the best hero in the world.</p>
-        
-
         </div>
+         <button onclick="showTxtOne()">Character Quote</button>
        
     <h4 class="intro">Toshinori Yagi AKA All Might</h3>
         <div class="container">
@@ -54,8 +53,9 @@
                 <img class="MHApic" src="Images/All_Might.png" alt="Picture of All Might">
         </div>
             <p class="para1">Toshi also known as All Might is known as the number one pro hero in the world,he posseses the quirk One For All which is the the only transimasble quirk within the MHA universe.It allows its user to willingly pass on the quirk to a successor and has been passed down for generations.All Might is a noble hero who sees potential in Midoriya and sees him as a worthy siccessor to inherit One For All,as he acts as a mentor towards him within the series.</p>
-    </div>
-
+        </div>
+        <button onclick="showTxtTwo()">Character Quote</button>
+     
     <h4 class="intro">Katsuki Bakugo AKA Kachan</h3>
         <div class="container">
             <div class="picture">
@@ -63,6 +63,7 @@
         </div>
             <p class="para1">Is a rival of Midoriya and is his childhood bully.Bakugo possesses the quirk called "Explosion" allow him to emit a burst of explosive energy,Bakugo acts acts as a driving force for Deku to work harder.Despite being an arrogant and brash character Bakugo does have a sense of good within him,as he is also training to be a professional hero at U.A High school.</p>
         </div>
+        <button onclick="showTxtThree()">Character Quote</button>
 
     <h4 class="intro">Shoto Todoroki</h4>
         <div class="container">
@@ -70,7 +71,9 @@
                 <img class="MHApic" src="Images/Shoto.png" alt="picture of Shoto Todoroki">
         </div>
             <p class="para1">Shoto acts as a secondary rival to Izuku,he possesses the quirk called "Half-hot Half-cold" which allows him to use ice and fire powers which he inherited from his parents.He is a talented individual who is quite stoic in nature due to the abuse he endured as a child.He is the son of the 2nd pro hero in the world "Endeavor" who raised him to be a strong hero in order to surpass All Might one day.</p>
-    </div><div class="container">
+    </div>
+     <button onclick="showTxtFour()">Character Quote</button>
+    <div class="container">
 
     <h4 class="intro">The League Of Villains</h4>
         <div class="container">
@@ -79,28 +82,41 @@
             </div>
             <p class="para1">Are the main antagonists of the series,and are lead by the villian All For One.Who has the ability to take and give other people quirks.He uses this as an advantage to set up The League of Villains,who threaten to destroy the hero society.The organisation is currently lead by All for One adopted son Tomura Shigaraki,who has the dangerous ability to decay anything he touches by will.With multiple members who pose a danger to the world. </p>
         </div>
-
+         <button onclick="showTxtFive()">Character Quote</button>
 
         <br>
         <!--An  image gallery of the anime itself-->
-    <div class="main">
-
-        <img class="gallery" src="Images/Deku.3.png" alt="Image of Astroboy">
-        <img class="gallery" src="Images/Class_A.jpg" alt="Image of Astroboy">
-        <img class="gallery" src="Images/AllMight3.png" alt="Image of Astroboy">
-        <img class="gallery" src="Images/Bakugo.jpg" alt="Image of Astroboy">
-        <img class="gallery" src="Images/" alt="Image of Astroboy">
-        <img class="gallery" src="Images" alt="Image of Astroboy">
-    </div>
-
-
     
     
     <script> 
 
-    function clickToChange(){
-        document.getElementById("para2").style.color="Purple";
+    function showTxtOne(){
+
+        window.alert("Im not going to be worthless punching bag Deku forever!");
     }
+
+    function showTxtTwo(){
+
+        window.alert("It's fine now.Why?Because Im here!");
+
+    }
+
+    function showTxtThree(){
+
+        window.alert("I will be number one with my strength!");
+    }
+
+    function showTxtFour(){
+
+        window.alert("Never forget who you want to become")
+    }
+
+    function showTxtFive(){
+
+        window.alert("Heroes are forgettable.They try to save the world...But villians are the ones who change it-Dabi")
+    }
+
+        
 
     
         
