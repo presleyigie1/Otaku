@@ -36,6 +36,11 @@ body{
     cursor:pointer;
 }
 
+.para1{
+    float:right;
+    padding-left: 5%;
+    font-size: medium;
+    
 
 
 /*presley- adds a hover on nav bar that changes color, and also gives an animation when cursor is pointed in it*/
@@ -83,85 +88,14 @@ body{
 .para2{
 
 }
-/*Sean*/
-.slider{
 
-    width:800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow:hidden;
 
-}
-/*Sean*/
-.slides{
-    width: 500%;
-    height:500px;
-    display: flex;
-}
-/*Sean*/
-.slides input{
-    display: none;
-
-}
-/*Sean*/
-.slide{
-    width: 20%;
-    transition: 4s;
-
-}
-/*Sean*/
-.slide img{
-    width:800px;
-    height:500px;
-}
 
 /*css for manual navigation*/
 /*Sean*/
-.navigation-manual{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
 
-}
-/*Sean*/
-.manual-btn{
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 2s;
-}
-/*Sean*/
-.manual-btn:not(:last-child){
 
-    margin-right: 40px;
 
-}
-/*Sean*/
-.manual-btn:hover{
-    background:black;
-
-}
-/*Sean*/
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked~.first {
-    margin-left: -20%;
-}
-
-#radio3:checked~.first {
-    margin-left: -30%;
-}
-
-#radio4:checked~.first {
-    margin-left: -50%;
-}
-/*This is used for radio buttons*/
-h1{
 
 }
 /*Sean*/
@@ -178,16 +112,6 @@ h1{
 
     font-family: 'Noto Sans JP',
     sans-serif;
-
-}
-
-a{
-
-}
-
-
-a{
-
 }
 
 
@@ -592,3 +516,319 @@ table, th, td {
 .sao_main{
   margin: 10px;
 }
+
+/*Sean*/
+.shonen {
+
+  width: 100%;
+  height: 500px;
+  align-items: center;
+}
+/*Sean*/
+#div1{
+
+  float:left;
+  width:33%;
+  height: 500px; /*This is a div for the paragraghs*/
+}
+/*Sean*/
+#div2{
+
+  width: 33%;
+  float: right;
+  height:500px;
+}
+/*Sean*/
+#div3{
+
+  width: 33%;
+  margin: 0 auto;
+  height:500px;
+}
+/*Sean*/
+.stats{
+
+  border: 1px solid black;
+
+
+}
+/*Sean*/
+.MHApic{
+
+  height:235 px;
+  width:590 px;
+  justify-content: center; 
+  align-items: center;
+  align-self: center;
+}
+
+/*Image gallery*/
+/*Sean*/
+.image-container{
+  width:auto;
+  height: auto; /*Image optimisation added*/
+  position:relative;   
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s; /*transition in all relative browsers for chrome,firefox and opera*/
+  -o-transition: left 2s;
+  float:right;
+  
+}
+
+
+
+/*Sean*/
+.Home{
+
+  margin:0;
+  padding:0;
+  justify-content:center;
+  align-items: center; /*Added tyling to the index page by centering most objects*/
+  margin:0;
+}
+/*Sean*/
+.container1{
+  
+  color:black;
+  height:100%;
+  width:100%;
+  background-image: url("Images/Graphic_Background.jpg");
+  background-repeat:no-repeat;
+  background-position: 50 px;
+  position:relative;/*background image added at the top of the pag*/
+  background-size: 1300px 200px ;
+}
+
+.color-overlay{
+  width:100%;
+  height:100%;
+  opacity: .5;
+  position:absolute;
+
+}
+/*Sean*/
+.villians{
+
+  height:auto;
+  width:auto;
+}
+/*Styling for the images*/
+/*Sean*/
+.main{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+  column-gap: 40px; /*Styling used to make the image gallery have a grid like structure*/
+  row-gap: 40px;
+}
+/*Sean*/
+.gallery{
+  width:300px;
+  height:300px;
+  object-fit: cover;
+  object-position: center; /*CSS for the image gallery to be formated in the center with having equal size*/
+
+}
+/*Sean*/
+.text1{
+
+  display:none;
+}
+
+
+/*Sean*/
+.para5{
+
+  color: black;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+  float:left;
+  justify-content: center;
+}
+/*Sean*/
+.form-container{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+  width: 400px;
+  max-width: 100%;
+  float: right ;
+  right:50%;
+  position:relative;
+}
+/*Sean*/
+.head{
+
+  background-color: grey;
+  border-bottom: 1px solid black;
+  padding: 20px 40px;
+}
+/*Sean*/
+.form{
+  padding:30px 40px;
+
+}
+/*Sean*/
+.form-control{
+
+  margin-bottom:10px;
+  padding-bottom: 20px;
+  position:relative;
+
+
+}
+/*Sean*/
+.form-control input{
+
+  border: 2px solid black;
+  padding:10px;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+  display:block;
+}
+/*Sean*/
+.form-control label{
+  display:inline-block;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+}
+/*Sean*/
+.form button{
+
+  background-color: yellow;
+  display:block;
+  border:1px solid black;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+  padding:10px;
+  font-size: 10pt;
+
+}
+
+.sidetext{
+
+  width:50%;
+  margin:auto;
+  display:inline-block;
+  padding: 8px;
+
+
+}
+/*Sean*/
+.para4{
+
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+  display:inline-block;
+  justify-content: center;
+}
+
+.MHApic{
+
+  float:right;
+}
+
+.MHA{
+
+  margin: auto;
+  width:auto;
+  height:auto;
+  
+}
+
+.largetext{
+  float:right;
+  font-size:60pt;
+  font-family: 'Comic Neue',
+  cursive;
+  top:-2px;
+}
+.anime {
+  border: 10 px solid 2px black;
+  padding: 10 px;
+  /*This styling is for the table*/
+  border-spacing: 0;
+
+
+}
+
+.para3{
+
+    font-family: 'Noto Sans JP',
+    sans-serif;
+
+}
+
+/*Sean*/
+a{
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif; /*google fonts*/
+  font-family: 'Shippori Antique',
+  sans-serif;
+  color: yellow;
+
+}
+.para3{
+
+    font-family: 'Noto Sans JP',
+    sans-serif;
+
+}
+.intro{
+
+  font-family: 'Titillium Web',
+  sans-serif;
+ 
+}
+
+.MHA{
+    padding:0;
+    margin:0;
+}
+/*Sean*/
+.form-container p{
+    margin-bottom: 15px;
+}
+/*Sean*/
+.picture{
+    width:450px;
+    position:relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    background-color: antiquewhite;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height:300;
+}
+/*Sean*/
+.picture:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border: 8px solid #fff;
+    z-index: 2;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
