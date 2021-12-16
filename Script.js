@@ -1,41 +1,117 @@
-/*pres*/
+//Sean
+ function guessNum(){
+
+    
+     var randNum = Math.floor(Math.random() * 20); //Uses randomisation,Uses number only from 1-10,it only returns integer values of this range
+    
+     //This produces an output of the random number-Sean
+    document.write(randNum+" " +"This is the number generated!");
+
+    var userInput= prompt("Enter any number between 1-20");
+    //User inputs number ("Enter any number between 1-30+randNum")//Sean
+    
+    if(userInput === randNum){                  //Sean 
+        window.alert("Correct! you are right!");// this message will pop up if you guessed the number correctly
+
+    }else if(userInput > randNum){                          //Sean
+        window.alert(" You guessed it too low,you lose!");//This message pops up if you have guess it too low
+    }
+     else if (userInput < randNum){                         //Sean
+        window.alert("You guessed it too high,you lose!");//if number us guessed too high this alert will pop up
+    }
+    else if(randNum >= 30){
+        window.alert("You cannot enter anything above 20");
+    }
+    else if(randNum <= 1){                                  //Sean
+        window.alert("You cannot enter anything below 1");//if number is not in the correct range of guessing
+    }
+    else{                                           //Sean
+        window.alert("This is not valid,ERROR!"); //This message prints if the value is not an integer
+    }
+}
+
+=======
+
+//Sean
+ function guessNum(){
+
+     var randNum = Math.floor(Math.random() * 30); //Uses randomisation,Uses number only from 1-10,it only returns integer values of this range
+    
+     //This produces an output of the random number
+    print(randNum);
+
+    var userInput= prompt("Enter any number between 1-30");
+    //User inputs number ("Enter any number between 1-30+randNum")
+    
+    if(userInput < randNum){
+        window.alert("Correct! you are right!");// this message will pop up if you guessed the number correctly
+
+    }else if(userInput > randNum){
+        window.alert(" You guessed it too low,you lose!");//This message pops up if you have guess it toow
+    }
+     else if (userInput == randNum){
+        window.alert("You guessed it too high,you lose!");
+    }
+    else{
+        window.alert("This is not valid,ERROR!"); //This message prints if the value is not an integer
+    }
+}
+
+//presley-JavaScript fr contact page
 function validate(){
-  //get input from user save ot var
-  var inputForEmail = document.getElementById("emailData").value;
-  //check for @symbol
-  // using indexof() - this will return a number of where the @ symbol is on the string
-  var symbol = inputForEmail.indexOf('@');
-  //get the index of the . and if >0 that means its present
-  //if not there gve feedback
-  // presley Youtube: Telesko email validation #31 tutorial for style and visibility
-  if(symbol < 1){
+  var formData = []; // array that holds data from the form fields
+  // arrays count from 0 up
+  formData[0] = document.getElementById("nameData").value;
+  formData[1] = document.getElementById("emailData").value;
+  formData[2] = document.getElementById("msgData").value;
+
+  if(formData[0] .length == ""){
+    document.getElementById("nameFeedback").innerHTML = "This field is required"
+    document.getElementById("nameFeedback").style.visibility = "visible";
+    document.getElementById("nameFeedback").style.color="red";
+  }
+    else if(formData[0] .length < 2){
+      document.getElementById("nameFeedback").innerHTML = "Name Is Not Valid"
+      document.getElementById("nameFeedback").style.visibility = "visible";
+  }
+
+  var symbol = formData[1].indexOf("@");
+
+  if(symbol = 0){
     document.getElementById("errorText").innerHTML = "Please enter a valid email address";
     document.getElementById("errorText").style.visibility = "visible";
     document.getElementById("errorText").style.color="red";
-  }else{
-        //if it is there then capitalise the email & show user
-
-        document.getElementById("errorText").innerHTML = "Valid";
+  }
+    else if(formData[1] .length == 2 || formData[1] .length == 1){
+      document.getElementById("errorText").innerHTML = "Please enter a valid email address";
+      document.getElementById("errorText").style.visibility = "visible";
+      document.getElementById("errorText").style.color="red";
+    }
+      else if(formData[1] .length == "" ){
+        document.getElementById("errorText").innerHTML = "This field is required";
         document.getElementById("errorText").style.visibility = "visible";
-        document.getElementById("errorText").style.color="green";
+        document.getElementById("errorText").style.color="red";
+      }
+
+    else{
+        //if it is there then capitalise the email & show user
+          document.getElementById("emailFeedback").innerHTML = input.toUpperCase();
+  }
+    if(formData[2] .length == "" ){
+      document.getElementById("msgFeedback").innerHTML = "This field is required"
+      document.getElementById("msgFeedback").style.visibility = "visible";
+      document.getElementById("msgFeedback").style.color="red";
+
   }
 
 }
 
-/*solomon*/
-var status = "less";
+//presley: source - https://www.youtube.com/watch?v=ydZc17rlR5E&t=20s -Florin pop
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('nav-ul');
 
-function toggleText()
-{
-    var text="Here is some text that I want added to the HTML file";
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
 
-    if (status == "less") {
-        document.getElementById("textArea").innerHTML=text;
-        document.getElementById("toggleButton").innerText = "See Less";
-        status = "more";
-    } else if (status == "more") {
-        document.getElementById("textArea").innerHTML = "";
-        document.getElementById("toggleButton").innerText = "See More";
-        status = "less"
-    }
-}
+

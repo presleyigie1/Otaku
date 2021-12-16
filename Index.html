@@ -5,73 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <link rel = "text/javascript" href="Script.js">
+    <script src="Script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Shippori+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&family=Oswald:wght@200&family=Ruda:wght@400;500&family=Shippori+Antique&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
     
     <title>Otaku</title>
 </head>
-<body>
-    <img class="logo" src="Images/otaku-logo-resize.png" alt="image of site logo">
-    <h1 class="otaku">Otaku</h1>
-
-    <ul id="h_bar"><!--This is the horizonal navigation bar-->
-        <li><a href="Index.html">Home</a></li><!--This leads to this webpage-->
-        <li><a href="Contact.html">Contacts</a></li><!--This leads to the contact page-->
-        <li><a href="About.html">About Us</a></li>
-        <li><a href="MHA.html">My Hero Academia</a></li>
-        <li><a href="Naruto.html">Naruto</a></li>
-        <li><a href="7DS.html">Seven Deadly Sins</a></li>
-        <li><a href="TopPicks.html">Our Top Picks</a></li>
-    </ul>
+  
+  <nav>
+      <button class="hamburger" id="hamburger">
+        <i class= "fas fa-bars"></i>
+      </button>
+        <ul class="nav-ul" id="nav-ul">
+            <li><a href ="Index.html">Home</a></li>
+            <li><a href="MHA.html">My Hero Academia</a></li>
+            <li><a href="Naruto.html">Naruto</a></li>
+            <li><a href="SAO.html">Sword Art Online</a></li>
+            <li><a href="TopPicks.html">Recommendations</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="Game.html">Mini-Game</a></li>
+        </ul>
+        <script src="Script.js"></script>
+    </nav>
     <br>
+<body class="Home">
+    <div class="container1">
+    <img class="logo" src="Images/otaku-logo-resize.png" alt="image of site logo">
+    <div class="color-overlay"></div>
+    </div>
+    <h1 class="otaku">Otaku</h1>
+      
+    <br>   
 </div>
+
     <!--Section of information about the site-->
     <h1 class="intro">This is the Anime Society!</h1>
 
     <img class="shonen" src="Images/Shonen.jpg" alt="A picture of Shonen characters">
 
-    <div id="div1">
+    <div id="div1"> <!--classes added for the header and paragragh to target different -->
         <h2 class="intro">Welcome!</h2>
             <p class="para1">This is the official site for the anime/manga community,allowing multiple anime fans to join together and create a sense of community within it.We call this our anime community which will give a taster for fantastic anime and manga reccomendations such as Naruto,Sword Art Online and so on.</p>
     </div>
-
     <div id="div2">
         <h2 class="intro">What is Anime?</h2>
-            <p class="para1">Anime is a Japanese style of animation which is mainly aimed for children,teens and adults.Where it has a variety of genres and categories that can satisyf any newcomer such as comedy,action,slice of life and so on.</p>
+            <p class="para1">Anime is a Japanese style of animation which is mainly aimed for children,teens and adults.Where it has a variety of genres and categories that can satisyf any newcomer such as comedy,action,slice of life and so on.Anime is vast and is a form of entertainment that allows you to explore so much content</p>
     </div>
-
     <div id="div3">
         <h2 class="intro">Statistics On Anime</h2>
-            <p class="para1">Anime continously adds new content every year,despite the pandemic Anime still fluctuates on a critical scale</p>
+            <p class="para1">Anime continously adds new content every year,despite the pandemic Anime still fluctuates on a critical scale.Showing that it will always increase in popoularity within the world no matter what happens.Which is what makes anime so unique and recommended for all ages</p>
     </div>
-    
     <div>
         <!--A History of Anime-->
-        <h3>A Brief History of Anime!</h3>
-            <p>Anime had made a start up within 1917 at its earliest in Japan,but mainly took a proper turn in the 1960's through the works of artists such Osamu Tezuka.Who was a pioneer of modern anime who was responsible for creating household names such as "Astro Boy","Black Jack" and "Princess Knight".The word "Anime" is a Japanese abbreviation of animation,where most anime series are adapted from Japanese styled comic books called "Manga". </p>
-        <!--Slide Show-->
-        <h3>A slideshow of 20th Century Anime</h3>
-        <div class="slide-container">
-            <span id="slider-image-1"></span>
-            <span id="slider-image-2"></span>
-            <span id="slider-image-3"></span>
-            <div class="image-container">
-                <img class="imgS"src="Images/Astro-Boy.jpg" class="slider-image" alt="Picture of Astro Boy">
-                <img class="imgS" src="Images/Hakusho.jpg" class="slider-image" alt="Picture of Yu Yu Hakusho">
-                <img class="imgS" src= "Images/Inuyasha.jpg" class="slider-image" alt="Picture of Inyusha">
-
-            </div>
-            <div class="button-container">
-                <a href="#slider-image-1" class="slider-button"></a>
-                <a href="#slider-image-2" class="slider-button"></a>
-                <a href="#slider-image-3" class="slider-button"></a>
-
-            </div>
-
+        <h3 class="intro">A Brief History of Anime!</h3>
+            <p class="para1">Anime had made a start up within 1917 at its earliest in Japan,but mainly took a proper turn in the 1960's through the works of artists such Osamu Tezuka.Who was a pioneer of modern anime who was responsible for creating household names such as "Astro Boy","Black Jack" and "Princess Knight".The word "Anime" is a Japanese abbreviation of animation,where most anime series are adapted from Japanese styled comic books called "Manga". </p>
+        <!--This is the HTML for the gallery of 6 images-->
+        <h3 class="intro">A image gallery of 20th and 21st Century Anime Series</h3>
+        <div class="main"></div>
+            <img onclick="showTextOne()" class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
+            <img onclick="showTextTwo()" id="image" class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
+            <img onclick="showTextThree()" id="image" class="gallery" src="Images/Hakusho.jpg" alt="Image of Hakusho">                                                                         
+            <img onclick="showTextFour()" id="image" class="gallery" src="Images/speedracer.jpg" alt="Image of the Speedracer">
+            <img onclick="showTextFive()" id ="image" class="gallery" src="Images/Gundam.jpg" alt="Image of a Gundam">
+            <img onclick="showTextSix()" id="image" class="gallery" src="Images/Neon_Evangelion.jpg" alt="Image of Evangelion">
+            </div>       <!--Each image has an onclick which is used to show text once its been clicked-->
         </div>
-        <br\>
+
+        <h3 class="intro">Click the Images to show the Anime's name!</h3>
             <!--A table of Anime statistics -->
     <table class="stats">
         <tr>Anime watchers per year</tr>
@@ -84,88 +89,148 @@
         
     </table>
     </div>
-    <h3 class="intro">Sign Up!</h3>
+
     <!--Input forms for new members to sign up-->
-    <form>
-        <div class="firstname">
-            <label>Your First Name</label>
-            <input type="text" id="fname" name="First name">
-            <br/>
+    
+    <div class="form-container">
+        <div class="head">
+            <h2 class="intro">Sign Up!</h2>
         </div>
-        <div class="surname">
-            <label>Your Surname</label>
-            <input type="text" id="sname" name="Surname">
-        <br/>
-        </div>
-        <div class="age">
-            <label>Age</label>
-            <input id="age" name="age"><br>
-            <button onclick="confirm()">Confirm</button>
-            
-        <br/>
-        </div>
-        <div class="email">
-            <label>Your Email Address</label>
-            <input type="text" id="email" name="Email">
-            <br/>
-        </div>
-        <div class="phone">
-            <label>Your Phone number</label>
-            <input type="text" id="number" name="Phone">
-            <br/>
-        </div>
-        <div class="gender">
-            <label for="male">Male</label>
-            <input type ="radio" name="sex" id="male">
-        </div>
-        <div class="gender">
-            <label for="female">Female</label>
-            <input type ="radio" name="sex" id="female">
-        </div>
-        <div class="gender">
-            <label for="non-binary">Non-Binary</label>
-            <input type="radio" name="sex" id="non-binary">
-        </div>
-        <div class="gender">
-            <label for="none">Prefer not say</label>
-            <input type="radio" name="sex" id="none"><!--This is an option for those not comformatable about confirming their gender-->
-        </div>
-        <label>Terms and Agreement</label>
-        <h6>All information has been consented</h6>
-        <input type="checkbox" id="term" name="Terms"> <!--This is check if the user agree with all terms and agreements with signing upt to the community-->
+            <form class="form" id="form">
+                <div class="form-control">
+                    <label>Username</label>
+                    <input type="text" name="uname" id="uname">
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="form-control">
+                    <label>Age</label> 
+                    <input type="text" id="age" name="age"><br>
+                    <button onclick="confirm()">Confirm</button>
+                </div>
+                <div class="form-control">
+                    <label>Password</label>
+                    <input type="text" name="password" id="psword">
+                </div>
+                <div class="form-control">
+                    <label>Password check</label>
+                    <input type="text" name="psword1" id="psword1">
+                </div>
+                <button>Submit!</button>
+        </form>
+    </div>
         
-        <button onclick="submit()">Submit</button><!---This is the submit button-->
         
 
-    </form>
-
+    
+  
 <script>
+    var email= document.getElementById("email");
+    var name = document.getElementById("uname");
+    var password = document.getElementById("psword");
+    var form = document.getElementById("form");
+    var password2 = document.getElementById("psword1")
+    //Referenced from Web develop simplified https://www.youtube.com/watch?v=In0nB0ABaUk
+    form.addEventListener( 'submit', (e) => {
+        e.preventDefault() //This allows nothing to be submitted is nothing is entered
+        let messages= []
+        if(name.value === '' || name.value == null){ //If no input is made this message will show
+            window.alert("Your username needs to be entered");
+        }
 
+        if(messages.length > 0){
+            e.preventDefault();
+            errorElement.innerText = messages.join(',');//prevents user from moving on if nothhas been submmitted in the forms
+
+        }
+        
+        if(password.value.length >=10){
+            window.alert("This password is too long"); //If user enters more than 10 characters this message will pop up on a new page;
+        }
+
+        if(password.value.length <= 5){
+            window.alert("You should have 5 or more characters entered");//If user enters less then 5 characters this message will pop up;
+
+        }
+        if(messages.length >0){
+            e.preventDefault()
+            errorElement.innerText = messages.join(', ');
+        }
+
+        if(email.value === " "){
+
+            window.alert("Your email cannot be empty"); //If user enters nothing in the email section
+        }
+        else if (password.value !== password2.value){
+            window.alert("Your passwords do not match");
+        }
+        else if(!ifEmail(email)){
+
+            window.alert("Email is not valid");
+        }
+        else{
+
+        }
+        
+    })
     function confirm(){
 
         var num1= Number(document.getElementById("age").value)//This is used to refer by back to id 
         if(num1<13){
-            window.alert("Your not at the correct age,sincere apologies");//This window will pop up if the user is not the correct age
+            window.alert("You're not at the correct age,sincere apologies");//This window will pop up if the user is not the correct age
 
         }
         else{
-            window.alert("You at the age of consent for the website,welcome");
+            window.alert("You're at the age of consent for the website,welcome");//Will display tis outcome if the client is not of age
         }
 
     }
 
-    //
-    function validation(){
+    function ifEmail(email){
+        //refrence from StackOverflow https://stackoverflow.com/questions/46155/whats-the-best-way-to-validate-an-email-address-in-javascript
+        return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    }//it return to the webpage if none of these elements are achieved
 
-        var
+    function showTextOne(){
+    
+        window.alert("Astroboy(1963):One of the earliest modern animes to exist,that tells the story of robot built to fight against evil");
+        
     }
 
-    
+    function showTextTwo(){
+
+        window.alert("Inuyasha(2000):Follows the story of a fifthteen year old,who is transported to Sengoku period in Japan,where she encounter the half human half demon Inuyasha");
+    }
+
+    function showTextThree(){
+
+        window.alert("YuYu Hakusho(1992):Follows the story of Yusuke Urameshi,who was a teenage delinquent who is killed in car accident.He is revived and becomes an underworld investigatior to hunt down demons and appartions");
+    }
+
+    function showTextFour(){
+        window.alert("Speedracer(1967):Follows the story of a young man called Speed with the natural instincts for racing,this story follows Speed racing careers and discovering new thing about the world he is in");
+
+    }
+
+    function showTextFive(){
+
+        window.alert("Mobile Suit Gundam(1979):One of the earliest sci-fi takes in Anime,Mobile Suit Gundam is about a galactic war between Earth and the Zeon Federation,by using giant robots called Gundams ");
+
+    }
+
+    function showTextSix(){
+
+        window.alert("Neon Evangelion(1995):A Story premises on monsters decending down to earth to destroy it,a young man pilots a squad to take on this threat by using giant robots");
+
+    }
 
 
 </script>
 
     
-    
+</div>
+</div>   
 </body>
 </html>
+
