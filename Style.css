@@ -1,30 +1,35 @@
+<<<<<<< HEAD
+/*Sean edited background color*/
+=======
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 body{
     background-color:yellow;
     font-size: 13pt;
     /*presley-under*/
     overflow-x:hidden
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 }
 /*Sean*/
-.nav-ul{
+#h_bar{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden; /*This is the navagtion bar styling*/
     background-color:black;
-    flex-wrap:wrap;
 }
 /*Sean*/
-.nav-ul li {
+#h_bar li {
 
     float:left;
+
 }
-
-
 /*Sean*/
-.nav-ul li a{
+#h_bar li a{
     display:inline-block;
     color:white;
     text-align: center;
@@ -41,27 +46,11 @@ body{
 
 
 /*presley- adds a hover on nav bar that changes color, and also gives an animation when cursor is pointed in it*/
-.nav-ul li a:hover{
+#h_bar li a:hover{
   box-shadow: inset 0 0 0 2px yellow;
   color:gray;
   cursor:pointer;
 }
-/*presley*/
-.hamburger{
-  background-color: transparent;
-  border:0;
-  color: black;
-  font-size: 30px;
-  cursor:pointer;
-  display: none;
-  float:right;
-}
-
-.hamburger:focus{
-  /*removes outline on button */
-  outline:none;
-}
-
 /*Sean*/
 .para1{
     font-family: 'Oswald',
@@ -76,6 +65,9 @@ body{
 
 }
 /*Sean*/
+<<<<<<< HEAD
+.
+=======
 .slider{
 
     width:800px;
@@ -106,6 +98,7 @@ body{
     width:800px;
     height:500px;
 }
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 
 /*css for manual navigation*/
 /*Sean*/
@@ -126,6 +119,18 @@ body{
     transition: 2s;
 }
 /*Sean*/
+<<<<<<< HEAD
+
+
+
+/*Sean*/
+
+/*This is used for radio buttons*/
+.slideshow{
+  width:700px;
+  height:500px;
+  overflow: hidden;
+=======
 .manual-btn:not(:last-child){
 
     margin-right: 40px;
@@ -154,6 +159,7 @@ body{
 }
 /*This is used for radio buttons*/
 h1{
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 
 }
 /*Sean*/
@@ -165,7 +171,11 @@ h1{
     font-family: 'Shippori Antique',
     sans-serif;
 }
+<<<<<<< HEAD
+/*Sean*/
+=======
 
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 .para3{
 
     font-family: 'Noto Sans JP',
@@ -173,112 +183,68 @@ h1{
 
 }
 
+<<<<<<< HEAD
+/*Sean*/
+=======
 a{
 
 }
 
 
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 a{
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+  color: yellow;
 
 }
 
 
 
-@media screen and (max-width: 900px) {
-    /*sean*/
+@media screen and (max-width: 800px) {
+
     .MHA{
+
         height: 600px;
         width:  600px;
     }
-    /*presley*/
-    .contact{
-      max-width:80%;
-    }
-    .input{
-      max-width:90%;
-    }
-    .kirito_and_co{
-      width:85%;
-      height:85%;
-    }
-    .sao_cover{
-      width:65%;
-      height:65%;
-    }
 
-}
 
-@media screen and (max-width: 500px) {
-  /*presley*/
-  .contact{
-    max-width:75%;
-  }
-  .input{
-    max-width:90%;
-  }
-  .kirito_and_co{
-    max-width:40%;
-    max-height:50%;
-  }
-  .sao_cover{
-    max-width:35%;
-  }
-  .kirito_alfheim{
-    max-width:316px;
-    max-height:220px;
-  }
-  .hamburger{
-    display:block;
-  }
-  .nav-ul{
-    display:none;
-    width:100%;
-  }
-  .nav-ul.show{
-    display: inline-block;
-  }
-  .contact-h2{
-    position:relative;
-    right: -20px;
-  }
 
 
 
 }
 
-
-
-@media screen and(max-width:320px){
-  /*presley*/
-  .contact{
-    max-width:45%;
-  }
-  .input{
-    max-width:45%;
-  }
-  .kirito_and_co{
-    max-width:25%;
-    max-height:25%;
-  }
-  .sao_cover{
-    max-width:35%;
-  }
-  .krito_alfheim{
-    max-width:20%;
-  }
+/*Sean*/
+@media screen and(max-width:800px){
 
 
 }
+<<<<<<< HEAD
+/*Added media queries for RWD*/
+=======
+<
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
+/*Sean*/
+@media screen and(max-width:800px){
 
 
+}
 
 
 .para1{
     float:right;
     padding-left: 5%;
+<<<<<<< HEAD
+    font-size: medium;
+    
+=======
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 }
-
-
 
 /*presley*/
 .kirito_and_co{
@@ -306,7 +272,11 @@ a{
   height:360px;
 }
 /*presley*/
-.sao_para,.contact-h2,.button{
+.sao_para,.contact-h2{
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
   font-family: 'Shippori Antique',
   sans-serif;
 }
@@ -314,6 +284,10 @@ a{
 .sao_list,.sao_list2{
   position:relative;
   right: -20px;
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
   font-family: 'Shippori Antique',
   sans-serif;
 }
@@ -324,7 +298,11 @@ a{
     margin:0;
 }
 
+<<<<<<< HEAD
+/*Sea*/
+=======
 
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 .container{
     padding:30px;
     font-size:15px;
@@ -336,7 +314,11 @@ a{
 .container p{
     margin-bottom: 15px;
 }
+<<<<<<< HEAD
+/*Sean*/
+=======
 
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 .picture{
     width:450px;
     position:relative;
@@ -393,27 +375,26 @@ table, th, td {
   border: 1px solid black;
 }
 
-/*preley*/
+/*prsley*/
 .contact-page{
   margin: 0;
   padding: 0;
 }
 /*presley*/
 .contact{
-  margin: auto;
   width: 500px;
-  /*sets a box shadow on the right on 40px with grey */
   box-shadow: 0 0 40px 0 grey;
-  border-radius: 10px;
-  /* moving th eposttion of th econtact box from the top and left */
+  position: absolute;
+  top: 30%;
+  left: 31%;
   transform: translate( -30%. -50%);
 }
 /*presley*/
 .input{
   width: 400px;
   height: 50px;
-  padding-right:15px;
-  padding-left: 15px;
+  padding-right:10px;
+  padding-left: 10px;
   margin-top: 20px;
   border: 1px  grey;
   border-radius:14px;
@@ -435,26 +416,23 @@ table, th, td {
   padding: 5px;
   background-color: Transparent;
   background-repeat: no-repeat;
-  background-color:black;
+  background-color:white;
     border-radius: 10%;
-    color:white;
-    font-size:20px;
+    color:black;
+    font-size:15px;
     border: none;
-    /* sets a a box shadow inset, takes 3s to go back to normal */
-    box-shadow: inset 0 0 0 0 #618a3d;
+    box-shadow: inset 0 0 0 0 #000080;
     transition: ease-out 0.3s;
-    /*mkakes the button able to b clicked on*/
     cursor: pointer;
-    /*hides scrollbars*/
     overflow: hidden;
     outline:none;
     position: relative;
-    right: -38.5%;
+    right: -40%;
   }
 
-/*presley - the transition of button when hovering*/
+/*prsley - the transition of button wehn hovering*/
 .button:hover{
-  box-shadow: inset 100px 0 0 0 #618a3d;
+  box-shadow: inset 100px 0 0 0 #000080;
   cursor: pointer;
   color: white;
 
@@ -470,7 +448,248 @@ table, th, td {
   margin: 0;
   padding: 0;
 }
-/*presley*/
-.sao_main{
-  margin: 10px;
+
+/*Sean*/
+
+.intro{
+<<<<<<< HEAD
+
+  font-family: 'Titillium Web',
+  sans-serif;
+ 
+=======
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
+}
+
+/*Sean*/
+.otaku{
+
+<<<<<<< HEAD
+  font-family: 'Titillium Web',
+  sans-serif;
+
+=======
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+}
+.logo{
+
+  align-items: center;
+  padding-top: 1%;
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
+}
+
+/*Sean*/
+.anime {
+  border: 10 px solid 2px black;
+  padding: 10 px;
+  /*This styling is for the table*/
+  border-spacing: 0;
+
+
+}
+
+/*Sean*/
+.age {
+
+  width: 40%;
+  padding: 20px;
+  /*This is for the age input*/
+  margin: auto;
+
+
+}
+
+.email {
+
+  width: 40%;
+  padding: 20px;
+<<<<<<< HEAD
+  margin: auto; 
+=======
+  margin: auto;
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
+  /*Email input*/
+}
+
+/*Sean*/
+
+.gender {
+  width: 40%;
+  padding: 20 px;
+  margin: auto;
+}
+
+/*Sean*/
+.phone {
+
+  width: 40%;
+  padding: 20 px;
+  margin: auto;
+}
+
+/*Sean*/
+.surname {
+
+  width: 40%;
+<<<<<<< HEAD
+  padding: 20 px; /*surname field for user input*/
+=======
+  padding: 20 px;
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
+  margin: auto;
+}
+
+/*Sean*/
+
+.firstname {
+
+  width: 40%;
+  padding: 20px;
+<<<<<<< HEAD
+  margin: auto; /*firstname field*/
+=======
+  margin: auto;
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
+}
+
+/*Sean*/
+.shonen {
+
+  width: 100%;
+  height: 500px;
+  align-items: center;
+}
+/*Sean*/
+#div1{
+
+  float:left;
+  width:33%;
+  height: 500px; /*This is a div for the paragraghs*/
+}
+/*Sean*/
+#div2{
+
+  width: 33%;
+  float: right;
+  height:500px;
+}
+/*Sean*/
+#div3{
+
+  width: 33%;
+  margin: 0 auto;
+  height:500px;
+}
+/*Sean*/
+.stats{
+
+  border: 1px solid black;
+
+
+}
+/*Sean*/
+.MHApic{
+
+  height:235 px;
+  width:590 px;
+<<<<<<< HEAD
+  justify-content: center; 
+  align-items: center;
+  align-self: center;
+}
+
+/*Image gallery*/
+/*Sean*/
+.image-container{
+  width:2400px;
+  height: 600px;
+  position:relative;   /*Clever Techie*/
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s; /*transition in all relative browsers*/
+  -o-transition: left 2s;
+}
+/*Sean*/
+
+/*Sean*/
+.button-container{
+
+  top: -20px;
+  position:relative;
+}
+/*Sean*/
+
+
+/*Sean*/
+.imgS{
+
+  height:400px;
+  width: 600px;
+}
+
+/*Sean*/
+.Home{
+
+  margin:0;
+  padding:0;
+  background-image: bac
+}
+
+.container1{
+  
+  color:black;
+  height:100%;
+  width:1000px;
+  background-image: url("Images/Graphic_Background.jpg");
+  background-repeat:no-repeat;
+  background-position: 50 px;
+  position:relative;
+  
+}
+
+.color-overlay{
+  width:100%;
+  height:100%;
+  opacity: .5;
+  position:absolute;
+
+}
+/*Sean*/
+.villians{
+
+  height:auto;
+  width:auto;
+}
+/*Styling for the images*/
+/*Sean*/
+.main{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+  column-gap: 40px;
+  row-gap: 40px;
+}
+/*Sean*/
+.gallery{
+  width:300px;
+  height:300px;
+  object-fit: cover;
+  object-position: center; /*CSS for the image gallery to be formated in the center with having equal size*/
+
+=======
+>>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 }
