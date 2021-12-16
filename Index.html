@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <script src="Script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><!--Links to google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&family=Oswald:wght@200&family=Ruda:wght@400;500&family=Shippori+Antique&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-    
-    <title>Otaku</title>
+    <script src="https://kit.fontawesome.com/ad4791524b.js" crossorigin="anonymous"></script>
+
+    <title>Otaku | Home</title>
 </head>
- 
+
 <body class="Home">
-    <div class="container1">
+  <div class="container1">
     <img class="logo" src="Images/otaku-logo-resize.png" alt="image of site logo">
     <div class="color-overlay"></div>
-    </div>
+  </div>
+
     <h1 class="otaku">Otaku</h1>
      <nav>
-      <button class="hamburger" id="hamburger">
-        <i class= "fas fa-bars"></i>
-      </button>
+
 
         <ul class="nav-ul" id="nav-ul">
             <li><a href ="Index.html">Home</a></li>
@@ -36,9 +35,14 @@
             <li><a href="About.html">About</a></li>
             <li><a href="Contact.html">Contact Us</a></li>
             <li><a href="Game.html">Mini-Game</a></li>
+
         </ul>
-   
-    <br>   
+        <button class="hamburger" id="hamburger">
+         <i class= "fas fa-bars"></i>
+        </button>
+          <script src="Script.js"></script>
+      </nav>
+    <br>
 </div>
     <!--Sean-->
     <!--Section of information about the site-->
@@ -67,7 +71,7 @@
         <div class="main"></div>
             <img onclick="showTextOne()" class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
             <img onclick="showTextTwo()" id="image" class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
-            <img onclick="showTextThree()" id="image" class="gallery" src="Images/Hakusho.jpg" alt="Image of Hakusho">                                                                         
+            <img onclick="showTextThree()" id="image" class="gallery" src="Images/Hakusho.jpg" alt="Image of Hakusho">
             <img onclick="showTextFour()" id="image" class="gallery" src="Images/speedracer.jpg" alt="Image of the Speedracer">
             <img onclick="showTextFive()" id ="image" class="gallery" src="Images/Gundam.jpg" alt="Image of a Gundam">
             <img onclick="showTextSix()" id="image" class="gallery" src="Images/Neon_Evangelion.jpg" alt="Image of Evangelion">
@@ -79,7 +83,7 @@
     </div>
     <!--Sean-->
     <!--Input forms for new members to sign up-->
-    
+
     <div class="form-container">
         <div class="head">
             <h2 class="intro">Sign Up!</h2>
@@ -93,26 +97,24 @@
                     <input type="text" name="email" id="email">
                 </div>
                 <div class="form-control">  <!--I-->
-                    <label>Age</label> 
+                    <label>Age</label>
                     <input type="text" id="age" name="age"><br>
                     <button onclick="confirm()">Confirm</button>
                 </div>
                 <div class="form-control">
                     <label>Password</label>
-                    <input type="text" name="password" id="psword">
+                    <input type="password" name="password" id="psword">
                 </div>
                 <div class="form-control">
                     <label>Password check</label>
-                    <input type="text" name="psword1" id="psword1">
+                    <input type="password" name="psword1" id="psword1">
                 </div>
                 <button>Submit!</button>
         </form>
     </div>
-        
-        
 
-    
-  
+
+
 <script>
     var email= document.getElementById("email");
     var name = document.getElementById("uname");
@@ -132,7 +134,7 @@
             errorElement.innerText = messages.join(',');//prevents user from moving on if nothhas been submmitted in the forms
 
         }
-        
+
         if(password.value.length >=10){
             window.alert("This password is too long"); //If user enters more than 10 characters this message will pop up on a new page;
         }
@@ -160,11 +162,11 @@
         else{
 
         }
-        
+
     })
     function confirm(){
 
-        var num1= Number(document.getElementById("age").value)//This is used to refer by back to id 
+        var num1= Number(document.getElementById("age").value)//This is used to refer by back to id
         if(num1<13){
             window.alert("You're not at the correct age,sincere apologies");//This window will pop up if the user is not the correct age
 
@@ -181,7 +183,7 @@
     }//it return to the webpage if none of these elements are achieved
 
     function showTextOne(){
-    
+
         window.alert("Astroboy(1963):One of the earliest modern animes to exist,that tells the story of robot built to fight against evil");
         //Window alerts show the text once image is clicked
     }
@@ -216,9 +218,8 @@
 
 </script>
 
-    
+
 </div>
-</div>   
+</div>
 </body>
 </html>
-

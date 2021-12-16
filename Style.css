@@ -28,7 +28,7 @@ body{
     text-align: center;
     padding: 14px 15px;
     text-decoration: none;
-    /*pres;ey*/
+    /*presley*/
     box-shadow:inset 0 0 0 0 yellow;
     transition: ease-out 1s;
     position: relative;
@@ -40,10 +40,9 @@ body{
     float:right;
     padding-left: 5%;
     font-size: medium;
-    
-
-
+}
 /*presley- adds a hover on nav bar that changes color, and also gives an animation when cursor is pointed in it*/
+
 .nav-ul li a:hover{
   box-shadow: inset 0 0 0 2px yellow;
   color:gray;
@@ -359,7 +358,16 @@ body{
   font-family: 'Shippori Antique',
   sans-serif;
 }
+/*presley*/
+.headers{
 
+}
+
+/*presley*/
+.subheads{
+  font-family: 'Titillium Web',
+  sans-serif;
+}
 /*Sean*/
 .MHA{
     padding:0;
@@ -435,6 +443,7 @@ table, th, td {
   border: 1px solid black;
 }
 
+/* source: https://www.youtube.com/watch?v=UAWhbMDBGW4&t=268s , link on how i coded the contact page. I changed up some measurments in which i felt were neccessary and the coloring to make it unique
 /*preley*/
 .contact-page{
   margin: 0;
@@ -557,7 +566,7 @@ table, th, td {
 
   height:235 px;
   width:590 px;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   align-self: center;
 }
@@ -567,13 +576,13 @@ table, th, td {
 .image-container{
   width:auto;
   height: auto; /*Image optimisation added*/
-  position:relative;   
+  position:relative;
   transition: left 2s;
   -webkit-transition: left 2s;
   -moz-transition: left 2s; /*transition in all relative browsers for chrome,firefox and opera*/
   -o-transition: left 2s;
   float:right;
-  
+
 }
 
 
@@ -589,7 +598,7 @@ table, th, td {
 }
 /*Sean*/
 .container1{
-  
+
   color:black;
   height:100%;
   width:100%;
@@ -605,11 +614,9 @@ table, th, td {
   height:100%;
   opacity: .5;
   position:absolute;
-
 }
 /*Sean*/
 .villians{
-
   height:auto;
   width:auto;
 }
@@ -635,7 +642,6 @@ table, th, td {
 }
 /*Sean*/
 .text1{
-
   display:none;
 }
 
@@ -664,7 +670,6 @@ table, th, td {
 }
 /*Sean*/
 .head{
-
   background-color: grey;
   border-bottom: 1px solid black;
   padding: 20px 40px;
@@ -672,16 +677,12 @@ table, th, td {
 /*Sean*/
 .form{
   padding:30px 40px;
-
 }
 /*Sean*/
 .form-control{
-
   margin-bottom:10px;
   padding-bottom: 20px;
   position:relative;
-
-
 }
 /*Sean*/
 .form-control input{
@@ -749,14 +750,13 @@ table, th, td {
   margin: auto;
   width:auto;
   height:auto;
-  
+
 }
 
 .largetext{
   float:right;
   font-size:60pt;
-  font-family: 'Comic Neue',
-  cursive;
+  font-family: 'Comic Neue';
   top:-2px;
 }
 .anime {
@@ -796,7 +796,7 @@ a{
 
   font-family: 'Titillium Web',
   sans-serif;
- 
+
 }
 
 .MHA{
@@ -831,4 +831,3 @@ a{
     overflow:hidden;
     box-sizing: border-box;
 }
-
