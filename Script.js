@@ -1,10 +1,6 @@
 //Sean
  function guessNum(){
 
-//Sean
- function guessNum(){
-
-
      var randNum = Math.floor(Math.random() * 20); //Uses randomisation,Uses number only from 1-10,it only returns integer values of this range
 
      //This produces an output of the random number-Sean
@@ -34,7 +30,6 @@
 }
 
 
-
 //Sean
  function guessNum(){
 
@@ -60,8 +55,7 @@
     }
 }
 
-//presley-JavaScript fr contact page
-=======
+
 //presley-JavaScript for contact page
 
 function validate(){
@@ -110,12 +104,23 @@ function validate(){
       document.getElementById("msgFeedback").style.visibility = "visible";
       document.getElementById("msgFeedback").style.color="red";
 
+
   }
     if(formData[2] .length == "" ){
       document.getElementById("msgFeedback").innerHTML = "This field is required"
       document.getElementById("msgFeedback").style.visibility = "visible";
       document.getElementById("msgFeedback").style.color="red";
 
+
+    if (status == "less") {
+        document.getElementById("textArea").innerHTML=text;
+        document.getElementById("toggleButton").innerText = "See Less";
+        status = "more";
+    } else if (status == "more") {
+        document.getElementById("textArea").innerHTML = "";
+        document.getElementById("toggleButton").innerText = "See More";
+        status = "less"
+    }
 }
 
 //presley: source - https://www.youtube.com/watch?v=ydZc17rlR5E&t=20s -Florin pop
@@ -161,7 +166,7 @@ function changeBackgroundColor2(){
         document.getElementById("sun").style.visibility = "hidden";
         document.getElementById("moon").style.visibility = "visible";
   }
-=======
+
 
 
 
