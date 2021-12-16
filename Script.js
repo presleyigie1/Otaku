@@ -1,3 +1,4 @@
+
 //Sean
  function guessNum(){
 
@@ -30,7 +31,7 @@
     }
 }
 
-=======
+
 
 //Sean
  function guessNum(){
@@ -58,6 +59,9 @@
 }
 
 //presley-JavaScript fr contact page
+=======
+//presley-JavaScript for contact page
+
 function validate(){
   var formData = []; // array that holds data from the form fields
   // arrays count from 0 up
@@ -88,7 +92,9 @@ function validate(){
       document.getElementById("errorText").style.color="red";
     }
       else if(formData[1] .length == "" ){
+        //displays "this field s required"
         document.getElementById("errorText").innerHTML = "This field is required";
+        //makes the errorText Visible
         document.getElementById("errorText").style.visibility = "visible";
         document.getElementById("errorText").style.color="red";
       }
@@ -107,11 +113,48 @@ function validate(){
 }
 
 //presley: source - https://www.youtube.com/watch?v=ydZc17rlR5E&t=20s -Florin pop
-  const hamburger = document.getElementById('hamburger');
-  const nav = document.getElementById('nav-ul');
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav-ul');
 
   hamburger.addEventListener('click', () => {
     nav.classList.toggle('show');
   });
 
+
+=======
+//when you click the hamburger menu, event listener toggles the nav-ul to appear
+hamburger.addEventListener('click', () => {
+nav.classList.toggle('show');
+});
+
+/*this was the first dom manipulation i was going to use but i couldnt find a way to make the color change to something else, then i decided to take the light switch/ dark and light concept and implemented it into the JS code below that chnages the background cover and makes the button hidden and visible
+
+//DOM MANIPULATION source: https://www.youtube.com/watch?v=jIyBx0Yh4rI
+document.getElementById("appearance").onclick = changeBackgroundColorToGreen;
+document.getElementById("appearance").onclick = changeBackgroundColorToYellow;
+
+function changeBackgroundColorToGreen(){
+document.querySelector("body").style.background = "green";
+} */
+
+
+
+function changeBackgroundColor(){
+  //if the background color is not green and you click the moon icon, the background will change to green and hide the moon icon and make the sun icon visible
+  if(body.style.background !== "green"){
+    body.style.background = "green";
+      document.getElementById("moon").style.visibility = "hidden";
+      document.getElementById("sun").style.visibility = "visible";
+      document.getElementById
+  }
+}
+
+function changeBackgroundColor2(){
+  //if the background color is not yellow and you click the sun icon then the background color will change to yellow and make the sun icon hidden and the moon icon visible - it acts like a light switch.
+  if(body.style.background !== "yellow"){
+    body.style.background = "yellow";
+        document.getElementById("sun").style.visibility = "hidden";
+        document.getElementById("moon").style.visibility = "visible";
+  }
+}
 
