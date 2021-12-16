@@ -3,9 +3,6 @@ body{
     font-size: 13pt;
     /*presley-under*/
     overflow-x:hidden
-
-
-
 }
 
 /*Sean*/
@@ -164,9 +161,7 @@ body{
     margin-left: -50%;
 }
 /*This is used for radio buttons*/
-h1{
 
-}
 /*Sean*/
 .para2,.para4{
     font-family: 'Noto Sans JP',
@@ -183,17 +178,6 @@ h1{
     sans-serif;
 
 }
-
-a{
-
-}
-
-
-a{
-
-}
-
-
 
 @media screen and (max-width: 900px) {
     /*sean*/
@@ -256,8 +240,6 @@ a{
     display: inline-block;
   }
 
-
-
 }
 
 /* brekpoint for mobile phones */
@@ -274,22 +256,22 @@ a{
     align-items: center;
   }
   .kirito_and_co{
-    max-width:150px;
-    max-height: 200px;
+    max-width:100px;
+    max-height: 150px;
   }
   .sao_cover{
-    max-width:115px;
+    max-width:120px;
     max-height:160px;
     position:relative;
-    right: -250px;
+    right: -140px;
     bottom: -80px;
 
   }
   .kirito_alfheim{
     position:relative;
-    bottom: -400px;
-    max-width:170px;
-    max-height:100px;
+    bottom: -430px;
+    max-width:120px;
+    max-height:80px;
   }
   .sao_list{
     clear:left;

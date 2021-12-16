@@ -74,17 +74,16 @@ function changeBackgroundColor(){
   //if the background color is not green and you click the moon icon, the background will change to green and hide the moon icon and make the sun icon visible
   if(body.style.background !== "green"){
     body.style.background = "green";
-      document.getElementById("moon").style.visibility = "hidden";
-      document.getElementById("sun").style.visibility = "visible";
-      document.getElementById
+    document.getElementById("moon").style.visibility = "hidden";
+    document.getElementById("sun").style.visibility = "visible";
   }
 }
 
 function changeBackgroundColor2(){
   //if the background color is not yellow and you click the sun icon then the background color will change to yellow and make the sun icon hidden and the moon icon visible - it acts like a light switch.
   if(body.style.background !== "yellow"){
-    body.style.background = "yellow";
-        document.getElementById("sun").style.visibility = "hidden";
-        document.getElementById("moon").style.visibility = "visible";
+      body.style.background = "yellow";
+      document.getElementById("sun").style.visibility = "hidden";
+      document.getElementById("moon").style.visibility = "visible";
   }
 }
