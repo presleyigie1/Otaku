@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!--Author:Sean-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&family=Oswald:wght@200&family=Shippori+Antique&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
     <!--Link to google fonts-->
     <link rel="stylesheet" href="Style.css">
     <!--Link to css-->
@@ -17,84 +22,115 @@
 <body class="MHA">
     <img src="Images/otaku-logo-resize.png" alt="picture of logo for the site">
     <h1 class="intro">My Hero Academia</h1>
-   
-    <nav>
-      <button class="hamburger" id="hamburger">
-        <i class= "fas fa-bars"></i>
-      </button>
-        <ul class="nav-ul" id="nav-ul">
-            <li><a href ="Index.html">Home</a></li>
-            <li><a href="MHA.html">My Hero Academia</a></li>
-            <li><a href="Naruto.html">Naruto</a></li>
-            <li><a href="SAO.html">Sword Art Online</a></li>
-            <li><a href="TopPicks.html">Recommendations</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
-            <li><a href="Game.html">Mini-Game</a></li>
-        </ul>
-        <script src="Script.js"></script>
-    </nav>
-
-    <h3 id="title" onclick="this.innerHTML='Get to know it!'"class="intro">Lore/Story</h3>
-    <p>Try to Click this header!</p>
-        <h4>Try click the text below!</h4>
-        <p onclick="clickToChange()" id="para2" class="para3">My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".Those who dont possese quirks are known as "quirkless" indviduals are discriminated against and looked down upon in society.Children are born with quirks and can choose to become pro heroes.My Hero Academia also known as "MHA" provides an exciting turn to supehero series by providing a more relatable exprience to how a world would be like with super powered humans.Allowing us to relate with characters within the show. </p>
-        
     
-        <p class="para3">A manga/anime series created by Japanese manga artist Kohei Horokoshi. My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".Children born with Quirks have the ability to train as hero through academic tutoring the most prestigious hero academy called "U.A Academy".</p>   
+    <ul id="h_bar"><!--This is the horizonal navigation bar-->
+        <li><a href="Index.html">Home</a></li><!--This leads to this webpage-->
+        <li><a href="MHA.html">My Hero Academia</a></li><!--This leads to the contact page-->
+        <li><a href="Naruto.html">Naruto</a></li>
+        <li><a href="TopPicks.html">Recommendations</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="Game.html">Mini-Game</a></li>
+    </ul>
+
+    <h3 id="title" onclick="this.innerHTML='Get to know it!'" class="intro">Lore/Story</h3>
+    <h3 class="intro">Try to Click this header!</p>
+        <h4 class="intro">Try hover text below!</h4>
+        <p onclick="clickToHide()" onclick="clickToChange()" id="para2" class="para3">My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".
+            Those who dont possese quirks are known as "quirkless" indviduals are discriminated against and looked down upon in society.Children are born with quirks and can choose to become pro heroes.My Hero Academia also known as "MHA" provides an exciting turn to supehero series by providing a more relatable exprience to how a world would be like with super powered humans.
+            Allowing us to relate with characters within the show. </p>
+        
+        
+        <p onclick="clickToChange()" id="para21" class="para3">A manga/anime series created by Japanese manga artist Kohei Horokoshi. My Hero Academia is a superhero themed anime that revolves on a society of civilians who possess super human abilities called "Quirks".Children born with Quirks have the ability to train as hero through academic tutoring the most prestigious hero academy called "U.A Academy".</p>   
    
-    <h3 class="head2">Characters</h3>
+    <h3 onclick="clickToHide()" onclick ="clickToChange()" id="para22" class="head2">Characters</h3>
+            <button onclick="showTxtOne()">Deku Quote</button>
+            <button onclick="showTxtTwo()">All Might Quote</button>
+            <button onclick="showTxtThree()">Bakugo Quote</button>
+            <button onclick="showTxtFour()">Todoroki Quote</button>
+            <button onclick="showTxtFive()">Villians Quote</button> 
 
     <h4 class="intro">Izuku Midoriya AKA Deku</h6>
-        <div class="container"> <!--Div container reference-->
+          <button onclick="showChar()">Click here to hide Deku</button>
+        <div class="image-container"> <!--Div container reference-->
             <div class="picture">
-                <img class="MHApic" src="Images/Deku4.jpg" alt="Picture of Deku">
+                <img class="MHApic" src="Images/Deku4.jpg" alt="Picture of Deku" id="MHApic">
             </div>
-
-                <p class="para1">Is a student that did not possess the ability to use quirk in the beginning of the story,but after running into the number 1 pro hero All Might who see a huge amount of potential in him to become a hero,All Might has a quirk that is tranferable,which allows him to pass on his quirk to Izuku.We follow the series from his point of view by aiming to be the best hero in the world.</p>
-        </div>
-         <button onclick="showTxtOne()">Character Quote</button>
-       
+            <div class="largetext">
+                Deku <!--Large text for the characters-->
+            </div>
+            <div class="sidetext"><!--Added CSS to paragraghs-->
+                <p class="para4">Is a student that did not possess the ability to use quirk in the beginning of the story,but after running into the number 1 pro hero All Might who see a huge amount of potential in him to become a hero,All Might has a quirk that is tranferable,
+                    which allows him to pass on his quirk to Izuku.We follow the series from his point of view by aiming to be the best hero in the world.</p>
+            </div>
+         
+         <br>
+         </div>
+       <br>
     <h4 class="intro">Toshinori Yagi AKA All Might</h3>
-        <div class="container">
+        <div class="image-container">
             <div class="picture">
-                <img class="MHApic" src="Images/All_Might.png" alt="Picture of All Might">
+                <img class="MHApic" src="Images/All_Might.png" alt="Picture of All Might" id="MHApic1">
+            </div>
+            <div class="largetext">
+                All Might
+            </div>
+            <div class="sidetext">
+                <p class="para4">Toshi also known as All Might is known as the number one pro hero in the world,he posseses the quirk One For All which is the the only transimasble quirk within the MHA universe.It allows its user to willingly pass on the quirk to a successor and has been passed down for generations.All Might is a noble hero who sees potential in Midoriya and sees him as a worthy siccessor to inherit One For All,as he acts as a mentor towards him within the series.</p>
+            </div>
+        
+        <br>
         </div>
-            <p class="para1">Toshi also known as All Might is known as the number one pro hero in the world,he posseses the quirk One For All which is the the only transimasble quirk within the MHA universe.It allows its user to willingly pass on the quirk to a successor and has been passed down for generations.All Might is a noble hero who sees potential in Midoriya and sees him as a worthy siccessor to inherit One For All,as he acts as a mentor towards him within the series.</p>
-        </div>
-        <button onclick="showTxtTwo()">Character Quote</button>
-     
-    <h4 class="intro">Katsuki Bakugo AKA Kachan</h3>
-        <div class="container">
+        <br>
+
+    <h4 class="intro">Katsuki Bakugo AKA Kachan</h4>
+        <div class="image-container">
             <div class="picture">
-                <img class="MHApic" src="Images/katsuki_s4.png" alt="picture of Katsuki">
+                <img class="MHApic" src="Images/katsuki_s4.png" alt="picture of Katsuki" id="MHApic">
+            </div>
+            <div class="largetext">
+                Bakugo
+            </div>
+            <div class="sidetext">
+                <p class="para4">Is a rival of Midoriya and is his childhood bully.Bakugo possesses the quirk called "Explosion" allow him to emit a burst of explosive energy,Bakugo acts acts as a driving force for Deku to work harder.Despite being an arrogant and brash character Bakugo does have a sense of good within him as he is also training to be a professional hero at U.A High school.</p>
+            </div>
+        <br>
         </div>
-            <p class="para1">Is a rival of Midoriya and is his childhood bully.Bakugo possesses the quirk called "Explosion" allow him to emit a burst of explosive energy,Bakugo acts acts as a driving force for Deku to work harder.Despite being an arrogant and brash character Bakugo does have a sense of good within him,as he is also training to be a professional hero at U.A High school.</p>
-        </div>
-        <button onclick="showTxtThree()">Character Quote</button>
+        <br>
 
     <h4 class="intro">Shoto Todoroki</h4>
-        <div class="container">
+        <div class="image-container">
             <div class="picture">
-                <img class="MHApic" src="Images/Shoto.png" alt="picture of Shoto Todoroki">
-        </div>
-            <p class="para1">Shoto acts as a secondary rival to Izuku,he possesses the quirk called "Half-hot Half-cold" which allows him to use ice and fire powers which he inherited from his parents.He is a talented individual who is quite stoic in nature due to the abuse he endured as a child.He is the son of the 2nd pro hero in the world "Endeavor" who raised him to be a strong hero in order to surpass All Might one day.</p>
-    </div>
-     <button onclick="showTxtFour()">Character Quote</button>
-    <div class="container">
-
-    <h4 class="intro">The League Of Villains</h4>
-        <div class="container">
-            <div class="picture">
-                <img class="villians" src="Images/LeagueVillains.png" alt="Picture of the villians">
+                <img class="MHApic" src="Images/Shoto.png" alt="picture of Shoto Todoroki" id="MHApic">
             </div>
-            <p class="para1">Are the main antagonists of the series,and are lead by the villian All For One.Who has the ability to take and give other people quirks.He uses this as an advantage to set up The League of Villains,who threaten to destroy the hero society.The organisation is currently lead by All for One adopted son Tomura Shigaraki,who has the dangerous ability to decay anything he touches by will.With multiple members who pose a danger to the world. </p>
-        </div>
-         <button onclick="showTxtFive()">Character Quote</button>
-
+            <div class="largetext">
+                Shoto
+            </div>
+            <div class="sidetext">
+                <p class="para4">Shoto acts as a secondary rival to Izuku,he possesses the quirk called "Half-hot Half-cold" which allows him to use ice and fire powers which he inherited from his parents.He is a talented individual who is quite stoic in nature due to the abuse he endured as a child.He is the son of the 2nd pro hero in the world "Endeavor" who raised him to be a strong hero in order to surpass All Might one day.</p>
+            </div>
+        
         <br>
-        <!--An  image gallery of the anime itself-->
+        </div>
+        <br>
+     
+    <h4 class="intro">The League Of Villains</h4>
+        <div class="image-container">
+            <div class="picture">
+                <img class="MHApic" src="Images/LeagueVillains.png" alt="Picture of the villians" id="MHApic">
+            </div>
+            <div class="largetext">
+                The Villians
+            </div>
+            <div class="sidetext">
+            <p class="para4">Are the main antagonists of the series,and are lead by the villian All For One.Who has the ability to take and give other people quirks.He uses this as an advantage to set up The League of Villains,who threaten to destroy the hero society.The organisation is currently lead by All for One adopted son Tomura Shigaraki,who has the dangerous ability to decay anything he touches by will.With multiple members who pose a danger to the world. </p>
+            </div>
+      
+        <br>
+        </div>
+        <br>
     
+
     
     <script> 
 
@@ -116,23 +152,45 @@
 
     function showTxtFour(){
 
-        window.alert("Never forget who you want to become")
+        window.alert("Never forget who you want to become");
     }
 
     function showTxtFive(){
 
-        window.alert("Heroes are forgettable.They try to save the world...But villians are the ones who change it-Dabi")
+        window.alert("Heroes are forgettable.They try to save the world...But villians are the ones who change it-Dabi");
     }
 
         
+    var text = document.getElementById("para2");
+    var textTwo= document.getElementById("para21");
+    var textThree= document.getElementById("para22");
 
+    function clickToChange(){
+
+        text.style.color="red"; //changes the text to red if it is clicked 
+        textTwo.style.color="blue";
+        textThree.style.color="purple";
+
+    }
+    //For showing and hiding the images
+    function showChar(){
+            var showMe = document.getElementById("MHApic");
     
+    if(showMe.style.display === 'none'){//equality used to change the image from hidden by using CSS DOM
+
+        showMe.style.display= 'inline';//Used to hide and unhide images 
+    }
+
+    else{
+
+        showMe.style.display= 'none';//
+    }
+
+    }
         
     
     </script>
 
     <footer></footer>
 </body>
-
 </html>
-
