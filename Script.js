@@ -33,7 +33,6 @@
     }
 }
 
-=======
 
 
 //Sean
@@ -128,7 +127,6 @@ const nav = document.getElementById('nav-ul');
   });
 
 
-=======
 //when you click the hamburger menu, event listener toggles the nav-ul to appear
 hamburger.addEventListener('click', () => {
 nav.classList.toggle('show');
@@ -163,4 +161,59 @@ function changeBackgroundColor2(){
         document.getElementById("sun").style.visibility = "hidden";
         document.getElementById("moon").style.visibility = "visible";
   }
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Solomon- Naruto.page//
+
+var situation = "less";
+var situation2 = "more";
+function toggleText()
+{
+    var text="<li>The ranks in the naruto universe go from genin,chuunin,jounin and Kage.</li> <li>Each rank has an exam.</li> <li>To rank up one must complete the exam. The exams can be very cruel with some people even losing there life.</li></li><li>The rank of kage can only be obtained by doing numerous S-rank missions and get the approvely of the previous kage to set into office.</li><li>Each rank a ranked assigned misson they are allowed to do.</li><li>Genin can do D ranked missions.<li>Chuunin can do D-C ranked missions.</li><li>Jounin can do D-B and some can even do A rank missons.</li><li>A-rank and S-rank missions are normally carried by the Anbu or talented individuals.</li><li> Anbu are people who are part of a secret organisation in the village.</li><li> Each village has there own anbu for top secert missions.</li></ul>";
+
+    if (situation == "less") {
+        document.getElementById("textArea").innerHTML=text;
+        document.getElementById("toggleButton").innerText = "Expand ";
+        situation2 = "more";
+        document.getElementById("toggleButton").style.visibility = "hidden";
+        document.getElementById("toggleButtonCollapse").style.visibility = "visible;"
+
+    }
+}
+
+
+
+var situation = "less";
+function toggleText2()
+{
+    var text="<li>The ranks in the naruto universe go from genin,chuunin,jounin and Kage.</li> <li>Each rank has an exam.</li> <li>To rank up one must complete the exam. The exams can be very cruel with some people even losing there life.</li></li><li>The rank of kage can only be obtained by doing numerous S-rank missions and get the approvely of the previous kage to set into office.</li><li>Each rank a ranked assigned misson they are allowed to do.</li> genin can do D-C</li><li>Genin can do D ranked missions.<li>Chuunin can do D-C ranked missions.</li><li>Jounin can do D-B and some can even do A rank missons.</li><li>A-rank and S-rank missions are normally carried by the Anbu or talented individuals.</li><li> Anbu are people who are part of a secret organisation in the village.</li><li> Each village has there own anbu for top secert missions.</li></ul>";
+
+   if(document.getElementById("toggleButton") == "visible"){
+     document.getElementByid("textarea").innterHTML = text;
+      document.getElementById("textArea").innetext = "Collapse";
+      situation = "less";
+      document.getElementByiD("toggleButtonCollapse").style.visibility = "visible";
+      document.getElementByiD("toggleButton").style.visibility = "hidden";
+    }
 }

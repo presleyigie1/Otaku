@@ -1120,12 +1120,13 @@ h1{
 /*solomon*/
 .characters{
           position: relative;
-          right:-600px;
+          float: right;
+          top:-210px;
 }
 /*solomon*/
 table{
     position: relative;
-    top:-225px;
+    top:-22px;
   }
   /*solomon*/
   .narutopara1{
@@ -1141,6 +1142,15 @@ table{
 table, th, td {
   border: 1px solid black;
 }
+
+/*solomon*/
+.show-text{display:hidden;
+}
+
+.show-text{display:visable;
+}
+
+
 
 /*preley*/
 .contact-page{
