@@ -3,9 +3,6 @@ body{
     font-size: 13pt;
     /*presley-under*/
     overflow-x:hidden
-
-
-
 }
 
 /*Sean*/
@@ -220,7 +217,7 @@ a{
 }
 /*main */
 /* breakpoint for ipads/tablets */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   /*presley*/
   .contact{
     max-width:75%;
@@ -238,11 +235,13 @@ a{
   }
   .sao_cover{
     max-width:150px;
-    max-height:200px;
+    max-height:250px;
   }
   .kirito_alfheim{
-    max-width:130px;
-    max-height:100px;
+    max-width:300px;
+    max-height:170px;
+    position:relative;
+    left:-90px;
   }
   .hamburger{
     display:block;
@@ -286,9 +285,9 @@ a{
   }
   .kirito_alfheim{
     position:relative;
-    bottom: -400px;
-    max-width:170px;
-    max-height:100px;
+    bottom: -410px;
+    max-width:120px;
+    max-height:80px;
   }
   .sao_list{
     clear:left;
@@ -329,7 +328,7 @@ a{
   .kirito_alfheim{
     position:relative;
     bottom: -390px;
-    max-width:170px;
+    max-width:140px;
     max-height:100px;
   }
   .sao_list{
@@ -376,9 +375,10 @@ a{
   }
   .kirito_alfheim{
     position:relative;
+    left:7px;
     bottom: -430px;
-    max-width:140px;
-    max-height:80px;
+    max-width:100px;
+    max-height:70px;
   }
   .sao_list{
     clear:left;
