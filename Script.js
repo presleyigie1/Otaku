@@ -9,7 +9,7 @@
     document.write(randNum+" " +"This is the number generated!");
 
     var userInput= prompt("Enter any number between 1-20");
-    //User inputs number ("Enter any number between 1-30+randNum")//Sean
+    //User inputs number ("Enter any number between 1-20+randNum")//Sean
 
     if(userInput === randNum){                  //Sean
         window.alert("Correct! you are right!");// this message will pop up if you guessed the number correctly
