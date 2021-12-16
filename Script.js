@@ -66,14 +66,15 @@ function validate(){
   formData[2] = document.getElementById("msgData").value;
 
   if(formData[0] .length == ""){
-    document.getElementById("nameFeedback").innerHTML = "This field is required"
+    document.getElementById("nameFeedback").innerHTML = "This field is required";
     document.getElementById("nameFeedback").style.visibility = "visible";
     document.getElementById("nameFeedback").style.color="red";
   }
     else if(formData[0] .length < 2){
-      document.getElementById("nameFeedback").innerHTML = "Name Is Not Valid"
+      document.getElementById("nameFeedback").innerHTML = "Name Is Not Valid";
       document.getElementById("nameFeedback").style.visibility = "visible";
   }
+
 
   var symbol = formData[1].indexOf("@");
 
@@ -98,26 +99,16 @@ function validate(){
           document.getElementById("emailFeedback").innerHTML = input.toUpperCase();
   }
     if(formData[2] .length == "" ){
-      document.getElementById("msgFeedback").innerHTML = "This field is required"
+      document.getElementById("msgFeedback").innerHTML = "This field is required";
       document.getElementById("msgFeedback").style.visibility = "visible";
       document.getElementById("msgFeedback").style.color="red";
 
 
   }
     if(formData[2] .length == "" ){
-      document.getElementById("msgFeedback").innerHTML = "This field is required"
+      document.getElementById("msgFeedback").innerHTML = "This field is required";
       document.getElementById("msgFeedback").style.visibility = "visible";
       document.getElementById("msgFeedback").style.color="red";
-
-
-    if (status == "less") {
-        document.getElementById("textArea").innerHTML=text;
-        document.getElementById("toggleButton").innerText = "See Less";
-        status = "more";
-    } else if (status == "more") {
-        document.getElementById("textArea").innerHTML = "";
-        document.getElementById("toggleButton").innerText = "See More";
-        status = "less"
     }
 }
 
@@ -131,9 +122,7 @@ function validate(){
 
 
 //when you click the hamburger menu, event listener toggles the nav-ul to appear
-hamburger.addEventListener('click', () => {
-nav.classList.toggle('show');
-});
+
 
 /*this was the first dom manipulation i was going to use but i couldnt find a way to make the color change to something else, then i decided to take the light switch/ dark and light concept and implemented it into the JS code below that chnages the background cover and makes the button hidden and visible
 
@@ -159,63 +148,8 @@ function changeBackgroundColor(){
 function changeBackgroundColor2(){
   //if the background color is not yellow and you click the sun icon then the background color will change to yellow and make the sun icon hidden and the moon icon visible - it acts like a light switch.
   if(body.style.background !== "yellow"){
-      body.style.background = "yellow";
-      document.getElementById("sun").style.visibility = "hidden";
-      document.getElementById("moon").style.visibility = "visible";
+    body.style.background = "yellow";
+    document.getElementById("sun").style.visibility = "hidden";
+    document.getElementById("moon").style.visibility = "visible";
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // Solomon- Naruto.page//
-
-var situation = "less";
-var situation2 = "more";
-function toggleText()
-{
-    var text="<li>The ranks in the naruto universe go from genin,chuunin,jounin and Kage.</li> <li>Each rank has an exam.</li> <li>To rank up one must complete the exam. The exams can be very cruel with some people even losing there life.</li></li><li>The rank of kage can only be obtained by doing numerous S-rank missions and get the approvely of the previous kage to set into office.</li><li>Each rank a ranked assigned misson they are allowed to do.</li><li>Genin can do D ranked missions.<li>Chuunin can do D-C ranked missions.</li><li>Jounin can do D-B and some can even do A rank missons.</li><li>A-rank and S-rank missions are normally carried by the Anbu or talented individuals.</li><li> Anbu are people who are part of a secret organisation in the village.</li><li> Each village has there own anbu for top secert missions.</li></ul>";
-
-    if (situation == "less") {
-        document.getElementById("textArea").innerHTML=text;
-        document.getElementById("toggleButton").innerText = "Expand ";
-        situation2 = "more";
-        document.getElementById("toggleButton").style.visibility = "hidden";
-        document.getElementById("toggleButtonCollapse").style.visibility = "visible;"
-
-    }
-}
-
-
-
-var situation = "less";
-function toggleText2()
-{
-    var text="<li>The ranks in the naruto universe go from genin,chuunin,jounin and Kage.</li> <li>Each rank has an exam.</li> <li>To rank up one must complete the exam. The exams can be very cruel with some people even losing there life.</li></li><li>The rank of kage can only be obtained by doing numerous S-rank missions and get the approvely of the previous kage to set into office.</li><li>Each rank a ranked assigned misson they are allowed to do.</li> genin can do D-C</li><li>Genin can do D ranked missions.<li>Chuunin can do D-C ranked missions.</li><li>Jounin can do D-B and some can even do A rank missons.</li><li>A-rank and S-rank missions are normally carried by the Anbu or talented individuals.</li><li> Anbu are people who are part of a secret organisation in the village.</li><li> Each village has there own anbu for top secert missions.</li></ul>";
-
-   if(document.getElementById("toggleButton") == "visible"){
-     document.getElementByid("textarea").innterHTML = text;
-      document.getElementById("textArea").innetext = "Collapse";
-      situation = "less";
-      document.getElementByiD("toggleButtonCollapse").style.visibility = "visible";
-      document.getElementByiD("toggleButton").style.visibility = "hidden";
-    }
 }
