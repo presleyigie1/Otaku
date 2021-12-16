@@ -2,16 +2,16 @@
 //Sean
  function guessNum(){
 
-    
+
      var randNum = Math.floor(Math.random() * 20); //Uses randomisation,Uses number only from 1-10,it only returns integer values of this range
-    
+
      //This produces an output of the random number-Sean
     document.write(randNum+" " +"This is the number generated!");
 
     var userInput= prompt("Enter any number between 1-20");
     //User inputs number ("Enter any number between 1-30+randNum")//Sean
-    
-    if(userInput === randNum){                  //Sean 
+
+    if(userInput === randNum){                  //Sean
         window.alert("Correct! you are right!");// this message will pop up if you guessed the number correctly
 
     }else if(userInput > randNum){                          //Sean
@@ -136,8 +136,6 @@ function changeBackgroundColor(){
     body.style.background = "green";
       document.getElementById("moon").style.visibility = "hidden";
       document.getElementById("sun").style.visibility = "visible";
-      document.getElementById
-
   }
 }
 
@@ -149,4 +147,3 @@ function changeBackgroundColor2(){
         document.getElementById("moon").style.visibility = "visible";
   }
 }
-
