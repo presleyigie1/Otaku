@@ -65,14 +65,15 @@ function validate(){
   formData[2] = document.getElementById("msgData").value;
 
   if(formData[0] .length == ""){
-    document.getElementById("nameFeedback").innerHTML = "This field is required"
+    document.getElementById("nameFeedback").innerHTML = "This field is required";
     document.getElementById("nameFeedback").style.visibility = "visible";
     document.getElementById("nameFeedback").style.color="red";
   }
     else if(formData[0] .length < 2){
-      document.getElementById("nameFeedback").innerHTML = "Name Is Not Valid"
+      document.getElementById("nameFeedback").innerHTML = "Name Is Not Valid";
       document.getElementById("nameFeedback").style.visibility = "visible";
   }
+
 
   var symbol = formData[1].indexOf("@");
 
@@ -99,12 +100,17 @@ function validate(){
           document.getElementById("emailFeedback").innerHTML = input.toUpperCase();
   }
     if(formData[2] .length == "" ){
-      document.getElementById("msgFeedback").innerHTML = "This field is required"
+      document.getElementById("msgFeedback").innerHTML = "This field is required";
       document.getElementById("msgFeedback").style.visibility = "visible";
       document.getElementById("msgFeedback").style.color="red";
 
-  }
 
+  }
+    if(formData[2] .length == "" ){
+      document.getElementById("msgFeedback").innerHTML = "This field is required";
+      document.getElementById("msgFeedback").style.visibility = "visible";
+      document.getElementById("msgFeedback").style.color="red";
+    }
 }
 
 //presley: source - https://www.youtube.com/watch?v=ydZc17rlR5E&t=20s -Florin pop
@@ -121,6 +127,19 @@ nav.classList.toggle('show');
 INITIAL CODE BELOW :
 
 DOM MANIPULATION source: https://www.youtube.com/watch?v=jIyBx0Yh4rI
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+
+
+//when you click the hamburger menu, event listener toggles the nav-ul to appear
+
+
+/*this was the first dom manipulation i was going to use but i couldnt find a way to make the color change to something else, then i decided to take the light switch/ dark and light concept and implemented it into the JS code below that chnages the background cover and makes the button hidden and visible
+
+//DOM MANIPULATION source: https://www.youtube.com/watch?v=jIyBx0Yh4rI
+
 document.getElementById("appearance").onclick = changeBackgroundColorToGreen;
 document.getElementById("appearance").onclick = changeBackgroundColorToYellow;
 
@@ -128,7 +147,9 @@ function changeBackgroundColorToGreen(){
 document.querySelector("body").style.background = "green";
 } */
 
+
 // DOM MANIPULATION - USING A TBACKHGROUND COLOUR SWITCHER
+
 
 function changeBackgroundColor(){
   //if the background color is not green and you click the moon icon, the background will change to green and hide the moon icon and make the sun icon visible
@@ -137,6 +158,7 @@ function changeBackgroundColor(){
       document.getElementById("moon").style.visibility = "hidden";
       document.getElementById("sun").style.visibility = "visible";
       document.getElementById
+
   }
 }
 

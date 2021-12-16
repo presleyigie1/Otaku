@@ -5,24 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&family=Oswald:wght@200&family=Ruda:wght@400;500&family=Shippori+Antique&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/ad4791524b.js" crossorigin="anonymous"></script>
 
     <title>Otaku</title>
 </head>
-<body class="Home">
-    <div class="container1">
-    <img class="logo" src="Images/otaku-logo-resize.png" alt="image of site logo">
-    <div class="color-overlay"></div>
-    </div>
-    <h1 class="otaku">Otaku</h1>
 
-    <nav>
+  <nav>
       <button class="hamburger" id="hamburger">
         <i class= "fas fa-bars"></i>
       </button>
@@ -40,7 +34,14 @@
         <script src="Script.js"></script>
     </nav>
     <br>
+<body class="Home">
+    <div class="container1">
+    <img class="logo" src="Images/otaku-logo-resize.png" alt="image of site logo">
+    <div class="color-overlay"></div>
+    </div>
+    <h1 class="otaku">Otaku</h1>
 
+    <br>
 </div>
 
     <!--Section of information about the site-->
@@ -48,7 +49,7 @@
 
     <img class="shonen" src="Images/Shonen.jpg" alt="A picture of Shonen characters">
 
-    <div id="div1">
+    <div id="div1"> <!--classes added for the header and paragragh to target different -->
         <h2 class="intro">Welcome!</h2>
             <p class="para1">This is the official site for the anime/manga community,allowing multiple anime fans to join together and create a sense of community within it.We call this our anime community which will give a taster for fantastic anime and manga reccomendations such as Naruto,Sword Art Online and so on.</p>
     </div>
@@ -65,22 +66,18 @@
         <h3 class="intro">A Brief History of Anime!</h3>
             <p class="para1">Anime had made a start up within 1917 at its earliest in Japan,but mainly took a proper turn in the 1960's through the works of artists such Osamu Tezuka.Who was a pioneer of modern anime who was responsible for creating household names such as "Astro Boy","Black Jack" and "Princess Knight".The word "Anime" is a Japanese abbreviation of animation,where most anime series are adapted from Japanese styled comic books called "Manga". </p>
         <!--This is the HTML for the gallery of 6 images-->
-        <h3 class="intro">A image gallery of 20th Century Anime Series</h3>
+        <h3 class="intro">A image gallery of 20th and 21st Century Anime Series</h3>
         <div class="main"></div>
-            <img id="galtext" onclick="showText()" class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
-
-            <img onclick= "this.InnerHTML='Inuyasha (2000)'" id="image" class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
-            </a>
-            <a href="javascript: changeText(3);">
-            <img id="image" class="gallery" src="Images/Hakusho.jpg" alt="Image of Hakusho">
-            </a>                                                                                            <!--Each image of the gallery was given a class used to target the size since since all images where different sizes-->
-            <img id="image" class="gallery" src="Images/speedracer.jpg" alt="Image of the Speedracer">
-            <img id ="image" class="gallery" src="Images/Gundam.jpg" alt="Image of a Gundam">
-            <img id="image" class="gallery" src="Images/Neon_Evangelion.jpg" alt="Image of Evangelion">
-            </div>
+            <img onclick="showTextOne()" class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
+            <img onclick="showTextTwo()" id="image" class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
+            <img onclick="showTextThree()" id="image" class="gallery" src="Images/Hakusho.jpg" alt="Image of Hakusho">
+            <img onclick="showTextFour()" id="image" class="gallery" src="Images/speedracer.jpg" alt="Image of the Speedracer">
+            <img onclick="showTextFive()" id ="image" class="gallery" src="Images/Gundam.jpg" alt="Image of a Gundam">
+            <img onclick="showTextSix()" id="image" class="gallery" src="Images/Neon_Evangelion.jpg" alt="Image of Evangelion">
+            </div>       <!--Each image has an onclick which is used to show text once its been clicked-->
         </div>
 
-         <h3 class="intro">Click the buttons to show the Anime's name!</h3>
+        <h3 class="intro">Click the Images to show the Anime's name!</h3>
             <!--A table of Anime statistics -->
     <table class="stats">
         <tr>Anime watchers per year</tr>
@@ -94,53 +91,52 @@
     </table>
     </div>
 
-    <h3 class="intro">Sign Up!</h3>
     <!--Input forms for new members to sign up-->
-    <div class="container">
-        <form class="form" id="form">
-            <div class="firstname">
-                <label>First Name</label>
-                <input type="text" name="firstname" id="fname">
-                <br>
-            </div>
-            <div class="surname">
-                <label>Surname</label>
-                <input type="text" name="surname" id="sname">
-                <br>
-            </div>
-            <div class="age">
-            <label>Age</label>
-                <input id="age" name="age"><br>
-                <button onclick="confirm()">Confirm</button>
-            <div class="username">
-                <label>Username</label>
-                <input type="text" name="username" id="uname">
-                <br>
-            </div>
-            <div class="password">
-                <label>Password</label>
-                <input id="psword" type="text" name="password">
-                <br>
-            </div>
 
+    <div class="form-container">
+        <div class="head">
+            <h2 class="intro">Sign Up!</h2>
+        </div>
+            <form class="form" id="form">
+                <div class="form-control">
+                    <label>Username</label>
+                    <input type="text" name="uname" id="uname">
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="form-control">
+                    <label>Age</label>
+                    <input type="text" id="age" name="age"><br>
+                    <button onclick="confirm()">Confirm</button>
+                </div>
+                <div class="form-control">
+                    <label>Password</label>
+                    <input type="text" name="password" id="psword">
+                </div>
+                <div class="form-control">
+                    <label>Password check</label>
+                    <input type="text" name="psword1" id="psword1">
+                </div>
+                <button>Submit!</button>
         </form>
     </div>
-        <button onclick="submit()">Submit</button><!---This is the submit button-->
 
 
-    </form>
 
 
 
 <script>
+    var email= document.getElementById("email");
     var name = document.getElementById("uname");
     var password = document.getElementById("psword");
     var form = document.getElementById("form");
-    //Web develop simplified https://www.youtube.com/watch?v=In0nB0ABaUk
+    var password2 = document.getElementById("psword1")
+    //Referenced from Web develop simplified https://www.youtube.com/watch?v=In0nB0ABaUk
     form.addEventListener( 'submit', (e) => {
         e.preventDefault() //This allows nothing to be submitted is nothing is entered
         let messages= []
-        if(name.value === '' || name.value == null){
+        if(name.value === '' || name.value == null){ //If no input is made this message will show
             window.alert("Your username needs to be entered");
         }
 
@@ -162,31 +158,73 @@
             e.preventDefault()
             errorElement.innerText = messages.join(', ');
         }
+
+        if(email.value === " "){
+
+            window.alert("Your email cannot be empty"); //If user enters nothing in the email section
+        }
+        else if (password.value !== password2.value){
+            window.alert("Your passwords do not match");
+        }
+        else if(!ifEmail(email)){
+
+            window.alert("Email is not valid");
+        }
+        else{
+
+        }
+
     })
     function confirm(){
 
         var num1= Number(document.getElementById("age").value)//This is used to refer by back to id
         if(num1<13){
-            window.alert("Your not at the correct age,sincere apologies");//This window will pop up if the user is not the correct age
+            window.alert("You're not at the correct age,sincere apologies");//This window will pop up if the user is not the correct age
 
         }
         else{
-            window.alert("You at the age of consent for the website,welcome");//Will display tis outcome if the client is not of age
+            window.alert("You're at the age of consent for the website,welcome");//Will display tis outcome if the client is not of age
         }
 
     }
 
+    function ifEmail(email){
+        //refrence from StackOverflow https://stackoverflow.com/questions/46155/whats-the-best-way-to-validate-an-email-address-in-javascript
+        return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    }//it return to the webpage if none of these elements are achieved
 
-    function showText(){
+    function showTextOne(){
 
-
-        document.print("Astroboy") ;
-
-
-
+        window.alert("Astroboy(1963):One of the earliest modern animes to exist,that tells the story of robot built to fight against evil");
 
     }
 
+    function showTextTwo(){
+
+        window.alert("Inuyasha(2000):Follows the story of a fifthteen year old,who is transported to Sengoku period in Japan,where she encounter the half human half demon Inuyasha");
+    }
+
+    function showTextThree(){
+
+        window.alert("YuYu Hakusho(1992):Follows the story of Yusuke Urameshi,who was a teenage delinquent who is killed in car accident.He is revived and becomes an underworld investigatior to hunt down demons and appartions");
+    }
+
+    function showTextFour(){
+        window.alert("Speedracer(1967):Follows the story of a young man called Speed with the natural instincts for racing,this story follows Speed racing careers and discovering new thing about the world he is in");
+
+    }
+
+    function showTextFive(){
+
+        window.alert("Mobile Suit Gundam(1979):One of the earliest sci-fi takes in Anime,Mobile Suit Gundam is about a galactic war between Earth and the Zeon Federation,by using giant robots called Gundams ");
+
+    }
+
+    function showTextSix(){
+
+        window.alert("Neon Evangelion(1995):A Story premises on monsters decending down to earth to destroy it,a young man pilots a squad to take on this threat by using giant robots");
+
+    }
 
 
 </script>

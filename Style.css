@@ -282,7 +282,6 @@ a{
     position:relative;
     right: -250px;
     bottom: -100px;
-
   }
   .kirito_alfheim{
     position:relative;
@@ -300,6 +299,7 @@ a{
     left: -110px;
   }
 }
+
 
 /* brekpoint for smaller-mobile phones e.g iphone 8*/
 @media screen and (max-width:375px){
@@ -344,6 +344,7 @@ a{
   }
 }
 
+
 /* brekpoint for smaller-mobile phones e.g samsung galaxy fold*/
 @media screen and (max-width:280px){
   /*presley*/
@@ -370,6 +371,7 @@ a{
     bottom: -100px;
     clear:right;
 
+
   }
   .kirito_alfheim{
     position:relative;
@@ -389,6 +391,7 @@ a{
     top:-40px;
   }
 }
+
 
 .para1{
     float:right;
