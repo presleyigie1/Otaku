@@ -4,10 +4,8 @@ body{
     /*presley-under*/
     overflow-x:hidden
 }
-
 /*Sean*/
 .nav-ul{
-  display:flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -58,16 +56,6 @@ body{
 .hamburger:focus{
   /*removes outline on button */
   outline:none;
-}
-
-/*presley*/
-#moon,#sun{
-  background-color:gray;
-  color:white;
-  border-radius:10px;
-  font-size: 25px;
-  cursor:pointer;
-  float:right;
 }
 
 /*Sean*/
@@ -202,31 +190,25 @@ body{
     }
 
 }
-/*main */
-/* breakpoint for ipads/tablets */
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 500px) {
   /*presley*/
   .contact{
     max-width:75%;
   }
   .input{
     max-width:90%;
-    align-items: center;
-  }
-  .button{
-    align-items: center;
   }
   .kirito_and_co{
-    max-width:150px;
-    max-height: 200px;
+    max-width:40%;
+    max-height:50%;
   }
   .sao_cover{
-    max-width:150px;
-    max-height:200px;
+    max-width:35%;
   }
   .kirito_alfheim{
-    max-width:130px;
-    max-height:100px;
+    max-width:316px;
+    max-height:220px;
   }
   .hamburger{
     display:block;
@@ -234,10 +216,13 @@ body{
   .nav-ul{
     display:none;
     width:100%;
-    flex-direction:column;
   }
   .nav-ul.show{
     display: inline-block;
+  }
+  .contact-h2{
+    position:relative;
+    right: -20px;
   }
 
 }
@@ -284,93 +269,28 @@ body{
   }
 }
 
-/* brekpoint for smaller-mobile phones */
-@media screen and (max-width:375px){
+@media screen and(max-width:320px){
   /*presley*/
   .contact{
-    max-width:75%;
+    max-width:45%;
   }
   .input{
-    max-width:90%;
-    align-items: center;
-  }
-  .button{
-    align-items: center;
+    max-width:45%;
   }
   .kirito_and_co{
-    max-width:100px;
-    max-height: 150px;
+    max-width:25%;
+    max-height:25%;
   }
   .sao_cover{
-    max-width:100px;
-    max-height:160px;
-    position:relative;
-    right: -250px;
-    bottom: -100px;
-    clear:right;
+    max-width:35%;
+  }
+  .krito_alfheim{
+    max-width:20%;
+  }
 
-  }
-  .kirito_alfheim{
-    position:relative;
-    bottom: -410px;
-    max-width:170px;
-    max-height:100px;
-  }
-  .sao_list{
-    clear:left;
-    position:relative;
-    top: -70px;
-  }
-  #saoListMain{
-    position:relative;
-    right: -210px;
-    top:-40px;
-  }
+
 }
 
-/* brekpoint for smaller-mobile phones e.g samsung galaxy fold*/
-@media screen and (max-width:280px){
-  /*presley*/
-  .contact{
-    max-width:75%;
-  }
-  .input{
-    max-width:90%;
-    align-items: center;
-  }
-  .button{
-    align-items: center;
-  }
-  .kirito_and_co{
-    max-width:100px;
-    max-height: 150px;
-  }
-  .sao_cover{
-    max-width:100px;
-    max-height:160px;
-    position:relative;
-    right: -160px;
-    bottom: -100px;
-    clear:right;
-
-  }
-  .kirito_alfheim{
-    position:relative;
-    bottom: -430px;
-    max-width:140px;
-    max-height:80px;
-  }
-  .sao_list{
-    clear:left;
-    position:relative;
-    top: -70px;
-  }
-  #saoListMain{
-    position:relative;
-    right: -210px;
-    top:-40px;
-  }
-}
 
 
 
@@ -378,6 +298,8 @@ body{
     float:right;
     padding-left: 5%;
 }
+
+
 
 /*presley*/
 .kirito_and_co{

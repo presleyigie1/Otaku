@@ -1,4 +1,4 @@
-//presley-JavaScript for contact page
+//presley-JavaScript fr contact page
 function validate(){
   var formData = []; // array that holds data from the form fields
   // arrays count from 0 up
@@ -29,9 +29,7 @@ function validate(){
       document.getElementById("errorText").style.color="red";
     }
       else if(formData[1] .length == "" ){
-        //displays "this field s required"
         document.getElementById("errorText").innerHTML = "This field is required";
-        //makes the errorText Visible
         document.getElementById("errorText").style.visibility = "visible";
         document.getElementById("errorText").style.color="red";
       }
@@ -50,8 +48,8 @@ function validate(){
 }
 
 //presley: source - https://www.youtube.com/watch?v=ydZc17rlR5E&t=20s -Florin pop
-const hamburger = document.getElementById('hamburger');
-const nav = document.getElementById('nav-ul');
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('nav-ul');
 
 //when you click the hamburger menu, event listener toggles the nav-ul to appear
 hamburger.addEventListener('click', () => {
