@@ -1010,10 +1010,58 @@ table, th, td {
   float:right;
   border-radius:15px;
 }
-/*Sean*/
+/*Presley*/
 .summer-wars{
   width:120px;
   height:170px;
   float:right;
   border-radius:15px;
 }
+
+/*Sean*/
+.Titans{
+  width:150px;
+  height:250px;
+  float:right;
+  border-radius: 15px;
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  /*google fonts used for the paragraghs*/
+  font-family: 'Shippori Antique',
+  sans-serif;
+  }
+
+.Goku{
+  width:150px;
+  height:250px;
+  float:right;
+  border-radius: 15px;
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  /*google fonts used for the paragraghs*/
+  font-family: 'Shippori Antique',
+  sans-serif;
+  
+
+}
+
+.full-metal{
+  width:120px;
+  height:170px;
+  float:right;
+  border-radius: 15px;
+}
+
+.shield-hero{
+  width:120px;
+  height:170px;
+  float:right;
+  border-radius: 15px;
+
+}
+
+
