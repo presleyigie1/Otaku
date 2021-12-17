@@ -1,6 +1,7 @@
 //Sean
  function guessNum(){
 
+
      var randNum = Math.floor(Math.random() * 20); //Uses randomisation,Uses number only from 1-10,it only returns integer values of this range
 
      //This produces an output of the random number-Sean
@@ -18,10 +19,10 @@
      else if (userInput < randNum){                         //Sean
         window.alert("You guessed it too high,you lose!");//if number us guessed too high this alert will pop up
     }
-    else if(randNum >= 30){
+    else if( 20>= randNum){
         window.alert("You cannot enter anything above 20");
     }
-    else if(randNum <= 1){                                  //Sean
+    else if( 1<= randNum){                                  //Sean
         window.alert("You cannot enter anything below 1");//if number is not in the correct range of guessing
     }
     else{                                           //Sean
@@ -30,33 +31,12 @@
 }
 
 
-//Sean
- function guessNum(){
-
-     var randNum = Math.floor(Math.random() * 30); //Uses randomisation,Uses number only from 1-10,it only returns integer values of this range
-
-     //This produces an output of the random number
-    print(randNum);
-
-    var userInput= prompt("Enter any number between 1-30");
-    //User inputs number ("Enter any number between 1-30+randNum")
-
-    if(userInput < randNum){
-        window.alert("Correct! you are right!");// this message will pop up if you guessed the number correctly
-
-    }else if(userInput > randNum){
-        window.alert(" You guessed it too low,you lose!");//This message pops up if you have guess it toow
-    }
-     else if (userInput == randNum){
-        window.alert("You guessed it too high,you lose!");
-    }
-    else{
-        window.alert("This is not valid,ERROR!"); //This message prints if the value is not an integer
-    }
-}
 
 
 //presley-JavaScript for contact page
+// i found the visibilty and style options on this link https://www.youtube.com/watch?v=vPVx-zGFh0w&t=109s
+//
+
 function validate(){
   var formData = []; // array that holds data from the form fields
   // arrays count from 0 up
@@ -103,8 +83,6 @@ function validate(){
       document.getElementById("msgFeedback").innerHTML = "This field is required";
       document.getElementById("msgFeedback").style.visibility = "visible";
       document.getElementById("msgFeedback").style.color="red";
-
-
   }
     if(formData[2] .length == "" ){
       document.getElementById("msgFeedback").innerHTML = "This field is required";
@@ -114,6 +92,7 @@ function validate(){
 }
 
 //presley: source - https://www.youtube.com/watch?v=ydZc17rlR5E&t=20s -Florin pop
+//hamburger menu javascript
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav-ul');
 
@@ -122,23 +101,11 @@ hamburger.addEventListener('click', () => {
 nav.classList.toggle('show');
 });
 
-/*this was the first dom manipulation i was going to use but i couldnt find a way to make the color change back to its original state, then i decided to use the light switch/ dark and light concept and implement it into the JS code below that chnages the background cover and makes the button hidden and visible
-
-INITIAL CODE BELOW :
-
-DOM MANIPULATION source: https://www.youtube.com/watch?v=jIyBx0Yh4rI
-
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('show');
-  });
-
-
-//when you click the hamburger menu, event listener toggles the nav-ul to appear
-
-
 /*this was the first dom manipulation i was going to use but i couldnt find a way to make the color change to something else, then i decided to take the light switch/ dark and light concept and implemented it into the JS code below that chnages the background cover and makes the button hidden and visible
 
 //DOM MANIPULATION source: https://www.youtube.com/watch?v=jIyBx0Yh4rI
+
+INITIAL CODE BELOW :
 
 document.getElementById("appearance").onclick = changeBackgroundColorToGreen;
 document.getElementById("appearance").onclick = changeBackgroundColorToYellow;
@@ -148,17 +115,13 @@ document.querySelector("body").style.background = "green";
 } */
 
 
-// DOM MANIPULATION - USING A TBACKHGROUND COLOUR SWITCHER
-
-
+// DOM MANIPULATION - USING A BACKHGROUND COLOUR SWITCHER - I essentially applied the same concept as the contact page form I created and chaged it to suite this situation
 function changeBackgroundColor(){
   //if the background color is not green and you click the moon icon, the background will change to green and hide the moon icon and make the sun icon visible
   if(body.style.background !== "green"){
     body.style.background = "green";
       document.getElementById("moon").style.visibility = "hidden";
       document.getElementById("sun").style.visibility = "visible";
-      document.getElementById
-
   }
 }
 
