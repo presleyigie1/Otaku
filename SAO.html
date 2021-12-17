@@ -1,70 +1,92 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- presley -->
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--link to stylesheet -->
+    <link rel="stylesheet" href="Style.css">
+
     <!-- google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Oswald:wght@200&family=Shippori+Antique&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Oswald:wght@200&family=Shippori+Antique&display=swap" rel="stylesheet">
-    <!--link to stylesheet -->
-    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ad4791524b.js" crossorigin="anonymous"></script>
+    <!--page title -->
     <title>Otaku | Sword Art Online</title>
-    <!-- my js script tag -->
-    <script type="text/javascript">
-    </script>
   </head>
-  <body class="SAO">
-    <div class="sidebar">
-        <header>Otaku</header>
-        <ul id="h_bar">
-            <li><a href ="Index.html">Home</li>
-            <li><a href="MHA.html">My Hero Academia</a></li>
-            <li><a href="Naruto.html">Naruto</a></li>
-            <li><a href="SAO.html">Sword Art Online</a></li>
-            <li><a href="TopPicks.html">Recommendations</a></li>
-            <li><a href="About.html">About Us</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
-        </ul>
+  <body class="SAO" id="body">
+    <img class="logo" src="Images/otaku-logo-resize.png" alt="image of site logo">
+    <header>Sword Art Online<header>
+    <nav>
+    <button class="hamburger" id="hamburger">
+      <i class= "fas fa-bars"></i>
+    </button>
+
+    <button id="moon" onclick="changeBackgroundColor()">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <button id="sun" style="visibility:hidden" onclick="changeBackgroundColor2()">
+      <i class="fas fa-sun"></i>
+    </button>
+
+      <ul class="nav-ul" id="nav-ul">
+          <li><a href ="Index.html">Home</a></li>
+          <li><a href="MHA.html">My Hero Academia</a></li>
+          <li><a href="Naruto.html">Naruto</a></li>
+          <li><a href="SAO.html">Sword Art Online</a></li>
+          <li><a href="TopPicks.html">Recommendations</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="Game.html">Mini-Game</a></li>
+      </ul>
+      <!-- this JavaScript script tag was placed here because it was the only way the hamburger and toggle theme switches would operate. otherwise it would give an UnCaught error in the console. -->
+      <script src="Script.js"></script>
+  </nav>
+
+    <div class="sao_main"> <!--div class for the main body of page incl. images -->
+      <h1 class="headers">Sword Art Online</h1>
+      <h2><strong><u>SAO:LORE</u></strong></h3>
+
+      <img class="kirito_and_co" src="Images/sao_kirito_eugeo.png" alt="Kirito, Eugeo and co">
+
+      <!-- class added on these paragraphs so i can place a font on them -->
+      <p class= "sao_para">Sword art online (SAO) is a japanese anime/manga within sub genre of fantasy called isekai meaning otherworld/different world. The anime is based in 2016-2022 near future that centres about a young boy named Kazuto Kirigaya that goes by Kirito in game. In 2016 Kirito is at the age of 8 and is tired of being forced to train in the martial art, kendo. As a result of this his grandfather gives him a  beating for quitting, following that kirito's adopted sister, Sugha, takes it upon herself to undergo intense kendo training to avoid the same faith as kirito. With his athletics and martial arts training out of his life Kirito's intrest in computers increases.</p>
+
+
+       <p class="sao_para">Fast forwarding 5 years the world is about to change, with the debut of a new VR headset called NerveGear developed by Akihiko Kayayba. It's a remarkable piece of VR technology which allows users to experience high quality graphichs and linkage of your nerves to the game. In May of 2022 NerveGear launches openly and everything is running succesfully except for the fact that there is a secret mode that exists that prevents users from removing the NerveGear, if they do so by force they result in dying in real life via the Nerve Gear destroying the users brain, the only alternative to succesfully removing the NerveGear and exiting the game  is to clear all the 100 floors of the huge floating castle Aincrad.
+      </p>
+
+      <p class="sao_para">As Kirito has isolated himslef from the real world he thinks of himself as the most ideal beta tester for the game and dives in and becomes a virtual swordsman in the game Sword Art Online. Within a few hours of playing, players in the game discover that there is no way to logout of the game, their appearances in-game change to how they look in real life and they all get an announcement from Akihiko Kayaba stating that he is now in control of the world and that the missing logout button from the main menus is not a defect in the game. Kayaba(who we later know as Heathcliff) then proceeds to say that this is how sao was designed to be and if anyone trys to remove the NerveGear from your head a transmitter inside the NerveGear will discharge a microwave signal into your skull destroying your brain and ending your life. Kirito and friends must adapt to their new reality and for their survival and hopefully break out from their virtual hell.
+      </p>
+      <br>
+      <img class="sao_cover" src="Images/sao_cover.jpg" alt="Sword Art Online Season 1 Cover">
+      <img class="kirito_alfheim" src="Images/sao_group.jpg" alt="Kirito and friends in Alfheim">
+        <h3 id="saoListMain" class="subheads"><u>Main characters</u></h3>
+          <ul class="sao_list">
+            <li>Kirito</li>
+            <li>Asuna</li>
+            <li>Alice</li>
+            <li>Eugeo</li>
+            <li>Sinon</li>
+            <li>Klein</li>
+            <li>Heathcliff</li>
+            <li>Sugou Nobuyuiki</li>
+          </ul>
+
+        <h3 class="subheads"><u>Other characters</u></h3>
+          <ul class=sao_list2>
+            <li>Yuuki</li>
+            <li>Leafa</li>
+            <li>Silica</li>
+          </ul>
+
+
+      <p class="sao_para">The latest SAO anime is <em>Sword Art Online: Alicization - War of Underwold</em>, it consists of two amazing seasons that paved the way for other characters to shine and left the paralyzed Kirito as a secondary character. A sense of excitement arises as fans await the release of <em>Sword Art Online Progressive: Aria of a Starless Night</em> that releases December 10, 2021 for people in the UK and Ireland. The trailer for the movie (available in <a href="https://youtu.be/blAzIwXB9zo" target="_blank">subbed</a> and <a href="https://youtu.be/J3-lSaS2rlU" target="_blank">dubbed</a>) has been released earlier this year and has set the suspense high for viewers.</p>
+
     </div>
-    <h1>Sword Art Online</h1>
-    <h2><strong><u>SAO:LORE</u></strong></h3>
-
-    <img class="kirito_and_co" src="Images/sao_kirito_eugeo.png" alt="Kirito, Eugeo and co">
-
-    <p class= "sao_para">Sword art online (SAO) is a japanese anime/manga within sub genre of fantasy called isekai meaning otherworld/different world. The anime is based in 2016-2022 near future that centres about a young boy named Kazuto Kirigaya that goes by Kirito in game. In 2016 Kirito is at the age of 8 and is tired of being forced to train in the martial art, kendo. As a result of this his grandfather gives him a  beating for quitting, following that kirito's adopted sister, Sugha, takes it upon herself to undergo intense kendo training to avoid the same faith as kirito. With his athletics and martial arts training out of his life Kirito's intrest in computers increases. Fast forwarding 5 years the world is about to change, with the debut of a new VR headset called NerveGear developed by Akihiko Kayayba. It's a remarkable piece of VR technology which allows users to experience high quality graphichs and linkage of your nerves to the game. In May of 2022 NerveGear launches openly and everything is running succesfully except for the fact that there is a secret mode that exists that prevents users from removing the NerveGear, if they do so by force they result in dying in real life via the Nerve Gear destroying the users brain, the only alternative to succesfully removing the NerveGear and exiting the game  is to clear all the 100 floors of the huge floating castle Aincrad.
-    </p>
-
-    <p class="sao_para">As Kirito has isolated himslef from the real world he thinks of himself as the most ideal beta tester for the game and dives in and becomes a virtual swordsman in the game Sword Art Online. Within a few hours of playing, players in the game discover that there is no way to logout of the game, their appearances in-game change to how they look in real life and they all get an announcement from Akihiko Kayaba stating that he is now in control of the world and that the missing logout button from the main menus is not a defect in the game. Kayaba(who we later know as Heathcliff) then proceeds to say that this is how sao was designed to be and if anyone trys to remove the NerveGear from your head a transmitter inside the NerveGear will discharge a microwave signal into your skull destroying your brain and ending your life. Kirito and friends must adapt to their new reality and for their survival and hopefully break out from their virtual hell.
-    </p>
-
-    <img class="sao_cover" src="Images/sao_cover.jpg" alt="Sword Art Online Season 1 Cover">
-    <img class="kirito_alfheim" src="Images/sao_group.jpg" alt="Kirito and friends in Alfheim">
-    <h3><u>Main characters</u></h3>
-    <ul class="sao_list">
-      <li>Kirito</li>
-      <li>Asuna</li>
-      <li>Alice</li>
-      <li>Eugeo</li>
-      <li>Sinon</li>
-      <li>Klein</li>
-      <li>Heathcliff</li>
-      <li>Sugou Nobuyuiki</li>
-    </ul>
-
-    <h3><u>Other characters</u></h3>
-    <ul class=sao_list2>
-      <li>Yuuki</li>
-      <li>Leafa</li>
-      <li>Silica</li>
-    </ul>
-
-
-    <p class="sao_para">The latest SAO anime is <em>Sword Art Online: Alicization - War of Underwold</em>, it consists of two amazing seasons that paved the way for other characters to shine and left the paralyzed Kirito as a secondary character. A sense of excitement arises as fans await the release of <em>Sword Art Online Progressive: Aria of a Starless Night</em> that releases December 10, 2021 for people in the UK and Ireland. The trailer for the movie (available in <a href="https://youtu.be/blAzIwXB9zo" target="_blank">subbed</a> and <a href="https://youtu.be/J3-lSaS2rlU" target="_blank">dubbed</a>) has been released earlier this year and has set the suspense high for viewers.</p>
-
   </body>
 </html>
