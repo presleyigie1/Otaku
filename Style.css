@@ -250,9 +250,9 @@ body{
   }
   .kirito_alfheim{
     position:relative;
-    bottom: -390px;
-    max-width:140px;
-    max-height:100px;
+    bottom: -400px;
+    max-width:135px;
+    max-height:90px;
   }
   .sao_list{
     clear:left;
@@ -347,7 +347,7 @@ body{
   height:360px;
 }
 /*presley*/
-.sao_para,.contact-h2,.button{
+.sao_para,.contact-h2,.button,.recom{
   font-family: 'Shippori Antique',
   sans-serif;
 }
@@ -487,20 +487,20 @@ table, th, td {
   background-color: Transparent;
   background-repeat: no-repeat;
   background-color:black;
-    border-radius: 10%;
-    color:white;
-    font-size:20px;
-    border: none;
-    /* sets a a box shadow inset, takes 3s to go back to normal */
-    box-shadow: inset 0 0 0 0 #618a3d;
-    transition: ease-out 0.3s;
-    /*mkakes the button able to b clicked on*/
-    cursor: pointer;
-    /*hides scrollbars*/
-    overflow: hidden;
-    outline:none;
-    position: relative;
-    right: -38.5%;
+  border-radius: 10%;
+  color:white;
+  font-size:20px;
+  border: none;
+  /* sets a a box shadow inset, takes 3s to go back to normal*/
+  box-shadow: inset 0 0 0 0 #618a3d;
+  transition: ease-out 0.3s;
+  /*mkakes the button able to b clicked on*/
+  cursor: pointer;
+  /*hides scrollbars*/
+  overflow: hidden;
+  outline:none;
+  position: relative;
+  right: -38.5%;
   }
 
 /*presley - the transition of button when hovering*/
@@ -565,7 +565,7 @@ table, th, td {
 .MHApic{
 
   height:235 px;
-  width:590 px;
+  width:590  px;
   justify-content: center;
   align-items: center;
   align-self: center;
@@ -959,4 +959,29 @@ table, th, td {
 /*presley*/
 .sao_main{
   margin: 10px;
+}
+
+.inuyashiki{
+  width:150px;
+  height:250px;
+  border-radius:15px;
+  float:right;
+}
+.tokyorevngers{
+  width:150px;
+  height:250px;
+  border-radius:15px;
+  float:right;
+}
+.new-game{
+  width:120px;
+  height:170px;
+  float:right;
+  border-radius:15px;
+}
+.summer-wars{
+  width:120px;
+  height:170px;
+  float:right;
+  border-radius:15px;
 }

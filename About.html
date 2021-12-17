@@ -19,11 +19,19 @@
     	<link href="Style.css" rel="stylesheet"/>
 
 </head>
-<body>
+<body id="body">
     <h1>About Us</h1>
     <nav>
         <button class="hamburger" id="hamburger">
           <i class= "fas fa-bars"></i>
+        </button>
+
+        <button id="moon" onclick="changeBackgroundColor()">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <button id="sun" style="visibility:hidden" onclick="changeBackgroundColor2()">
+          <i class="fas fa-sun"></i>
         </button>
 
         <ul class="nav-ul" id="nav-ul">
