@@ -101,12 +101,12 @@ body{
 .para2,.para4{
     font-family: 'Noto Sans JP',
     sans-serif;
-    font-family: 'Oswald',
+    font-family: 'Oswald', /*google fonts*/
     sans-serif;
     font-family: 'Shippori Antique',
     sans-serif;
 }
-
+/*Sean*/
 .para3{
 
     font-family: 'Noto Sans JP',
@@ -315,7 +315,7 @@ body{
   }
 }
 
-
+/*Sean*/
 .para1{
     float:right;
     padding-left: 5%;
@@ -691,7 +691,7 @@ table, th, td {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
   width: 400px;
-  max-width: 100%;
+  max-width: 100%;/*Container for the validation form*/
   float: right ;
   right:50%;
   position:relative;
@@ -727,7 +727,7 @@ table, th, td {
 .form-control label{
   display:inline-block;
   font-family: 'Oswald',
-  sans-serif;
+  sans-serif;/*Styling for labels to display block*/
   font-family: 'Shippori Antique',
   sans-serif;
 }
@@ -772,21 +772,22 @@ table, th, td {
 
   float:right;
 }
-
+/*Sean*/
 .MHA{
 
   margin: auto;
   width:auto;
-  height:auto;
+  height:auto;/*automatic sizing for MHA page*/
 
 }
-
+/*Sean*/
 .largetext{
   float:right;
   font-size:60pt;
   font-family: 'Comic Neue';
   top:-2px;
 }
+/*Sean*/
 .anime {
   border: 10 px solid 2px black;
   padding: 10 px;
@@ -808,23 +809,25 @@ a{
   font-family: 'Noto Sans JP',
   sans-serif;
   font-family: 'Oswald',
-  sans-serif; /*google fonts*/
+  sans-serif; /*google fonts used for the paragraghs*/
   font-family: 'Shippori Antique',
   sans-serif;
 }
+/*Sean*/
 .para3{
 
     font-family: 'Noto Sans JP',
     sans-serif;
 
 }
+/*Sean*/
 .intro{
 
-  font-family: 'Titillium Web',
+  font-family: 'Titillium Web', /*Used for headings*/
   sans-serif;
 
 }
-
+/*Sean*/
 .MHA{
     padding:0;
     margin:0;
@@ -839,7 +842,7 @@ a{
     position:relative;
     box-shadow: 0 0 5px rgba(0, 0, 0, .4);
     background-color: antiquewhite;
-    overflow: hidden;
+    overflow: hidden; 
     border-radius: 8px;
     margin-bottom: 10px;
     height:300;
@@ -850,7 +853,7 @@ a{
     position:absolute;
     top:0;
     left:0;
-    width:100%;
+    width:100%; /*Styling for MHA images*/
     height:100%;
     border: 8px solid #fff;
     z-index: 2;
@@ -955,7 +958,7 @@ table, th, td {
     /* sets a a box shadow inset, takes 3s to go back to normal */
     box-shadow: inset 0 0 0 0 #618a3d;
     transition: ease-out 0.3s;
-    /*mkakes the button able to b clicked on*/
+    /*makes the button able to b clicked on*/
     cursor: pointer;
     /*hides scrollbars*/
     overflow: hidden;
@@ -986,25 +989,28 @@ table, th, td {
 .sao_main{
   margin: 10px;
 }
-
+/*Presley*/
 .inuyashiki{
   width:150px;
   height:250px;
   border-radius:15px;
   float:right;
 }
+/*Preseley*/
 .tokyorevngers{
   width:150px;
   height:250px;
   border-radius:15px;
   float:right;
 }
+/*Presley*/
 .new-game{
   width:120px;
   height:170px;
   float:right;
   border-radius:15px;
 }
+/*Sean*/
 .summer-wars{
   width:120px;
   height:170px;
