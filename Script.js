@@ -14,10 +14,10 @@ function guessNum(){
         window.alert("Correct! you are right!");// this message will pop up if you guessed the number correctly
 
     }else if(userInput > randNum){                          //Sean
-        window.alert(" You guessed it too low,you lose!");//This message pops up if you have guess it too low
+        window.alert("You guessed it too high, you lose!");//This message pops up if you have guess it too low
     }
      else if (userInput < randNum){                         //Sean
-        window.alert("You guessed it too high,you lose!");//if number us guessed too high this alert will pop up
+        window.alert("You guessed it too low, you lose!");//if number us guessed too high this alert will pop up
     }
     else if( 20>= randNum){
         window.alert("You cannot enter anything above 20");
