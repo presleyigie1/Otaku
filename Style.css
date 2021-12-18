@@ -1033,3 +1033,48 @@ table, th, td {
   border-radius: 15px;
 
 }
+
+
+/*solomon*/
+.Slime{
+  width:150px;
+  height:250px;
+  float:right;
+  border-radius: 15px;
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  /*google fonts used for the paragraghs*/
+  font-family: 'Shippori Antique',
+  sans-serif;
+}
+
+.Common{
+    width:150px;
+    height:250px;
+    float:right;
+    border-radius: 15px;
+    font-family: 'Noto Sans JP',
+    sans-serif;
+    font-family: 'Oswald',
+    sans-serif;
+    /*google fonts used for the paragraghs*/
+    font-family: 'Shippori Antique',
+    sans-serif;
+}
+
+
+  .War{
+    width:120px;
+    height:170px;
+    float:right;
+    border-radius:15px;
+  }
+
+  .Juju{
+    width:120px;
+    height:170px;
+    float:right;
+    border-radius:15px;
+  }
