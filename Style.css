@@ -58,7 +58,7 @@ body{
   display: none;
   float:right;
 }
-
+/*presley*/
 .hamburger:focus{
   /*removes outline on button */
   outline:none;
@@ -124,14 +124,14 @@ body{
     /*presley*/
     .contact{
       max-width:80%;
-    }
+    }/*presley*/
     .input{
       max-width:90%;
-    }
+    }/*presley*/
     .kirito_and_co{
       width:85%;
       height:85%;
-    }
+    }/*presley*/
     .sao_cover{
       width:65%;
       height:65%;
@@ -145,35 +145,43 @@ body{
   .contact{
     max-width:75%;
   }
+  /*presley*/
   .input{
     max-width:90%;
     align-items: center;
   }
+  /*presley*/
   .button{
     align-items: center;
   }
+  /*presley*/
   .kirito_and_co{
     max-width:150px;
     max-height: 200px;
   }
+  /*presley*/
   .sao_cover{
     max-width:150px;
     max-height:250px;
   }
+  /*presley*/
   .kirito_alfheim{
     max-width:300px;
     max-height:170px;
     position:relative;
     left:-90px;
   }
+  /*presley*/
   .hamburger{
     display:block;
   }
+  /*presley*/
   .nav-ul{
     display:none;
     width:100%;
     flex-direction:column;
   }
+  /*presley*/
   .nav-ul.show{
     display: inline-block;
   }
@@ -188,17 +196,21 @@ body{
   .contact{
     max-width:80%;
   }
+  /*presley*/
   .input{
     max-width:90%;
     align-items: center;
   }
+  /*presley*/
   .button{
     align-items: center;
   }
+  /*presley*/
   .kirito_and_co{
     max-width:150px;
     max-height: 200px;
   }
+  /*presley*/
   .sao_cover{
     max-width:115px;
     max-height:160px;
@@ -206,17 +218,20 @@ body{
     right: -250px;
     bottom: -100px;
   }
+  /*presley*/
   .kirito_alfheim{
     position:relative;
     bottom: -410px;
     max-width:120px;
     max-height:80px;
   }
+  /*presley*/
   .sao_list{
     clear:left;
     position:relative;
     top: -70px;
   }
+  /*presley*/
   #saoListMain{
     position:relative;
     left: -110px;
@@ -230,17 +245,21 @@ body{
   .contact{
     max-width:85%;
   }
+  /*presley*/
   .input{
     max-width:85%;
     align-items: center;
   }
+  /*presley*/
   .button{
     align-items: center;
   }
+  /*presley*/
   .kirito_and_co{
     max-width:100px;
     max-height: 150px;
   }
+  /*presley*/
   .sao_cover{
     max-width:80px;
     max-height:130px;
@@ -248,17 +267,20 @@ body{
     right: -260px;
     bottom: -140px;
   }
+  /*presley*/
   .kirito_alfheim{
     position:relative;
     bottom: -400px;
     max-width:135px;
     max-height:90px;
   }
+  /*presley*/
   .sao_list{
     clear:left;
     position:relative;
     top: -40px;
   }
+  /*presley*/
   #saoListMain{
     position:relative;
     right: -120px;
@@ -275,17 +297,21 @@ body{
   .contact{
     max-width:85%;
   }
+  /*presley*/
   .input{
     max-width:85%;
     align-items: center;
   }
+  /*presley*/
   .button{
     align-items: center;
   }
+  /*presley*/
   .kirito_and_co{
     max-width:100px;
     max-height: 150px;
   }
+  /*presley*/
   .sao_cover{
     max-width:100px;
     max-height:160px;
@@ -296,6 +322,7 @@ body{
 
 
   }
+  /*presley*/
   .kirito_alfheim{
     position:relative;
     left:7px;
@@ -303,11 +330,13 @@ body{
     max-width:100px;
     max-height:70px;
   }
+  /*presley*/
   .sao_list{
     clear:left;
     position:relative;
     top: -70px;
   }
+  /*presley*/
   #saoListMain{
     position:relative;
     right: -210px;
@@ -424,6 +453,7 @@ sans-serif;
   height: 15%;
   position: relative;
   right: -550px;
+  border-radius:30%/50%;
 }
 /*solomon*/
 .All_Might{
@@ -431,6 +461,7 @@ sans-serif;
   height: 15%;
   position: relative;
   right: -550px;
+  border-radius:30%/50%;
 }
 /*solomon*/
 .Black_Swordsmen{
@@ -438,6 +469,7 @@ sans-serif;
   height: 15%;
   position: relative;
   right: -550px;
+  border-radius:30%/50%;
 }
 /*solomon*/
 .kage{
@@ -635,13 +667,6 @@ table, th, td {
   background-position: 50 px;
   position:relative;/*background image added at the top of the pag*/
   background-size: 1300px 200px ;
-}
-
-.color-overlay{
-  width:100%;
-  height:100%;
-  opacity: .5;
-  position:absolute;
 }
 /*Sean*/
 .villians{
@@ -867,9 +892,9 @@ a{
 }
 /*solomon*/
 .characters{
-          position: relative;
-          float: right;
-          top:-210px;
+    position: relative;
+    float: right;
+    top:-210px;
 }
 /*solomon*/
 table{
@@ -880,134 +905,76 @@ table{
   .narutopara1{
     font-family: 'Shippori Antique',
     sans-serif;
-    font-family: 'Titillium Web',
-    sans-serif;
   }
 
   /*solomon*/
 table, th, td {
   border: 1px solid black;
 }
-
-/*solomon*/
-.show-text{display:visable;
-}
-
-.show-text{display:visable;
-}
-#toggleButton,#toggleCollapse{
-  background-color:gray;
-  color:white;
-  border-radius:10px;
-  font-size: 25px;
-  cursor:pointer;
-  float:left;
-}
-
-
-/*preley*/
-.contact-page{
-  margin: 0;
-  padding: 0;
-}
 /*presley*/
-.contact{
-  margin: auto;
-  width: 500px;
-  /*sets a box shadow on the right on 40px with grey */
-  box-shadow: 0 0 40px 0 grey;
-  border-radius: 10px;
-  /* moving th eposttion of th econtact box from the top and left */
-  transform: translate( -30%. -50%);
-}
-/*presley*/
-.input{
-  width: 400px;
-  height: 50px;
-  padding-right:15px;
-  padding-left: 15px;
-  margin-top: 20px;
-  border: 1px  grey;
-  border-radius:14px;
-  outline: none;
-}
-/*presley*/
-.contact-form{
-  margin: 25px;
-}
-/*presley*/
-.textarea-field{
-  height: 150px;
-  padding-top: 10px;
-}
-
-/*presley*/
-.button{
-  margin-top:14px;
-  padding: 5px;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  background-color:black;
-    border-radius: 10%;
-    color:white;
-    font-size:20px;
-    border: none;
-    /* sets a a box shadow inset, takes 3s to go back to normal */
-    box-shadow: inset 0 0 0 0 #618a3d;
-    transition: ease-out 0.3s;
-    /*mkakes the button able to b clicked on*/
-    cursor: pointer;
-    /*hides scrollbars*/
-    overflow: hidden;
-    outline:none;
-    position: relative;
-    right: -38.5%;
-  }
-
-/*presley - the transition of button when hovering*/
-.button:hover{
-  box-shadow: inset 100px 0 0 0 #618a3d;
-  cursor: pointer;
-  color: white;
-
-}
-
-/*presley*/
-  .contact-h2{
-    text-align: center;
-  }
-
-  /*presley*/
-.SAO{
-  margin: 0;
-  padding: 0;
-}
-/*presley*/
-.sao_main{
-  margin: 10px;
-}
-
 .inuyashiki{
   width:150px;
   height:250px;
   border-radius:15px;
   float:right;
 }
+/*presley*/
 .tokyorevngers{
   width:150px;
   height:250px;
   border-radius:15px;
   float:right;
 }
+/*presley*/
 .new-game{
   width:120px;
   height:170px;
   float:right;
   border-radius:15px;
 }
+/*presley*/
 .summer-wars{
   width:120px;
   height:170px;
   float:right;
   border-radius:15px;
+}
+/*presley*/
+.show-me{
+  display:none;
+}
+/*presley*/
+.see-more{
+  cursor:pointer;
+  background-color:Darkorange;
+  border:none;
+  padding: 15px 15px;
+  outline:none;
+  font-size:15px;
+}
+.trivia.show-more .show-me{
+  display:inline;
+}
+.question2,.expandSocial{
+  font-family: 'Shippori Antique',
+  sans-serif;
+  font-family: 'Titillium Web',
+  sans-serif;
+  font-weight:bold;
+  font-size:16pt;
+}
+.expandSocial{
+  display:none;
+}
+/*presley*/
+.see-social{
+  cursor:pointer;
+  background-color:red;
+  border:none;
+  padding: 15px 15px;
+  outline:none;
+  font-size:15px;
+}
+.socialMedia.show-more .expandSocial{
+  display:inline;
 }

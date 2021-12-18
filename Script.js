@@ -1,5 +1,5 @@
 //Sean
- function guessNum(){
+function guessNum(){
 
 
      var randNum = Math.floor(Math.random() * 20); //Uses randomisation,Uses number only from 1-10,it only returns integer values of this range
