@@ -101,12 +101,12 @@ body{
 .para2,.para4{
     font-family: 'Noto Sans JP',
     sans-serif;
-    font-family: 'Oswald',
+    font-family: 'Oswald', /*google fonts*/
     sans-serif;
     font-family: 'Shippori Antique',
     sans-serif;
 }
-
+/*Sean*/
 .para3{
 
     font-family: 'Noto Sans JP',
@@ -344,7 +344,7 @@ body{
   }
 }
 
-
+/*Sean*/
 .para1{
     float:right;
     padding-left: 5%;
@@ -716,7 +716,7 @@ table, th, td {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
   width: 400px;
-  max-width: 100%;
+  max-width: 100%;/*Container for the validation form*/
   float: right ;
   right:50%;
   position:relative;
@@ -752,7 +752,7 @@ table, th, td {
 .form-control label{
   display:inline-block;
   font-family: 'Oswald',
-  sans-serif;
+  sans-serif;/*Styling for labels to display block*/
   font-family: 'Shippori Antique',
   sans-serif;
 }
@@ -797,21 +797,22 @@ table, th, td {
 
   float:right;
 }
-
+/*Sean*/
 .MHA{
 
   margin: auto;
   width:auto;
-  height:auto;
+  height:auto;/*automatic sizing for MHA page*/
 
 }
-
+/*Sean*/
 .largetext{
   float:right;
   font-size:60pt;
   font-family: 'Comic Neue';
   top:-2px;
 }
+/*Sean*/
 .anime {
   border: 10 px solid 2px black;
   padding: 10 px;
@@ -833,23 +834,25 @@ a{
   font-family: 'Noto Sans JP',
   sans-serif;
   font-family: 'Oswald',
-  sans-serif; /*google fonts*/
+  sans-serif; /*google fonts used for the paragraghs*/
   font-family: 'Shippori Antique',
   sans-serif;
 }
+/*Sean*/
 .para3{
 
     font-family: 'Noto Sans JP',
     sans-serif;
 
 }
+/*Sean*/
 .intro{
 
-  font-family: 'Titillium Web',
+  font-family: 'Titillium Web', /*Used for headings*/
   sans-serif;
 
 }
-
+/*Sean*/
 .MHA{
     padding:0;
     margin:0;
@@ -864,7 +867,7 @@ a{
     position:relative;
     box-shadow: 0 0 5px rgba(0, 0, 0, .4);
     background-color: antiquewhite;
-    overflow: hidden;
+    overflow: hidden; 
     border-radius: 8px;
     margin-bottom: 10px;
     height:300;
@@ -875,7 +878,7 @@ a{
     position:absolute;
     top:0;
     left:0;
-    width:100%;
+    width:100%; /*Styling for MHA images*/
     height:100%;
     border: 8px solid #fff;
     z-index: 2;
@@ -918,27 +921,32 @@ table, th, td {
   border-radius:15px;
   float:right;
 }
-/*presley*/
+
+/*Preseley*/
 .tokyorevngers{
   width:150px;
   height:250px;
   border-radius:15px;
   float:right;
 }
-/*presley*/
+
+/*Presley*/
 .new-game{
   width:120px;
   height:170px;
   float:right;
   border-radius:15px;
 }
-/*presley*/
+
+/*Presley*/
+
 .summer-wars{
   width:120px;
   height:170px;
   float:right;
   border-radius:15px;
 }
+
 /*presley*/
 .show-me{
   display:none;
@@ -977,4 +985,51 @@ table, th, td {
 }
 .socialMedia.show-more .expandSocial{
   display:inline;
+}
+
+
+/*Sean*/
+.Titans{
+  width:150px;
+  height:250px;
+  float:right;
+  border-radius: 15px;
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  /*google fonts used for the paragraghs*/
+  font-family: 'Shippori Antique',
+  sans-serif;
+  }
+
+.Goku{
+  width:150px;
+  height:250px;
+  float:right;
+  border-radius: 15px;
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  /*google fonts used for the paragraghs*/
+  font-family: 'Shippori Antique',
+  sans-serif;
+  
+
+}
+
+.full-metal{
+  width:120px;
+  height:170px;
+  float:right;
+  border-radius: 15px;
+}
+
+.shield-hero{
+  width:120px;
+  height:170px;
+  float:right;
+  border-radius: 15px;
+
 }
