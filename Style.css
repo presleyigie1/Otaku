@@ -481,7 +481,7 @@ sans-serif;
 /*solomon*/
 .characters{
           position: relative;
-          right:-600px;
+          right:-1px;
 }
 /*solomon*/
 table{
@@ -908,7 +908,7 @@ table{
   .narutopara1{
     font-family: 'Shippori Antique',
     sans-serif;
-  }
+}
 
   /*solomon*/
 table, th, td {
