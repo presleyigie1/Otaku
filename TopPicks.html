@@ -22,14 +22,22 @@
     <script type="text/javascript">
     </script>
   </head>
-  <body>
+  <body id="body">
     <h1 class="intro">Our Recommendations</h1>
 
     <nav>
       <button class="hamburger" id="hamburger">
         <i class= "fas fa-bars"></i>
       </button>
-      
+
+      <!-- theme switchers - background colour -->
+      <button id="moon" onclick="changeBackgroundColor()">
+        <i class="fas fa-moon"></i>
+      </button>
+
+      <button id="sun" style="visibility:hidden" onclick="changeBackgroundColor2()">
+        <i class="fas fa-sun"></i>
+      </button>
 
         <ul class="nav-ul" id="nav-ul">
             <li><a href ="Index.html">Home</a></li>
