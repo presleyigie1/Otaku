@@ -20,3 +20,5 @@ Note: Since this was the first website I have properly made the code or the styl
 
 Desktop view: ![swordart](sao.jpg)
 
+Mobile View: ![swordart](mobiless.jpg)
+
