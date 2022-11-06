@@ -18,3 +18,5 @@ HTML/CSS/JavaScript
 • Pseudocode
 Note: Since this was the first website I have properly made the code or the styling isn’t exactly up to scratch.
 
+Desktop view: ![swordart](C:\Users\presl\OneDrive\Desktop\Otaku\sao.jpg)
+
