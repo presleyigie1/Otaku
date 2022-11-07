@@ -1,30 +1,34 @@
 body{
     background-color:yellow;
     font-size: 13pt;
-
+    /*presley-under*/
+    overflow-x:hidden
 }
+
 /*Sean*/
-#h_bar{
+.nav-ul{
+  display:flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden; /*This is the navagtion bar styling*/
     background-color:black;
+    flex-wrap:wrap;
 }
 /*Sean*/
-#h_bar li {
-
+.nav-ul li {
     float:left;
-
 }
+
+
 /*Sean*/
-#h_bar li a{
+.nav-ul li a{
     display:inline-block;
     color:white;
     text-align: center;
     padding: 14px 15px;
     text-decoration: none;
-    /*pres;ey*/
+    /*presley*/
     box-shadow:inset 0 0 0 0 yellow;
     transition: ease-out 1s;
     position: relative;
@@ -32,14 +36,44 @@ body{
     cursor:pointer;
 }
 
-
-
+.para1{
+    float:right;
+    padding-left: 5%;
+    font-size: medium;
+}
 /*presley- adds a hover on nav bar that changes color, and also gives an animation when cursor is pointed in it*/
-#h_bar li a:hover{
+
+.nav-ul li a:hover{
   box-shadow: inset 0 0 0 2px yellow;
   color:gray;
   cursor:pointer;
 }
+/*presley*/
+.hamburger{
+  background-color: transparent;
+  border:0;
+  color: black;
+  font-size: 30px;
+  cursor:pointer;
+  display: none;
+  float:right;
+}
+/*presley*/
+.hamburger:focus{
+  /*removes outline on button */
+  outline:none;
+}
+
+/*presley*/
+#moon,#sun{
+  background-color:gray;
+  color:white;
+  border-radius:10px;
+  font-size: 25px;
+  cursor:pointer;
+  float:right;
+}
+
 /*Sean*/
 .para1{
     font-family: 'Oswald',
@@ -53,142 +87,264 @@ body{
 .para2{
 
 }
-/*Sean*/
-.slider{
 
-    width:800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow:hidden;
 
-}
-/*Sean*/
-.slides{
-    width: 500%;
-    height:500px;
-    display: flex;
-}
-/*Sean*/
-.slides input{
-    display: none;
-
-}
-/*Sean*/
-.slide{
-    width: 20%;
-    transition: 4s;
-
-}
-/*Sean*/
-.slide img{
-    width:800px;
-    height:500px;
-}
 
 /*css for manual navigation*/
 /*Sean*/
-.navigation-manual{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
 
-}
-/*Sean*/
-.manual-btn{
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 2s;
-}
-/*Sean*/
-.manual-btn:not(:last-child){
 
-    margin-right: 40px;
 
-}
-/*Sean*/
-.manual-btn:hover{
-    background:black;
-
-}
-/*Sean*/
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked~.first {
-    margin-left: -20%;
-}
-
-#radio3:checked~.first {
-    margin-left: -30%;
-}
-
-#radio4:checked~.first {
-    margin-left: -50%;
-}
-/*This is used for radio buttons*/
-h1{
 
 }
 /*Sean*/
 .para2,.para4{
     font-family: 'Noto Sans JP',
     sans-serif;
-    font-family: 'Oswald',
+    font-family: 'Oswald', /*google fonts*/
     sans-serif;
     font-family: 'Shippori Antique',
     sans-serif;
 }
-
+/*Sean*/
 .para3{
 
     font-family: 'Noto Sans JP',
     sans-serif;
-
-}
-
-a{
-
-}
-
-
-a{
-
 }
 
 
 
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width: 900px) {
+    /*sean*/
     .MHA{
-
         height: 600px;
         width:  600px;
     }
+    /*presley*/
+    .contact{
+      max-width:80%;
+    }/*presley*/
+    .input{
+      max-width:90%;
+    }/*presley*/
+    .kirito_and_co{
+      width:85%;
+      height:85%;
+    }/*presley*/
+    .sao_cover{
+      width:65%;
+      height:65%;
+    }
+
+}
+/*main */
+/* breakpoint for ipads/tablets */
+@media screen and (max-width: 768px) {
+  /*presley*/
+  .contact{
+    max-width:75%;
+  }
+  /*presley*/
+  .input{
+    max-width:90%;
+    align-items: center;
+  }
+  /*presley*/
+  .button{
+    align-items: center;
+  }
+  /*presley*/
+  .kirito_and_co{
+    max-width:150px;
+    max-height: 200px;
+  }
+  /*presley*/
+  .sao_cover{
+    max-width:150px;
+    max-height:250px;
+  }
+  /*presley*/
+  .kirito_alfheim{
+    max-width:300px;
+    max-height:170px;
+    position:relative;
+    left:-90px;
+  }
+  /*presley*/
+  .hamburger{
+    display:block;
+  }
+  /*presley*/
+  .nav-ul{
+    display:none;
+    width:100%;
+    flex-direction:column;
+  }
+  /*presley*/
+  .nav-ul.show{
+    display: inline-block;
+  }
 
 
 
+}
+
+/* brekpoint for mobile phones */
+@media screen and (max-width:480px){
+  /*presley*/
+  .contact{
+    max-width:80%;
+  }
+  /*presley*/
+  .input{
+    max-width:90%;
+    align-items: center;
+  }
+  /*presley*/
+  .button{
+    align-items: center;
+  }
+  /*presley*/
+  .kirito_and_co{
+    max-width:150px;
+    max-height: 200px;
+  }
+  /*presley*/
+  .sao_cover{
+    max-width:115px;
+    max-height:160px;
+    position:relative;
+    right: -250px;
+    bottom: -100px;
+  }
+  /*presley*/
+  .kirito_alfheim{
+    position:relative;
+    bottom: -410px;
+    max-width:120px;
+    max-height:80px;
+  }
+  /*presley*/
+  .sao_list{
+    clear:left;
+    position:relative;
+    top: -70px;
+  }
+  /*presley*/
+  #saoListMain{
+    position:relative;
+    left: -110px;
+  }
+}
 
 
+/* brekpoint for smaller-mobile phones e.g iphone 8*/
+@media screen and (max-width:375px){
+  /*presley*/
+  .contact{
+    max-width:85%;
+  }
+  /*presley*/
+  .input{
+    max-width:85%;
+    align-items: center;
+  }
+  /*presley*/
+  .button{
+    align-items: center;
+  }
+  /*presley*/
+  .kirito_and_co{
+    max-width:100px;
+    max-height: 150px;
+  }
+  /*presley*/
+  .sao_cover{
+    max-width:80px;
+    max-height:130px;
+    position:relative;
+    right: -260px;
+    bottom: -140px;
+  }
+  /*presley*/
+  .kirito_alfheim{
+    position:relative;
+    bottom: -400px;
+    max-width:135px;
+    max-height:90px;
+  }
+  /*presley*/
+  .sao_list{
+    clear:left;
+    position:relative;
+    top: -40px;
+  }
+  /*presley*/
+  #saoListMain{
+    position:relative;
+    right: -120px;
+    top:-40px;
+    clear:right;
+  }
+}
+
+
+/* brekpoint for smaller-mobile phones e.g samsung galaxy fold*/
+@media screen and (max-width:280px){
+  /*presley*/
+  /*max width for contact box */
+  .contact{
+    max-width:85%;
+  }
+  /*presley*/
+  .input{
+    max-width:85%;
+    align-items: center;
+  }
+  /*presley*/
+  .button{
+    align-items: center;
+  }
+  /*presley*/
+  .kirito_and_co{
+    max-width:100px;
+    max-height: 150px;
+  }
+  /*presley*/
+  .sao_cover{
+    max-width:100px;
+    max-height:160px;
+    position:relative;
+    right: -160px;
+    bottom: -100px;
+    clear:right;
+
+
+  }
+  /*presley*/
+  .kirito_alfheim{
+    position:relative;
+    left:7px;
+    bottom: -430px;
+    max-width:100px;
+    max-height:70px;
+  }
+  /*presley*/
+  .sao_list{
+    clear:left;
+    position:relative;
+    top: -70px;
+  }
+  /*presley*/
+  #saoListMain{
+    position:relative;
+    right: -210px;
+    top:-40px;
+  }
 }
 
 /*Sean*/
-@media screen and(max-width:800px){
-
-
-}
-<
-/*Sean*/
-@media screen and(max-width:800px){
-
-
-}
-
-
 .para1{
     float:right;
     padding-left: 5%;
@@ -198,20 +354,49 @@ a{
 .kirito_and_co{
   width:240px;
   height:380px;
-  border-radius: 10px;
+  border-radius:15px;
   float:right;
+  margin: 5px;
+
 }
 /*presley*/
-.saopara{
-  font-family: 'Noto Sans JP',
-  sans-serif;
-  font-family: 'Oswald',
-  sans-serif;
+.sao_cover{
+  width:240px;
+  height:380px;
+  border-radius:15px;
+  float:left;
+  margin: 5px;
+}
+/*presley*/
+.kirito_alfheim{
+  position:relative;
+  float: right;
+  border-radius:15px;
+  width:640px;
+  height:360px;
+}
+/*presley*/
+.sao_para,.contact-h2,.button,.recom{
   font-family: 'Shippori Antique',
   sans-serif;
 }
+/*presley*/
+.sao_list,.sao_list2{
+  position:relative;
+  right: -20px;
+  font-family: 'Shippori Antique',
+  sans-serif;
+}
+/*presley*/
+.headers{
 
+}
 
+/*presley*/
+.subheads{
+  font-family: 'Titillium Web',
+  sans-serif;
+}
 /*Sean*/
 .MHA{
     padding:0;
@@ -254,3 +439,642 @@ a{
     overflow:hidden;
     box-sizing: border-box;
 }
+
+/*solomon*/
+.Memebespara1{
+font-family: 'Shippori Antique',
+sans-serif;
+font-family: 'Titillium Web',
+sans-serif;
+}
+/*solomon*/
+.Hokage{
+  width: 25%;
+  height: 15%;
+  position: relative;
+  right: -550px;
+  border-radius:30%/50%;
+}
+/*solomon*/
+.All_Might{
+  width: 25%;
+  height: 15%;
+  position: relative;
+  right: -550px;
+  border-radius:30%/50%;
+}
+/*solomon*/
+.Black_Swordsmen{
+  width: 25%;
+  height: 15%;
+  position: relative;
+  right: -550px;
+  border-radius:30%/50%;
+}
+/*solomon*/
+.kage{
+    width: 55%;
+    height: 15%;
+    position: relative;
+    right: -250px;
+}
+/*solomon*/
+.characters{
+          position: relative;
+          right:-1px;
+}
+/*solomon*/
+table{
+    position: relative;
+    top:-225px;
+  }
+  /*solomon*/
+  .narutopara1{
+    font-family: 'Noto Sans JP',
+    sans-serif;
+    font-family: 'Oswald',
+    sans-serif;
+    font-family: 'Shippori Antique',
+    sans-serif;
+  }
+
+  /*solomon*/
+table, th, td {
+  border: 1px solid black;
+}
+
+/* source: https://www.youtube.com/watch?v=UAWhbMDBGW4&t=268s , link on how i coded the contact page. I changed up some measurments in which i felt were neccessary and the coloring to make it unique
+/*preley*/
+.contact-page{
+  margin: 0;
+  padding: 0;
+}
+/*presley*/
+.contact{
+  margin: auto;
+  width: 500px;
+  /*sets a box shadow on the right on 40px with grey */
+  box-shadow: 0 0 40px 0 grey;
+  border-radius: 10px;
+  /* moving th eposttion of th econtact box from the top and left */
+  transform: translate( -30%. -50%);
+}
+/*presley*/
+.input{
+  width: 400px;
+  height: 50px;
+  padding-right:15px;
+  padding-left: 15px;
+  margin-top: 20px;
+  border: 1px  grey;
+  border-radius:14px;
+  outline: none;
+}
+/*presley*/
+.contact-form{
+  margin: 25px;
+}
+/*presley*/
+.textarea-field{
+  height: 150px;
+  padding-top: 10px;
+}
+
+/*presley*/
+.button{
+  margin-top:14px;
+  padding: 5px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  background-color:black;
+  border-radius: 10%;
+  color:white;
+  font-size:20px;
+  border: none;
+  /* sets a a box shadow inset, takes 3s to go back to normal*/
+  box-shadow: inset 0 0 0 0 #618a3d;
+  transition: ease-out 0.3s;
+  /*mkakes the button able to b clicked on*/
+  cursor: pointer;
+  /*hides scrollbars*/
+  overflow: hidden;
+  outline:none;
+  position: relative;
+  right: -38.5%;
+  }
+
+/*presley - the transition of button when hovering*/
+.button:hover{
+  box-shadow: inset 100px 0 0 0 #618a3d;
+  cursor: pointer;
+  color: white;
+
+}
+
+/*presley*/
+  .contact-h2{
+    text-align: center;
+  }
+
+  /*presley*/
+.SAO{
+  margin: 0;
+  padding: 0;
+}
+/*presley*/
+.sao_main{
+  margin: 10px;
+}
+
+/*Sean*/
+.shonen {
+
+  width: 100%;
+  height: 500px;
+  align-items: center;
+}
+/*Sean*/
+#div1{
+
+  float:left;
+  width:33%;
+  height: 500px; /*This is a div for the paragraghs*/
+}
+/*Sean*/
+#div2{
+
+  width: 33%;
+  float: right;
+  height:500px;
+}
+/*Sean*/
+#div3{
+
+  width: 33%;
+  margin: 0 auto;
+  height:500px;
+}
+/*Sean*/
+.stats{
+
+  border: 1px solid black;
+
+
+}
+/*Sean*/
+.MHApic{
+
+  height:235 px;
+  width:590  px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+/*Image gallery*/
+/*Sean*/
+.image-container{
+  width:auto;
+  height: auto; /*Image optimisation added*/
+  position:relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s; /*transition in all relative browsers for chrome,firefox and opera*/
+  -o-transition: left 2s;
+  float:right;
+
+}
+
+
+
+/*Sean*/
+.Home{
+
+  margin:0;
+  padding:0;
+  justify-content:center;
+  align-items: center; /*Added tyling to the index page by centering most objects*/
+  margin:0;
+}
+/*Sean*/
+.container1{
+
+  color:black;
+  height:100%;
+  width:100%;
+  background-image: url("Images/Graphic_Background.jpg");
+  background-repeat:no-repeat;
+  background-position: 50 px;
+  position:relative;/*background image added at the top of the pag*/
+  background-size: 1300px 200px ;
+}
+/*Sean*/
+.villians{
+  height:auto;
+  width:auto;
+}
+/*Styling for the images*/
+/*Sean*/
+.main{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+  column-gap: 40px; /*Styling used to make the image gallery have a grid like structure*/
+  row-gap: 40px;
+}
+/*Sean*/
+.gallery{
+  width:300px;
+  height:300px;
+  object-fit: cover;
+  object-position: center; /*CSS for the image gallery to be formated in the center with having equal size*/
+
+}
+/*Sean*/
+.text1{
+  display:none;
+}
+
+
+/*Sean*/
+.para5{
+
+  color: black;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+  float:left;
+  justify-content: center;
+}
+/*Sean*/
+.form-container{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+  width: 400px;
+  max-width: 100%;/*Container for the validation form*/
+  float: right ;
+  right:50%;
+  position:relative;
+}
+/*Sean*/
+.head{
+  background-color: grey;
+  border-bottom: 1px solid black;
+  padding: 20px 40px;
+}
+/*Sean*/
+.form{
+  padding:30px 40px;
+}
+/*Sean*/
+.form-control{
+  margin-bottom:10px;
+  padding-bottom: 20px;
+  position:relative;
+}
+/*Sean*/
+.form-control input{
+
+  border: 2px solid black;
+  padding:10px;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+  display:block;
+}
+/*Sean*/
+.form-control label{
+  display:inline-block;
+  font-family: 'Oswald',
+  sans-serif;/*Styling for labels to display block*/
+  font-family: 'Shippori Antique',
+  sans-serif;
+}
+/*Sean*/
+.form button{
+
+  background-color: yellow;
+  display:block;
+  border:1px solid black;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+  padding:10px;
+  font-size: 10pt;
+
+}
+
+.sidetext{
+
+  width:50%;
+  margin:auto;
+  display:inline-block;
+  padding: 8px;
+
+
+}
+/*Sean*/
+.para4{
+
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  font-family: 'Shippori Antique',
+  sans-serif;
+  display:inline-block;
+  justify-content: center;
+}
+
+.MHApic{
+
+  float:right;
+}
+/*Sean*/
+.MHA{
+
+  margin: auto;
+  width:auto;
+  height:auto;/*automatic sizing for MHA page*/
+
+}
+/*Sean*/
+.largetext{
+  float:right;
+  font-size:60pt;
+  font-family: 'Comic Neue';
+  top:-2px;
+}
+/*Sean*/
+.anime {
+  border: 10 px solid 2px black;
+  padding: 10 px;
+  /*This styling is for the table*/
+  border-spacing: 0;
+
+
+}
+
+.para3{
+
+    font-family: 'Noto Sans JP',
+    sans-serif;
+
+}
+
+/*Sean*/
+a{
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif; /*google fonts used for the paragraghs*/
+  font-family: 'Shippori Antique',
+  sans-serif;
+}
+/*Sean*/
+.para3{
+
+    font-family: 'Noto Sans JP',
+    sans-serif;
+
+}
+/*Sean*/
+.intro{
+
+  font-family: 'Titillium Web', /*Used for headings*/
+  sans-serif;
+
+}
+/*Sean*/
+.MHA{
+    padding:0;
+    margin:0;
+}
+/*Sean*/
+.form-container p{
+    margin-bottom: 15px;
+}
+/*Sean*/
+.picture{
+    width:450px;
+    position:relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    background-color: antiquewhite;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height:300;
+}
+/*Sean*/
+.picture:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%; /*Styling for MHA images*/
+    height:100%;
+    border: 8px solid #fff;
+    z-index: 2;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
+/*solomon*/
+.kage{
+    width: 55%;
+    height: 15%;
+    position: relative;
+    right: -250px;
+}
+/*solomon*/
+.characters{
+    position: relative;
+    float: right;
+    top:-210px;
+}
+/*solomon*/
+table{
+    position: relative;
+    top:-22px;
+  }
+  /*solomon*/
+  .narutopara1{
+    font-family: 'Shippori Antique',
+    sans-serif;
+}
+
+  /*solomon*/
+table, th, td {
+  border: 1px solid black;
+}
+/*presley*/
+.inuyashiki{
+  width:150px;
+  height:250px;
+  border-radius:15px;
+  float:right;
+}
+
+/*Preseley*/
+.tokyorevngers{
+  width:150px;
+  height:250px;
+  border-radius:15px;
+  float:right;
+}
+
+/*Presley*/
+.new-game{
+  width:120px;
+  height:170px;
+  float:right;
+  border-radius:15px;
+}
+
+/*Presley*/
+
+.summer-wars{
+  width:120px;
+  height:170px;
+  float:right;
+  border-radius:15px;
+}
+
+/*presley*/
+.show-me{
+  display:none;
+}
+/*presley*/
+.see-more{
+  cursor:pointer;
+  background-color:Darkorange;
+  border:none;
+  padding: 15px 15px;
+  outline:none;
+  font-size:15px;
+}
+.trivia.show-more .show-me{
+  display:inline;
+}
+.question2,.expandSocial{
+  font-family: 'Shippori Antique',
+  sans-serif;
+  font-family: 'Titillium Web',
+  sans-serif;
+  font-weight:bold;
+  font-size:16pt;
+}
+.expandSocial{
+  display:none;
+}
+/*presley*/
+.see-social{
+  cursor:pointer;
+  background-color:red;
+  border:none;
+  padding: 15px 15px;
+  outline:none;
+  font-size:15px;
+}
+.socialMedia.show-more .expandSocial{
+  display:inline;
+}
+
+
+/*Sean*/
+.Titans{
+  width:150px;
+  height:250px;
+  float:right;
+  border-radius: 15px;
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  /*google fonts used for the paragraghs*/
+  font-family: 'Shippori Antique',
+  sans-serif;
+  }
+
+.Goku{
+  width:150px;
+  height:250px;
+  float:right;
+  border-radius: 15px;
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  /*google fonts used for the paragraghs*/
+  font-family: 'Shippori Antique',
+  sans-serif;
+
+
+}
+
+.full-metal{
+  width:120px;
+  height:170px;
+  float:right;
+  border-radius: 15px;
+}
+
+.shield-hero{
+  width:120px;
+  height:170px;
+  float:right;
+  border-radius: 15px;
+
+}
+
+
+/*solomon*/
+.Slime{
+  width:150px;
+  height:250px;
+  float:right;
+  border-radius: 15px;
+  font-family: 'Noto Sans JP',
+  sans-serif;
+  font-family: 'Oswald',
+  sans-serif;
+  /*google fonts used for the paragraghs*/
+  font-family: 'Shippori Antique',
+  sans-serif;
+}
+
+.Common{
+    width:150px;
+    height:250px;
+    float:right;
+    border-radius: 15px;
+    font-family: 'Noto Sans JP',
+    sans-serif;
+    font-family: 'Oswald',
+    sans-serif;
+    /*google fonts used for the paragraghs*/
+    font-family: 'Shippori Antique',
+    sans-serif;
+}
+
+
+  .War{
+    width:120px;
+    height:170px;
+    float:right;
+    border-radius:15px;
+  }
+
+  .Juju{
+    width:120px;
+    height:170px;
+    float:right;
+    border-radius:15px;
+  }
