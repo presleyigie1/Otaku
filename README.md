@@ -6,6 +6,7 @@ Tech used:
 HTML/CSS/JavaScript
 	
 > ####	Here are some of my responsibilities during this project:
+>       - organized meetings, delegated tasks,help teammates debug
 >	- created Hamburger Menu -DOM
 >	- created Yellow to green background colour toggle switch, made with JavaScript - DOM
 >	-  Media queries for SAO.html and Contact.html
