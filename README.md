@@ -20,10 +20,12 @@ HTML/CSS/JavaScript
 >	- Created Logo
 >	- Pseudocode
 	
-	Note: Since this was the first website I have properly made the code or the styling isn’t exactly up to scratch.(few features have issues since after deployment)
+Note: Since this was the first website I have properly made the code or the styling isn’t exactly up to scratch.(few features have issues since after deployment)
 	
 
-#### Desktop view: ![swordart](sao.jpg)
+#### Desktop view: 
+![swordart](sao.jpg)
 
-#### Mobile View: ![swordart](mobiless.jpg)
+#### Mobile View: 
+![swordart](mobiless.jpg)
 
