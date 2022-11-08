@@ -6,7 +6,7 @@ Tech used:
 HTML/CSS/JavaScript
 	
 > ####	Here are some of my responsibilities during this project:
->       - organized meetings, delegated tasks,help teammates debug
+>	- organized meetings, delegated tasks,help teammates debug
 >	- created Hamburger Menu -DOM
 >	- created Yellow to green background colour toggle switch, made with JavaScript - DOM
 >	-  Media queries for SAO.html and Contact.html
@@ -20,7 +20,7 @@ HTML/CSS/JavaScript
 >	- Created Logo
 >	- Pseudocode
 	
-	Note: Since this was the first website I have properly made the code or the styling isn’t exactly up to scratch.
+	Note: Since this was the first website I have properly made the code or the styling isn’t exactly up to scratch.(few features have issues since after deployment)
 	
 
 #### Desktop view: ![swordart](sao.jpg)
